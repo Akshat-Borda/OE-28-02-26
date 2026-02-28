@@ -1,0 +1,381 @@
+/* =========================================
+   OnLoop Energy - Visual Animations
+   ========================================= */
+
+/* ---- Wind Turbine Animation ---- */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.turbine-visual {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 400px;
+    z-index: 5;
+    pointer-events: none;
+    overflow: visible;
+}
+
+/* ... (Rest of turbine structure remains similar, maybe adjusted) ... */
+.turbine-visual::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 30px;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.turbine-pole {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 280px;
+    background: linear-gradient(90deg, #94a3b8 0%, #f8fafc 30%, #cbd5e1 60%, #e2e8f0 85%, #64748b 100%);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.turbine-rotor {
+    position: absolute;
+    bottom: 270px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    animation: spin 2s infinite linear;
+    z-index: 2;
+}
+
+/* Realistic Aerodynamic Blades */
+.turbine-blade {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 145px;
+    background:
+        linear-gradient(to bottom,
+            #FF0000 0%,
+            #FF0000 18%,
+            transparent 18%),
+        linear-gradient(to right,
+            rgba(255, 255, 255, 0.9) 0%,
+            rgba(240, 244, 248, 0.95) 25%,
+            rgba(210, 220, 230, 0.85) 50%,
+            rgba(180, 195, 210, 0.7) 75%,
+            rgba(150, 170, 190, 0.6) 100%),
+        linear-gradient(to bottom,
+            transparent 0%,
+            transparent 18%,
+            #e8edf2 18%,
+            #f1f5f9 35%,
+            #e2e8f0 60%,
+            #cbd5e1 100%);
+    clip-path: polygon(45% 0%,
+            55% 0%,
+            95% 70%,
+            75% 95%,
+            50% 100%,
+            30% 95%,
+            5% 70%);
+    transform-origin: 50% 100%;
+    margin-left: -10px;
+    border-radius: 50% 50% 0 0;
+    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.25));
+    border: none;
+}
+
+/* 3 Blades exactly 120 degrees apart */
+.turbine-blade:nth-child(1) {
+    transform: rotate(0deg);
+}
+
+.turbine-blade:nth-child(2) {
+    transform: rotate(120deg);
+}
+
+.turbine-blade:nth-child(3) {
+    transform: rotate(240deg);
+}
+
+/* Metallic Hub cap  */
+.turbine-hub {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    background: radial-gradient(circle at 40% 38%, #ffffff 0%, #e2e8f0 30%, #94a3b8 60%, #64748b 100%);
+    border: 1.5px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    box-shadow: inset -2px -2px 6px rgba(0, 0, 0, 0.25), 2px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Secondary Turbines */
+.turbine-visual--small-1 {
+    transform: translateX(-50%) scale(0.65);
+    left: 35%;
+    bottom: 42px;
+    opacity: 1;
+    z-index: 4;
+}
+
+.turbine-visual--small-1 .turbine-rotor {
+    animation-duration: 2.6s;
+    /* Slightly slower than main */
+}
+
+.turbine-visual--small-2 {
+    transform: translateX(-50%) scale(0.65);
+    left: 65%;
+    bottom: 41px;
+    opacity: 1;
+    z-index: 3;
+}
+
+.turbine-visual--small-2 .turbine-rotor {
+    animation-duration: 2.3s;
+    /* Slightly different speed for natural look */
+}
+
+/* ---- Landscape/Terrain ---- */
+.landscape-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 350px;
+    pointer-events: none;
+    overflow: hidden;
+    /* Sky blue gradient above the grass */
+    background: #87CEEB;
+    z-index: 0;
+}
+
+.hill {
+    position: absolute;
+    bottom: -100px;
+    left: -25%;
+    width: 150%;
+    height: 300px;
+    border-radius: 100% 100% 0 0;
+    background: linear-gradient(180deg, #65a30d 0%, #365314 100%);
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+/* Remove second hill to match simpler single-curve look of reference */
+.hill:nth-child(2) {
+    display: none;
+}
+
+.ground-shadow {
+    display: none;
+}
+
+/* ---- Solar Panels ---- */
+.solar-visual {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 6;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    pointer-events: none;
+}
+
+.solar-panel-unit {
+    position: relative;
+    width: 140px;
+    /* Made wider for realistic aspect ratio */
+    height: 90px;
+    transform-origin: bottom center;
+}
+
+/* Make side panels slightly smaller/perspective */
+.solar-panel-unit:nth-child(1),
+.solar-panel-unit:nth-child(5) {
+    transform: scale(0.9);
+}
+
+.solar-panel {
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #172554 100%);
+    /* Deeper sapphire blue */
+    border: 3px solid #64748b;
+    /* Silver/grey aluminium frame */
+    border-radius: 2px;
+    transform: perspective(600px) rotateX(35deg);
+    /* Flatter angle */
+    box-shadow:
+        inset 0 0 15px rgba(0, 0, 0, 0.9),
+        0 8px 15px rgba(0, 0, 0, 0.4),
+        0 -2px 10px rgba(16, 185, 129, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Glassmorphism reflection */
+.solar-panel::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(105deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.3) 45%, rgba(255, 255, 255, 0) 60%);
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Deep Monocrystalline Grid lines */
+.solar-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+    background-size: 20px 30px;
+    z-index: 1;
+}
+
+.solar-structure {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 60%;
+    height: 35px;
+    z-index: -1;
+    filter: drop-shadow(0 15px 10px rgba(0, 0, 0, 0.5));
+}
+
+/* Galvanized Steel Poles */
+.solar-pole {
+    position: absolute;
+    bottom: 0;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(90deg, #64748b 0%, #94a3b8 50%, #475569 100%);
+    box-shadow: inset 1px 0 2px rgba(255, 255, 255, 0.5);
+    border-radius: 2px 2px 0 0;
+}
+
+.solar-pole:first-child {
+    left: 0;
+}
+
+.solar-pole:last-child {
+    right: 0;
+}
+
+/* ---- Footer Integration Override ---- */
+/* ---- Footer Integration Override ---- */
+/* Removed obsolete .footer and .footer__grid overrides as they are handled in styles.css */
+
+/* Mobile adjustments */
+@media (max-width: 900px) {
+
+    /* Footer Tier 1 */
+    .footer__top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 10px;
+        /* Reduce spacing under nav links */
+    }
+
+    .footer__brand {
+        display: none;
+        /* Hide brand logo and description on mobile */
+    }
+
+    .footer__nav-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        /* Force 3 columns without overflow */
+        gap: 5px;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Small font size to comfortably fit 3 columns on narrow phone screens */
+    .footer__nav-grid .footer__title {
+        font-size: 11px;
+        margin-bottom: 8px;
+    }
+
+    .footer__nav-grid .footer__link {
+        font-size: 13px;
+    }
+
+
+
+    .visuals-wrapper {
+        width: 100%;
+        /* Take full width on mobile */
+    }
+
+    .footer__animation-zone {
+        height: 240px;
+        /* Significantly reduce excess sky gap on mobile */
+    }
+
+    /* Footer Tier 3 */
+    .footer__bottom-inner {
+        flex-direction: column;
+        gap: var(--space-4);
+        text-align: center;
+    }
+
+    .turbine-visual {
+        transform: translateX(-50%) scale(0.65);
+        bottom: -60px;
+        opacity: 0.6;
+    }
+
+    /* Target smaller turbines explicitly so they don't break */
+    .turbine-visual--small-1 {
+        transform: translateX(-50%) scale(0.35);
+        bottom: -20px;
+    }
+
+    .turbine-visual--small-2 {
+        transform: translateX(-50%) scale(0.35);
+        bottom: -20px;
+    }
+
+    .solar-visual {
+        opacity: 0.8;
+        bottom: 10px;
+        transform-origin: bottom center;
+        transform: scale(0.7);
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        width: 100%;
+    }
+}
