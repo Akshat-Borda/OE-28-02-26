@@ -50,9 +50,9 @@ const Layout = () => {
           </Link>
           <nav className="nav">
             <ul className="nav__list">
-              <li><Link to="/" className="nav__link nav__link--active">Home</Link></li>
+              <li><Link to="/" className={`nav__link ${location.pathname === '/' ? 'nav__link--active' : ''}`}>Home</Link></li>
               <li className="nav__dropdown">
-                <span className="nav__dropdown-toggle">
+                <span className={`nav__dropdown-toggle ${['/solar', '/wind', '/hybrid'].includes(location.pathname) ? 'nav__link--active' : ''}`}>
                   Solutions
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -95,7 +95,7 @@ const Layout = () => {
                 </div>
               </li>
               <li className="nav__dropdown">
-                <span className="nav__dropdown-toggle">
+                <span className={`nav__dropdown-toggle ${['/epc-services', '/om-services', '/consulting'].includes(location.pathname) ? 'nav__link--active' : ''}`}>
                   Services
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

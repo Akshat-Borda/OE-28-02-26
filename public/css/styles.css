@@ -483,7 +483,9 @@ p:last-child {
 }
 
 .nav__link:hover,
-.nav__link--active {
+.nav__link--active,
+.nav__dropdown-toggle.nav__link--active,
+.nav__dropdown:hover .nav__dropdown-toggle {
     color: var(--color-text-primary);
 }
 
@@ -500,7 +502,9 @@ p:last-child {
 }
 
 .nav__link:hover::after,
-.nav__link--active::after {
+.nav__link--active::after,
+.nav__dropdown:hover .nav__dropdown-toggle::after,
+.nav__dropdown-toggle.nav__link--active::after {
     width: 100%;
 }
 
