@@ -46,7 +46,7 @@ const Layout = () => {
       <header className="header">
         <div className="container header__inner">
           <Link to="/" className="header__logo">
-            <img src="/images/logo.svg" alt="OnLoop Energy" style={{ height: '48px', width: 'auto' }} />
+            <img src="/images/logo.svg" alt="OnLoop Energy - Wind and Solar Hybrid Power Projects" style={{ height: '48px', width: 'auto' }} />
           </Link>
           <nav className="nav">
             <ul className="nav__list">
