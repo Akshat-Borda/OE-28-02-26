@@ -5,17 +5,17 @@
   
   <!-- Main Pages -->
   <url>
-    <loc>https://onloopenergy.com</loc>
+    <loc>https://www.onloopenergy.com</loc>
     <lastmod>2024-05-20T10:00:00+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://onloopenergy.com/about</loc>
+    <loc>https://www.onloopenergy.com/about</loc>
     <lastmod>2024-05-20T10:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://onloopenergy.com/contact</loc>
+    <loc>https://www.onloopenergy.com/contact</loc>
     <lastmod>2024-05-20T10:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -32,7 +32,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://onloopenergy.com/hybrid</loc>
+    <loc>https://www.onloopenergy.com/hybrid</loc>
     <lastmod>2024-05-20T10:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
