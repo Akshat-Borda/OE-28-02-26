@@ -34,7 +34,7 @@ const OmServices = () => {
 
 
             {/* Hero Section */}
-            <section className="hero hero--short hero--image" style={{ backgroundImage: 'url("/images/stock/wind-solar-farm.jpg")' }}>
+            <section className="hero hero--short hero--image" style={{ backgroundImage: 'url("/images/stock/wind-solar-farm.webp")' }}>
                 <div className="container">
                     <div className="hero__content">
                         <div className="hero__badge" style={{ marginTop: 'var(--space-12)' }}>

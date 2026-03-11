@@ -40,7 +40,7 @@ const Hybrid = () => {
 
 
             {/* Hero Section */}
-            <section className="hero hero--short hero--image" style={{ backgroundImage: 'url("/images/stock/solar-wind-farm.jpg")' }}>
+            <section className="hero hero--short hero--image" style={{ backgroundImage: 'url("/images/stock/solar-wind-farm.webp")' }}>
                 <div className="container">
                     <div className="hero__content">
                         <div className="hero__badge" style={{ marginTop: 'var(--space-12)' }}>
@@ -61,15 +61,21 @@ const Hybrid = () => {
                     <div className="grid-3">
                         <div className="image-card">
                             <img src="/images/stock/solar-panel-5542443_1920.webp" loading="lazy" alt="Industrial solar panels acting as the daytime generation foundation" />
-                            <h4 className="image-card__label">Solar: The Foundation</h4>
+                            <div className="image-card__caption">
+                                <h4 className="image-card__label">Solar: The Foundation</h4>
+                            </div>
                         </div>
                         <div className="image-card">
                             <img src="/images/stock/pinwheels-6535599_1920.webp" loading="lazy" alt="Small wind turbines providing complementary nighttime generation" />
-                            <h4 className="image-card__label">Wind: The Complement</h4>
+                            <div className="image-card__caption">
+                                <h4 className="image-card__label">Wind: The Complement</h4>
+                            </div>
                         </div>
-                        <div className="image-card image-card--large">
+                        <div className="image-card">
                             <img src="/images/stock/wind-solar-farm.webp" loading="lazy" alt="Fully integrated commercial hybrid energy architecture combining solar and wind" />
-                            <h4 className="image-card__label">Integration: The Architecture</h4>
+                            <div className="image-card__caption">
+                                <h4 className="image-card__label">Integration: The Architecture</h4>
+                            </div>
                         </div>
                     </div>
                 </div>

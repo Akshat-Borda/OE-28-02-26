@@ -34,7 +34,7 @@ const EpcServices = () => {
 
 
             {/* Hero Section */}
-            <section className="hero hero--short hero--image" style={{ backgroundImage: 'url("/images/stock/solar-wind-farm.jpg")' }}>
+            <section className="hero hero--short hero--image" style={{ backgroundImage: 'url("/images/stock/solar-wind-farm.webp")' }}>
                 <div className="container">
                     <div className="hero__content">
                         <div className="hero__badge" style={{ marginTop: 'var(--space-12)' }}>
