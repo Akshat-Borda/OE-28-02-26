@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Analytics } from '@vercel/analytics/react';
 import Layout from './components/Layout.jsx';
@@ -15,23 +16,25 @@ import Contact from './pages/Contact.jsx';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route element={<Layout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/solar" element={<Solar />} />
-        <Route path="/wind" element={<Wind />} />
-        <Route path="/hybrid" element={<Hybrid />} />
-        <Route path="/epc-services" element={<EpcServices />} />
-        <Route path="/om-services" element={<OmServices />} />
-        <Route path="/consulting" element={<Consulting />} />
-        <Route path="/contact" element={<Contact />} />
-              </Route>
-      </Routes>
-      <Analytics />
-      <SpeedInsights />
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/solar" element={<Solar />} />
+            <Route path="/wind" element={<Wind />} />
+            <Route path="/hybrid" element={<Hybrid />} />
+            <Route path="/epc-services" element={<EpcServices />} />
+            <Route path="/om-services" element={<OmServices />} />
+            <Route path="/consulting" element={<Consulting />} />
+            <Route path="/contact" element={<Contact />} />
+          </Route>
+        </Routes>
+        <Analytics />
+        <SpeedInsights />
+      </Router>
+    </HelmetProvider>
   );
 }
 

@@ -25,7 +25,7 @@ const Layout = () => {
       '/hybrid': 'Hybrid Solutions | OnLoop Energy',
       '/epc-services': 'EPC Services | OnLoop Energy',
       '/om-services': 'O&M Services | OnLoop Energy',
-      '/consulting': 'Consulting | OnLoop Energy',
+      '/consulting': 'Green Consulting | OnLoop Energy',
       '/contact': 'Contact Us | OnLoop Energy'
     };
     document.title = titles[location.pathname] || 'OnLoop Energy';
@@ -125,7 +125,7 @@ const Layout = () => {
                       <line x1="12" y1="20" x2="12" y2="4" />
                       <line x1="6" y1="20" x2="6" y2="14" />
                     </svg>
-                    Consulting
+                    Green Consulting
                   </Link>
                 </div>
               </li>
@@ -203,7 +203,7 @@ const Layout = () => {
                 <line x1="12" y1="20" x2="12" y2="4" />
                 <line x1="6" y1="20" x2="6" y2="14" />
               </svg>
-              Consulting
+              Green Consulting
             </Link>
           </div>
 
@@ -220,9 +220,9 @@ const Layout = () => {
         <div className="container" style={{ position: 'relative', zIndex: '20' }}>
           <div className="footer__top">
             <div className="footer__brand">
-              <div className="footer__logo">
-                <img src="/images/logo.svg" alt="OnLoop Energy" style={{ height: '42px', width: 'auto', marginBottom: '20px' }} />
-              </div>
+              <Link to="/" className="footer__brand">
+                <img src="/images/logo.svg" alt="OnLoop Energy - Commercial Hybrid Energy Systems EPC" style={{ height: '42px', width: 'auto', marginBottom: '20px' }} />
+              </Link>
               <p className="footer__description">
                 Developing solar, wind, and hybrid power projects for diverse infrastructure and industrial needs.
               </p>
@@ -243,7 +243,7 @@ const Layout = () => {
                 <ul className="footer__list">
                   <li><Link to="/epc-services" className="footer__link">EPC Services</Link></li>
                   <li><Link to="/om-services" className="footer__link">O&M Services</Link></li>
-                  <li><Link to="/consulting" className="footer__link">Consulting</Link></li>
+                  <li><Link to="/consulting" className="footer__link">Green Consulting</Link></li>
                 </ul>
               </div>
 

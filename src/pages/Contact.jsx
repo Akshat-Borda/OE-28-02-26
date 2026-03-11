@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -42,9 +43,11 @@ const Contact = () => {
 
     return (
         <div>
-
-
-
+            <Helmet>
+                <title>Contact OnLoop Energy | Start a Conversation</title>
+                <meta name="description" content="Talk to the engineering team at OnLoop Energy to evaluate your site's renewable energy potential with honesty and technical precision." />
+                <link rel="canonical" href="https://www.onloopenergy.com/contact" />
+            </Helmet>
 
 
             {/* Hero Section */}
