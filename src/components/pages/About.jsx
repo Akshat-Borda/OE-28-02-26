@@ -1,15 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 
 const About = () => {
     return (
         <div>
-            <Helmet>
-                <title>About OnLoop Energy | Engineering-Led Renewable Solutions</title>
-                <meta name="description" content="Discover our philosophy: We don't sell equipment, we engineer custom architecture systems. Learn why OnLoop Energy is the honest, accountable EPC partner." />
-                <link rel="canonical" href="https://www.onloopenergy.com/about" />
-            </Helmet>
+            
 
             {/* Header */}
 
@@ -311,7 +305,7 @@ const About = () => {
                                 clean energy, done right.</span>
                         </div>
                         <div style={{ marginTop: 'var(--space-12)' }}>
-                            <Link to="/contact" className="btn btn--primary btn--large">Start a Conversation</Link>
+                            <a href="/contact" className="btn btn--primary btn--large">Start a Conversation</a>
                         </div>
                     </div>
                 </div>

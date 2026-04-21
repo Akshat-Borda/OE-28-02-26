@@ -1,34 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 
 const EpcServices = () => {
     return (
         <div>
-            <Helmet>
-                <title>Renewable Energy EPC Services | Solar, Wind, Hybrid | OnLoop Energy</title>
-                <meta name="description" content="End-to-end Renewable Energy EPC Services taking full accountability for design, engineering, procurement, and construction of energy systems for any facility." />
-                <link rel="canonical" href="https://www.onloopenergy.com/epc-services" />
-                <script type="application/ld+json">
-                    {`
-                    {
-                    "@context": "https://schema.org",
-                    "@type": "Service",
-                    "serviceType": "Engineering, Procurement, and Construction (EPC)",
-                    "category": "Renewable Energy",
-                    "provider": {
-                        "@type": "EnergyBusiness",
-                        "name": "OnLoop Energy"
-                    },
-                    "description": "Full-spectrum EPC services for residential, commercial, industrial, and government solar, wind, and hybrid projects.",
-                    "offers": {
-                        "@type": "Offer",
-                        "availability": "https://schema.org/InStock"
-                    }
-                    }
-                `}
-                </script>
-            </Helmet>
+            
 
 
 
@@ -337,7 +312,7 @@ const EpcServices = () => {
                         <h2 className="cta-section__title">Let’s Start With the Right Questions</h2>
                         <p className="cta-section__text">If you’re planning a renewable energy project and want clarity before
                             committing to decisions, we’re happy to talk.</p>
-                        <Link to="/contact" className="btn btn--primary btn--large">Schedule a Consultation</Link>
+                        <a href="/contact" className="btn btn--primary btn--large">Schedule a Consultation</a>
                     </div>
                 </div>
             </section>

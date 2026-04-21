@@ -1,33 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 
 const OmServices = () => {
     return (
         <div>
-            <Helmet>
-                <title>O&M Services for Renewable Energy Assets | OnLoop Energy</title>
-                <meta name="description" content="Operations and maintenance designed to protect performance, extend system life, and deliver predictable value for your renewable energy assets." />
-                <link rel="canonical" href="https://www.onloopenergy.com/om-services" />
-                <script type="application/ld+json">
-                    {`
-                    {
-                    "@context": "https://schema.org",
-                    "@type": "Service",
-                    "serviceType": "Solar and Wind Operations & Maintenance (O&M)",
-                    "provider": {
-                        "@type": "EnergyBusiness",
-                        "name": "OnLoop Energy"
-                    },
-                    "description": "Comprehensive maintenance, monitoring, and lifetime performance management for solar, wind, and hybrid renewable energy assets.",
-                    "offers": {
-                        "@type": "Offer",
-                        "availability": "https://schema.org/InStock"
-                    }
-                    }
-                `}
-                </script>
-            </Helmet>
+            
 
 
 
@@ -345,7 +321,7 @@ const OmServices = () => {
                         <p className="cta-section__text">If you view your renewable plant as a long-term asset, O&M isn’t
                             optional, it’s strategic. Let’s talk about how to protect performance over the full life of your
                             system.</p>
-                        <Link to="/contact" className="btn btn--primary btn--large">Get in Touch</Link>
+                        <a href="/contact" className="btn btn--primary btn--large">Get in Touch</a>
                     </div>
                 </div>
             </section>

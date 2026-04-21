@@ -1,33 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 
 const Consulting = () => {
     return (
         <div>
-            <Helmet>
-                <title>Green Consulting & Site Feasibility | OnLoop Energy</title>
-                <meta name="description" content="Independent green energy consulting, site feasibility, and ESG decarbonisation studies helping clients make decisions driven by deep technical analysis, not sales assumptions." />
-                <link rel="canonical" href="https://www.onloopenergy.com/consulting" />
-                <script type="application/ld+json">
-                    {`
-                    {
-                    "@context": "https://schema.org",
-                    "@type": "Service",
-                    "serviceType": "Renewable Energy Feasibility Studies and Consulting",
-                    "provider": {
-                        "@type": "EnergyBusiness",
-                        "name": "OnLoop Energy"
-                    },
-                    "description": "Deep analytical feasibility studies evaluating site dynamics, wind resources, insolation, and load demands to define optimal energy investments.",
-                    "offers": {
-                        "@type": "Offer",
-                        "availability": "https://schema.org/InStock"
-                    }
-                    }
-                `}
-                </script>
-            </Helmet>
+            
 
 
 
@@ -399,7 +375,7 @@ const Consulting = () => {
                         <h2 className="cta-section__title">Start With Clarity</h2>
                         <p className="cta-section__text">If you’re evaluating renewable energy options and want decisions grounded
                             in engineering , not pressure , let’s talk.</p>
-                        <Link to="/contact" className="btn btn--primary btn--large">Request a Consultation</Link>
+                        <a href="/contact" className="btn btn--primary btn--large">Request a Consultation</a>
                     </div>
                 </div>
             </section>

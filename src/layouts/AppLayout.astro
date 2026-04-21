@@ -1,0 +1,63 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import Header from '../components/Header.jsx';
+import Footer from '../components/Footer.jsx';
+import '../index.css'; // Add the CSS from React's main.jsx
+
+const { title, description } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="https://www.onloopenergy.com/favicon.png" sizes="any" />
+  <link rel="apple-touch-icon" href="https://www.onloopenergy.com/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title || 'OnLoop Energy'}</title>
+  {description && <meta name="description" content={description} />}
+  
+  <link rel="canonical" href={Astro.url} />
+  <meta property="og:title" content={title || 'OnLoop Energy | Hybrid Energy Solutions'} />
+  <meta property="og:image" content="https://www.onloopenergy.com/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/visuals.css" />
+  
+  <ClientRouter />
+
+  <!-- Vercel Insights -->
+  <script is:inline>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js" is:inline></script>
+  
+  <!-- Main JS -->
+  <script src="/js/main.js" is:inline></script>
+
+  <!-- Re-initialize scripts on Astro page swap -->
+  <script is:inline>
+    document.addEventListener('astro:page-load', () => {
+      if (window.initMobileNav) window.initMobileNav();
+      if (window.initScrollAnimations) window.initScrollAnimations();
+      if (window.initSmoothScroll) window.initSmoothScroll();
+      if (window.initContactForm) window.initContactForm();
+      if (window.initHeaderScroll) window.initHeaderScroll();
+      if (window.initParticles) window.initParticles();
+      if (window.initTiltEffect) window.initTiltEffect();
+      if (window.initCounterAnimation) window.initCounterAnimation();
+    });
+  </script>
+</head>
+<body>
+  <div id="root">
+    <Header client:load />
+    <main>
+      <slot />
+    </main>
+    <Footer transition:persist />
+  </div>
+</body>
+</html>

@@ -1,37 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 
 const Hybrid = () => {
     return (
         <div>
-            <Helmet>
-                <title>Integrated Solar & Wind Systems | Hybrid Energy | OnLoop Energy</title>
-                <meta name="description" content="Thoughtfully integrated hybrid energy systems combining solar and wind to smooth production variability and guarantee energy resilience across all facility types." />
-                <link rel="canonical" href="https://www.onloopenergy.com/hybrid" />
-                <script type="application/ld+json">
-                    {`
-                    {
-                    "@context": "https://schema.org",
-                    "@type": "Service",
-                    "serviceType": "Integrated Hybrid Renewable Energy System Engineering",
-                    "provider": {
-                        "@type": "EnergyBusiness",
-                        "name": "OnLoop Energy"
-                    },
-                    "description": "Custom-engineered hybrid energy systems integrating industrial solar and small wind turbines to ensure high availability and resilient energy generation for residential, C&I, and public sector sites.",
-                    "offers": {
-                        "@type": "Offer",
-                        "availability": "https://schema.org/InStock",
-                        "priceSpecification": {
-                        "@type": "PriceSpecification",
-                        "priceCurrency": "USD"
-                        }
-                    }
-                    }
-                `}
-                </script>
-            </Helmet>
+            
 
             {/* Header */}
 
@@ -406,14 +378,14 @@ const Hybrid = () => {
                         <h2 className="cta-section__title">Considering a hybrid energy system?</h2>
                         <p className="cta-section__text">Let’s evaluate whether a hybrid system genuinely makes sense for your site
                             and objectives.</p>
-                        <Link to="/contact" className="btn btn--primary btn--large">
+                        <a href="/contact" className="btn btn--primary btn--large">
                             Contact OnLoop Energy
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
                                 <line x1="5" y1="12" x2="19" y2="12" />
                                 <polyline points="12 5 19 12 12 19" />
                             </svg>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </section>

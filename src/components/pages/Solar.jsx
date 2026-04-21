@@ -1,38 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 
 const Solar = () => {
     return (
         <div>
-            <Helmet>
-                <title>Solar Energy Systems | Residential & Commercial | OnLoop Energy</title>
-                <meta name="description" content="Reliable solar energy solutions engineered around real-world consumption patterns for residential, C&I, and government applications." />
-                <link rel="canonical" href="https://www.onloopenergy.com/solar" />
-                <script type="application/ld+json">
-                    {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Service",
-              "serviceType": "Solar Energy System Engineering and Installation",
-              "provider": {
-                "@type": "EnergyBusiness",
-                "name": "OnLoop Energy"
-              },
-              "areaServed": "Global",
-              "description": "Rooftop and ground-mounted solar installations for residential, commercial, industrial, and government applications, engineered for efficiency and durability.",
-              "offers": {
-                "@type": "Offer",
-                "availability": "https://schema.org/InStock",
-                "priceSpecification": {
-                  "@type": "PriceSpecification",
-                  "priceCurrency": "USD"
-                }
-              }
-            }
-          `}
-                </script>
-            </Helmet>
+            
 
             {/* Header */}
 
@@ -317,14 +288,14 @@ const Solar = () => {
                         <h2 className="cta-section__title">Looking beyond solar?</h2>
                         <p className="cta-section__text">See how solar can work alongside wind to improve reliability and long-term
                             performance.</p>
-                        <Link to="/hybrid" className="btn btn--primary btn--large">
+                        <a href="/hybrid" className="btn btn--primary btn--large">
                             Learn About Hybrid
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
                                 <line x1="5" y1="12" x2="19" y2="12" />
                                 <polyline points="12 5 19 12 12 19" />
                             </svg>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </section>

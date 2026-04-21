@@ -1,30 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
   return (
     <div>
-      <Helmet>
-        <title>OnLoop Energy | Solar, Wind & Hybrid Renewable Systems</title>
-        <meta name="description" content="OnLoop Energy designs and delivers solar, small wind, and hybrid energy systems engineered for real sites and long-term performance across residential, commercial, industrial, and government applications." />
-        <link rel="canonical" href="https://www.onloopenergy.com/" />
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "EnergyBusiness",
-              "name": "OnLoop Energy",
-              "url": "https://www.onloopenergy.com",
-              "logo": "https://www.onloopenergy.com/favicon.png",
-              "description": "Technology-agnostic renewable energy EPC providing solar, small wind, and hybrid energy solutions tailored to residential, C&I, and government clients.",
-              "sameAs": [
-                "https://www.onloopenergy.com"
-              ]
-            }
-          `}
-        </script>
-      </Helmet>
+      
 
       {/* Header */}
 
@@ -43,8 +22,8 @@ const Home = () => {
               tailored to real sites, real energy demand, and long-term performance, across residential, commercial,
               industrial, and government applications.</p>
             <div className="hero__actions">
-              <Link to="/hybrid" className="btn btn--primary btn--large">Explore Solutions</Link>
-              <Link to="/contact" className="btn btn--secondary btn--large">Talk to Our Team</Link>
+              <a href="/hybrid" className="btn btn--primary btn--large">Explore Solutions</a>
+              <a href="/contact" className="btn btn--secondary btn--large">Talk to Our Team</a>
             </div>
           </div>
         </div>
@@ -402,14 +381,14 @@ const Home = () => {
             <h2 className="cta-section__title">Let’s design the right energy system for your site</h2>
             <p className="cta-section__text">Whether it’s a home, an industrial facility, or a public-sector project, the right
               energy solution starts with the right engineering.</p>
-            <Link to="/contact" className="btn btn--primary btn--large">
+            <a href="/contact" className="btn btn--primary btn--large">
               Contact OnLoop Energy
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
                 strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
                 <line x1="5" y1="12" x2="19" y2="12" />
                 <polyline points="12 5 19 12 12 19" />
               </svg>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

@@ -1,37 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 
 const Wind = () => {
     return (
         <div>
-            <Helmet>
-                <title>Small Wind Turbine Systems | OnLoop Energy</title>
-                <meta name="description" content="Thoughtfully designed small wind energy systems installed where wind resources genuinely support long-term performance for any property." />
-                <link rel="canonical" href="https://www.onloopenergy.com/wind" />
-                <script type="application/ld+json">
-                    {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Service",
-              "serviceType": "Small Wind Energy System Design and Installation",
-              "provider": {
-                "@type": "EnergyBusiness",
-                "name": "OnLoop Energy"
-              },
-              "description": "Site-specific small wind solutions deployed where wind resources justify long-term performance, offering generation beyond solar hours.",
-              "offers": {
-                "@type": "Offer",
-                "availability": "https://schema.org/InStock",
-                "priceSpecification": {
-                  "@type": "PriceSpecification",
-                  "priceCurrency": "USD"
-                }
-              }
-            }
-          `}
-                </script>
-            </Helmet>
+            
 
             {/* Header */}
 
@@ -269,14 +241,14 @@ const Wind = () => {
                         <h2 className="cta-section__title">When wind and solar align</h2>
                         <p className="cta-section__text">Explore how carefully designed hybrid systems improve reliability and
                             energy balance.</p>
-                        <Link to="/hybrid" className="btn btn--primary btn--large">
+                        <a href="/hybrid" className="btn btn--primary btn--large">
                             Explore Hybrid Solutions
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
                                 <line x1="5" y1="12" x2="19" y2="12" />
                                 <polyline points="12 5 19 12 12 19" />
                             </svg>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </section>
