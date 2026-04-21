@@ -102,6 +102,7 @@ const Header = () => {
                 </div>
               </li>
               <li><a href="/about" className={`nav__link ${pathname === '/about' ? 'nav__link--active' : ''}`}>About Us</a></li>
+              <li><a href="/faqs" className={`nav__link ${pathname === '/faqs' ? 'nav__link--active' : ''}`}>FAQs</a></li>
               <li><a href="/blogs" className={`nav__link ${pathname.startsWith('/blog') ? 'nav__link--active' : ''}`}>Blogs</a></li>
             </ul>
             <a href="/contact" className="btn btn--primary">Contact Us</a>
@@ -181,6 +182,7 @@ const Header = () => {
           </div>
 
           <a href="/blogs" className="nav__mobile-item">Blogs</a>
+          <a href="/faqs" className="nav__mobile-item">FAQs</a>
           <a href="/about" className="nav__mobile-item">About Us</a>
           <a href="/contact" className="btn btn--primary" style={{ marginTop: 'var(--space-4)' }}>Contact Us</a>
         </div>
