@@ -129,7 +129,13 @@ function initSmoothScroll() {
 
 // ---- Contact Form ----
 function initContactForm() {
-  const form = document.querySelector('.contact-form');
+  let form = document.querySelector('.contact-form');
+
+  if (!form) return;
+
+  if (form.tagName !== 'FORM') {
+    form = form.querySelector('form');
+  }
 
   if (!form) return;
 
