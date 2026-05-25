@@ -24,7 +24,7 @@ const Header = () => {
             <ul className="nav__list">
               <li><a href="/" className={`nav__link ${pathname === '/' ? 'nav__link--active' : ''}`}>Home</a></li>
               <li className="nav__dropdown">
-                <span className={`nav__dropdown-toggle ${['/solar', '/wind', '/hybrid'].includes(pathname) ? 'nav__link--active' : ''}`}>
+                <span className={`nav__dropdown-toggle ${['/solar', '/wind', '/hybrid', '/bess'].includes(pathname) ? 'nav__link--active' : ''}`}>
                   Solutions
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -53,7 +53,7 @@ const Header = () => {
                       <path
                         d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2" />
                     </svg>
-                    Small Wind Energy
+                    Small wind turbines
                   </a>
                   <a href="/hybrid" className="nav__dropdown-link">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -63,6 +63,21 @@ const Header = () => {
                       <path d="M2 12l10 5 10-5" />
                     </svg>
                     Hybrid Solutions
+                  </a>
+                  <a href="/bess" className="nav__dropdown-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16">
+                      <rect x="2" y="3" width="20" height="18" rx="2" ry="2" />
+                      <line x1="2" y1="9" x2="22" y2="9" />
+                      <line x1="2" y1="15" x2="22" y2="15" />
+                      <line x1="6" y1="6" x2="6.01" y2="6" />
+                      <line x1="6" y1="12" x2="6.01" y2="12" />
+                      <line x1="6" y1="18" x2="6.01" y2="18" />
+                      <line x1="18" y1="6" x2="18.01" y2="6" />
+                      <line x1="18" y1="12" x2="18.01" y2="12" />
+                      <line x1="18" y1="18" x2="18.01" y2="18" />
+                    </svg>
+                    Battery Storage (BESS)
                   </a>
                 </div>
               </li>
@@ -140,7 +155,7 @@ const Header = () => {
                 strokeLinecap="round" strokeLinejoin="round">
                 <path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2" />
               </svg>
-              Small Wind Energy
+              Small wind turbines
             </a>
             <a href="/hybrid" className="nav__mobile-sublink">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
@@ -150,6 +165,18 @@ const Header = () => {
                 <path d="M2 12l10 5 10-5" />
               </svg>
               Hybrid Solutions
+            </a>
+            <a href="/bess" className="nav__mobile-sublink">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+                strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="3" width="20" height="18" rx="2" ry="2" />
+                <line x1="2" y1="9" x2="22" y2="9" />
+                <line x1="2" y1="15" x2="22" y2="15" />
+                <line x1="6" y1="6" x2="6.01" y2="6" />
+                <line x1="6" y1="12" x2="6.01" y2="12" />
+                <line x1="6" y1="18" x2="6.01" y2="18" />
+              </svg>
+              Battery Storage (BESS)
             </a>
           </div>
 

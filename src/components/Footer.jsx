@@ -20,8 +20,9 @@ const Footer = () => {
               <h4 className="footer__title">Solutions</h4>
               <ul className="footer__list">
                 <li><a href="/solar" className="footer__link">Solar</a></li>
-                <li><a href="/wind" className="footer__link">Small Wind Energy</a></li>
+                <li><a href="/wind" className="footer__link">Small wind turbines</a></li>
                 <li><a href="/hybrid" className="footer__link">Hybrid</a></li>
+                <li><a href="/bess" className="footer__link">Battery Storage (BESS)</a></li>
               </ul>
             </div>
 
