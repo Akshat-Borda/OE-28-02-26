@@ -1,10 +1,11 @@
 ---
 import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 import AppLayout from '../../layouts/AppLayout.astro';
 
 // Get all blogs and sort by date (newest first)
 const posts = await getCollection('blog');
-posts.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+posts.sort((a: CollectionEntry<'blog'>, b: CollectionEntry<'blog'>) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 
 const featuredPost = posts[0];
 const restPosts = posts.slice(1);
