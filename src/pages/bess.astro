@@ -340,21 +340,9 @@ import AppLayout from '../layouts/AppLayout.astro';
         <div id="bess-form-alert" style="display: none; padding: 1rem; margin-bottom: 1.5rem; border-radius: 8px; font-size: 0.95rem;"></div>
 
         <form id="bess-simulation-form">
-          <div class="grid-2" style="gap: var(--space-4);">
-            <div class="form-group" style="margin-bottom: var(--space-4);">
-              <label class="form-label" style="font-weight: 600;">Contact Name</label>
-              <input type="text" id="bess-name" class="form-input" required placeholder="Your Name" />
-            </div>
-            
-            <div class="form-group" style="margin-bottom: var(--space-4);">
-              <label class="form-label" style="font-weight: 600;">Company Name</label>
-              <input type="text" id="bess-company" class="form-input" required placeholder="Your Company" />
-            </div>
-          </div>
-
-          <div class="form-group" style="margin-bottom: var(--space-6);">
-            <label class="form-label" style="font-weight: 600;">Average Monthly Electric Bill ($)</label>
-            <input type="number" id="bess-bill" class="form-input" required placeholder="e.g. 15000" min="1" />
+          <div class="form-group" style="margin-bottom: var(--space-4);">
+            <label class="form-label" style="font-weight: 600;">Contact Name</label>
+            <input type="text" id="bess-name" class="form-input" required placeholder="Your Name" />
           </div>
 
           <div class="grid-2" style="gap: var(--space-4); margin-bottom: var(--space-6);">
@@ -370,7 +358,7 @@ import AppLayout from '../layouts/AppLayout.astro';
           </div>
 
           <div class="form-group" style="margin-bottom: var(--space-6);">
-            <label class="form-label" style="font-weight: 600;">Operational Context / Target Objectives</label>
+            <label class="form-label" style="font-weight: 600;">Please provide your Storage Requirements</label>
             <textarea id="bess-message" class="form-textarea" placeholder="Describe any specific peak constraints, grid dropouts, or generation resources currently on-site..." style="height: 100px;"></textarea>
           </div>
 
@@ -396,13 +384,11 @@ import AppLayout from '../layouts/AppLayout.astro';
         e.preventDefault();
 
         const name = document.getElementById('bess-name').value.trim();
-        const company = document.getElementById('bess-company').value.trim();
         const email = document.getElementById('bess-email').value.trim();
         const phone = document.getElementById('bess-phone').value.trim();
-        const bill = document.getElementById('bess-bill').value.trim();
         const message = document.getElementById('bess-message').value.trim();
 
-        if (!name || !company || !email || !phone || !bill) {
+        if (!name || !email || !phone) {
           alertBlock.textContent = "❌ Please fill out all required fields.";
           alertBlock.style.background = "rgba(239, 68, 68, 0.1)";
           alertBlock.style.border = "1px solid rgba(239, 68, 68, 0.3)";
@@ -421,12 +407,10 @@ import AppLayout from '../layouts/AppLayout.astro';
         // Use FormData instead of JSON body to prevent preflight OPTIONS requests (which fail CORS policies on localhost)
         const formData = new FormData();
         formData.append('Name', name);
-        formData.append('Company', company);
         formData.append('Email Address', email);
         formData.append('Contact Number', phone);
-        formData.append('Average Monthly Electric Bill ($)', bill);
-        formData.append('Objectives / Operational Context', message);
-        formData.append('_subject', `New BESS Simulation Request from ${company}`);
+        formData.append('Storage Requirements / Context', message);
+        formData.append('_subject', `New BESS Simulation Request from ${name}`);
         formData.append('_captcha', 'false');
         formData.append('_template', 'table');
 
