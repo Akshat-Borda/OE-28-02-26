@@ -15,7 +15,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="footer__nav-grid">
+          <div className="footer__nav-grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}>
             <div>
               <h4 className="footer__title">Solutions</h4>
               <ul className="footer__list">
@@ -26,16 +26,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div>
-              <h4 className="footer__title">Services</h4>
-              <ul className="footer__list">
-                <li><a href="/epc-services" className="footer__link">EPC Services</a></li>
-                <li><a href="/om-services" className="footer__link">O&M Services</a></li>
-                <li><a href="/consulting" className="footer__link">Green Consulting</a></li>
-              </ul>
-            </div>
-
-            {/* Company Links (Now always in top grid parallel to Solutions & Services) */}
+            {/* Company Links */}
             <div>
               <h4 className="footer__title">Company</h4>
               <ul className="footer__list">

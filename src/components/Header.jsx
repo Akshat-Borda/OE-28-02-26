@@ -81,41 +81,6 @@ const Header = () => {
                   </a>
                 </div>
               </li>
-              <li className="nav__dropdown">
-                <span className={`nav__dropdown-toggle ${['/epc-services', '/om-services', '/consulting'].includes(pathname) ? 'nav__link--active' : ''}`}>
-                  Services
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <polyline points="6 9 12 15 18 9" />
-                  </svg>
-                </span>
-                <div className="nav__dropdown-menu">
-                  <a href="/epc-services" className="nav__dropdown-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16">
-                      <path
-                        d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
-                    </svg>
-                    EPC Services
-                  </a>
-                  <a href="/om-services" className="nav__dropdown-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16">
-                      <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-                    </svg>
-                    O&M Services
-                  </a>
-                  <a href="/consulting" className="nav__dropdown-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16">
-                      <line x1="18" y1="20" x2="18" y2="10" />
-                      <line x1="12" y1="20" x2="12" y2="4" />
-                      <line x1="6" y1="20" x2="6" y2="14" />
-                    </svg>
-                    Green Consulting
-                  </a>
-                </div>
-              </li>
               <li><a href="/about" className={`nav__link ${pathname === '/about' ? 'nav__link--active' : ''}`}>About Us</a></li>
               <li><a href="/faqs" className={`nav__link ${pathname === '/faqs' ? 'nav__link--active' : ''}`}>FAQs</a></li>
               <li><a href="/blogs" className={`nav__link ${pathname.startsWith('/blog') ? 'nav__link--active' : ''}`}>Blogs</a></li>
@@ -177,34 +142,6 @@ const Header = () => {
                 <line x1="6" y1="18" x2="6.01" y2="18" />
               </svg>
               Battery Storage (BESS)
-            </a>
-          </div>
-
-          <div className="nav__mobile-group">
-            <div className="nav__mobile-group-title">Services</div>
-            <a href="/epc-services" className="nav__mobile-sublink">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
-                strokeLinecap="round" strokeLinejoin="round">
-                <path
-                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
-              </svg>
-              EPC Services
-            </a>
-            <a href="/om-services" className="nav__mobile-sublink">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
-                strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-              </svg>
-              O&M Services
-            </a>
-            <a href="/consulting" className="nav__mobile-sublink">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
-                strokeLinecap="round" strokeLinejoin="round">
-                <line x1="18" y1="20" x2="18" y2="10" />
-                <line x1="12" y1="20" x2="12" y2="4" />
-                <line x1="6" y1="20" x2="6" y2="14" />
-              </svg>
-              Green Consulting
             </a>
           </div>
 
