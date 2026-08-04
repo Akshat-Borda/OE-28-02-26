@@ -1,7 +1,17 @@
 import React, { useState } from 'react';
 
 const Contact = () => {
-    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+    const [formData, setFormData] = useState({
+        name: '',
+        phone: '',
+        email: '',
+        company: '',
+        monthlyBill: '<50k',
+        industryType: 'Textile',
+        openSpace: 'Yes',
+        primaryObjective: 'Reduce Bill',
+        message: ''
+    });
     const [status, setStatus] = useState('idle'); // idle | sending | success | error
 
     const handleChange = (e) => {
@@ -20,10 +30,16 @@ const Contact = () => {
                     'Accept': 'application/json',
                 },
                 body: JSON.stringify({
-                    name: formData.name,
-                    email: formData.email,
-                    message: formData.message,
-                    _subject: 'New Submission from OnLoop Energy Contact Form',
+                    "Full Name": formData.name,
+                    "Phone Number": formData.phone,
+                    "Email Address": formData.email,
+                    "Company / Facility Name": formData.company,
+                    "Average Monthly Bill (₹)": formData.monthlyBill,
+                    "Industry Sector": formData.industryType,
+                    "500+ sq ft Space Available": formData.openSpace,
+                    "Primary Objective": formData.primaryObjective,
+                    "Additional Message": formData.message,
+                    _subject: `New C&I / MSME Feasibility Lead from ${formData.name}`,
                     _captcha: 'false',
                     _template: 'table',
                 }),
@@ -31,7 +47,17 @@ const Contact = () => {
 
             if (response.ok) {
                 setStatus('success');
-                setFormData({ name: '', email: '', message: '' });
+                setFormData({
+                    name: '',
+                    phone: '',
+                    email: '',
+                    company: '',
+                    monthlyBill: '<50k',
+                    industryType: 'Textile',
+                    openSpace: 'Yes',
+                    primaryObjective: 'Reduce Bill',
+                    message: ''
+                });
             } else {
                 setStatus('error');
             }
@@ -42,41 +68,37 @@ const Contact = () => {
 
     return (
         <div>
-            
-
-
             {/* Hero Section */}
             <section className="hero hero--short">
                 <div className="container">
                     <div className="hero__content">
                         <div className="hero__badge" style={{ marginTop: 'var(--space-12)' }}>
                             <span className="hero__badge-dot"></span>
-                            Contact Us
+                            Free Wind & Hybrid Feasibility
                         </div>
-                        <h1 className="hero__title">Let’s Start a <span className="hero__title-highlight">Conversation</span></h1>
-                        <p className="hero__subtitle">Whether you’re exploring wind, solar, or hybrid energy, we’re here to help you
-                            make informed decisions.</p>
+                        <h1 className="hero__title">Request Your <span className="hero__title-highlight">Free Feasibility Study</span></h1>
+                        <p className="hero__subtitle">Share your energy details. Our engineering team will analyze your site’s wind resource and load profile — no tenders, no pressure, just engineering.</p>
                     </div>
                 </div>
             </section>
 
-            {/* Contact Info */}
+            {/* Contact Info & MSME Lead Gen Form */}
             <section className="content-section">
                 <div className="container">
-                    <div className="grid-2">
+                    <div className="grid-2" style={{ gap: 'var(--space-12)' }}>
                         <div>
-                            <span className="content-section__label">Get in Touch</span>
-                            <h2 className="content-section__title" style={{ marginBottom: 'var(--space-6)' }}>How can we help?</h2>
+                            <span className="content-section__label">Direct Engineering Support</span>
+                            <h2 className="content-section__title" style={{ marginBottom: 'var(--space-6)' }}>Cut your per-unit power costs.</h2>
+                            <p className="content-section__text" style={{ marginBottom: 'var(--space-6)' }}>
+                                Whether you run a textile dyeing unit in Surat, a food processing plant, a cold storage facility, or a multi-shift manufacturing plant — we’re here to help you evaluate captive wind and hybrid power.
+                            </p>
 
                             <div className="feature-list">
                                 <div className="feature-item">
                                     <div className="feature-item__icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" strokeWidth="2" strokeLinecap="round"
-                                            strokeLinejoin="round">
-                                            <path
-                                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-
+                                            stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                                         </svg>
                                     </div>
                                     <span className="feature-item__text">
@@ -88,11 +110,8 @@ const Contact = () => {
                                 <div className="feature-item">
                                     <div className="feature-item__icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" strokeWidth="2" strokeLinecap="round"
-                                            strokeLinejoin="round">
-                                            <path
-                                                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-
+                                            stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                                             <polyline points="22,6 12,13 2,6" />
                                         </svg>
                                     </div>
@@ -104,25 +123,26 @@ const Contact = () => {
                                 <div className="feature-item">
                                     <div className="feature-item__icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" strokeWidth="2" strokeLinecap="round"
-                                            strokeLinejoin="round">
+                                            stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                                             <circle cx="12" cy="10" r="3" />
                                         </svg>
                                     </div>
                                     <span className="feature-item__text">
                                         <strong>Office</strong><br />
-                                        16, Balaji Industrial Park<br />Kathwada, Ahmedabad<br />Daskroi, Gujarat<br />India,
-                                        382430
+                                        16, Balaji Industrial Park<br />Kathwada, Ahmedabad<br />Daskroi, Gujarat, 382430
                                     </span>
                                 </div>
                             </div>
                         </div>
 
                         <div>
-                            {/* Simple Contact Form */}
-                            <div className="contact-form">
-                                <h3 className="card__title" style={{ marginBottom: 'var(--space-6)' }}>Send us a Message</h3>
+                            {/* Targeted MSME Lead Form */}
+                            <div className="contact-form" style={{ background: '#ffffff', padding: 'var(--space-8)', borderRadius: 'var(--radius-xl)', boxShadow: 'var(--shadow-md)', border: '1px solid var(--glass-border)' }}>
+                                <h3 className="card__title" style={{ marginBottom: 'var(--space-2)' }}>Request Wind Feasibility Assessment</h3>
+                                <p style={{ fontSize: 'var(--font-size-sm)', color: 'var(--color-text-secondary)', marginBottom: 'var(--space-6)' }}>
+                                    Fill out this quick form for a free, site-specific wind energy assessment.
+                                </p>
 
                                 {status === 'success' && (
                                     <div style={{
@@ -134,7 +154,7 @@ const Contact = () => {
                                         color: '#10b981',
                                         fontSize: '0.95rem',
                                     }}>
-                                        ✅ Thank you! Your message has been sent successfully. We'll get back to you soon.
+                                        ✅ Thank you! Your feasibility request has been received. Our engineers will review your bill details and reach out within 24 hours.
                                     </div>
                                 )}
 
@@ -153,25 +173,84 @@ const Contact = () => {
                                 )}
 
                                 <form onSubmit={handleSubmit}>
-                                    <div className="form-group">
-                                        <label className="form-label">Name</label>
-                                        <input type="text" name="name" className="form-input" required placeholder="Your Name" value={formData.name} onChange={handleChange} />
+                                    <div className="grid-2" style={{ gap: 'var(--space-4)', marginBottom: 'var(--space-4)' }}>
+                                        <div className="form-group" style={{ marginBottom: 0 }}>
+                                            <label className="form-label">Full Name *</label>
+                                            <input type="text" name="name" className="form-input" required placeholder="Your Name" value={formData.name} onChange={handleChange} />
+                                        </div>
+                                        <div className="form-group" style={{ marginBottom: 0 }}>
+                                            <label className="form-label">Phone Number *</label>
+                                            <input type="tel" name="phone" className="form-input" required placeholder="e.g. +91 98765 43210" value={formData.phone} onChange={handleChange} />
+                                        </div>
                                     </div>
-                                    <div className="form-group">
-                                        <label className="form-label">Email</label>
-                                        <input type="email" name="email" className="form-input" required placeholder="your@email.com" value={formData.email} onChange={handleChange} />
+
+                                    <div className="grid-2" style={{ gap: 'var(--space-4)', marginBottom: 'var(--space-4)' }}>
+                                        <div className="form-group" style={{ marginBottom: 0 }}>
+                                            <label className="form-label">Email Address *</label>
+                                            <input type="email" name="email" className="form-input" required placeholder="your@email.com" value={formData.email} onChange={handleChange} />
+                                        </div>
+                                        <div className="form-group" style={{ marginBottom: 0 }}>
+                                            <label className="form-label">Company / Facility Name</label>
+                                            <input type="text" name="company" className="form-input" placeholder="e.g. Surat Textiles Ltd" value={formData.company} onChange={handleChange} />
+                                        </div>
                                     </div>
-                                    <div className="form-group">
-                                        <label className="form-label">Message</label>
-                                        <textarea name="message" className="form-textarea" required placeholder="How can we help?" value={formData.message} onChange={handleChange}></textarea>
+
+                                    <div className="grid-2" style={{ gap: 'var(--space-4)', marginBottom: 'var(--space-4)' }}>
+                                        <div className="form-group" style={{ marginBottom: 0 }}>
+                                            <label className="form-label">Avg. Monthly Electricity Bill (₹)</label>
+                                            <select name="monthlyBill" className="form-input" value={formData.monthlyBill} onChange={handleChange}>
+                                                <option value="<50k">Less than ₹50,000 / month</option>
+                                                <option value="50k-2L">₹50,000 – ₹2 Lakhs / month</option>
+                                                <option value="2L-5L">₹2 Lakhs – ₹5 Lakhs / month</option>
+                                                <option value=">5L">More than ₹5 Lakhs / month</option>
+                                            </select>
+                                        </div>
+                                        <div className="form-group" style={{ marginBottom: 0 }}>
+                                            <label className="form-label">Industry Type</label>
+                                            <select name="industryType" className="form-input" value={formData.industryType} onChange={handleChange}>
+                                                <option value="Textile">Textile / Dyeing</option>
+                                                <option value="Food Processing">Food Processing</option>
+                                                <option value="Cold Storage">Cold Storage</option>
+                                                <option value="Foundry / Metals">Foundry / Metals</option>
+                                                <option value="Light Engineering">Light Engineering</option>
+                                                <option value="Warehousing / Logistics">Warehousing / Logistics</option>
+                                                <option value="Commercial Complex">Commercial Complex</option>
+                                                <option value="Other">Other Manufacturing</option>
+                                            </select>
+                                        </div>
                                     </div>
+
+                                    <div className="grid-2" style={{ gap: 'var(--space-4)', marginBottom: 'var(--space-4)' }}>
+                                        <div className="form-group" style={{ marginBottom: 0 }}>
+                                            <label className="form-label">500+ sq. ft. Rooftop / Open Space?</label>
+                                            <select name="openSpace" className="form-input" value={formData.openSpace} onChange={handleChange}>
+                                                <option value="Yes">Yes, space is available</option>
+                                                <option value="No">No / Limited space</option>
+                                                <option value="Unsure">Unsure (Need evaluation)</option>
+                                            </select>
+                                        </div>
+                                        <div className="form-group" style={{ marginBottom: 0 }}>
+                                            <label className="form-label">Primary Objective</label>
+                                            <select name="primaryObjective" className="form-input" value={formData.primaryObjective} onChange={handleChange}>
+                                                <option value="Reduce Bill">Reduce Electricity Bill</option>
+                                                <option value="Power Reliability">Power Reliability / Backup</option>
+                                                <option value="Carbon Neutrality">Carbon Neutrality / ESG</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div className="form-group" style={{ marginBottom: 'var(--space-6)' }}>
+                                        <label className="form-label">Additional Site Context / Message</label>
+                                        <textarea name="message" className="form-textarea" placeholder="Tell us about your operating hours, shifts, or specific energy goals..." style={{ height: '90px' }} value={formData.message} onChange={handleChange}></textarea>
+                                    </div>
+
                                     <button
                                         type="submit"
-                                        className="btn btn--primary"
+                                        className="btn btn--primary btn--large"
                                         style={{ width: '100%', justifyContent: 'center' }}
                                         disabled={status === 'sending'}
                                     >
-                                        {status === 'sending' ? 'Sending...' : 'Send Message'}
+                                        {status === 'sending' ? 'Submitting Request...' : 'Submit Feasibility Request'}
                                     </button>
                                 </form>
                             </div>
@@ -179,10 +258,6 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
-
-            {/* Footer */}
-
-
         </div>
     );
 };

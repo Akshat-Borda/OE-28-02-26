@@ -11,93 +11,76 @@ This section defines hard constraints on positioning across all content and mark
 | We Never Do | Reason |
 |---|---|
 | Pure solar-only installations | Solar exists only as a component within a hybrid architecture |
-| Residential projects of any size | Our expertise and economics are calibrated for commercial-scale energy loads |
-| Government / public sector projects | Our focus and speed are suited for private C&I decision-makers |
+| Residential projects of any size | Our expertise and economics are calibrated for commercial & MSME-scale energy loads |
+| Government / public sector projects / Tenders | We operate fast with private decision-makers — no tenders, red tape, or bureaucracy |
 | Battery Energy Storage (BESS) | Not in our current scope; we focus on generation, not storage |
 | Standalone wind without hybrid context | Wind is offered site-specifically, only where resources genuinely support it |
+
+> **Explicit Exclusion Statement (Trust Banner):**
+> *"OnLoop Energy focuses exclusively on Commercial, Industrial, and MSME facilities. We do not undertake residential installations or government/public sector projects."*
 
 ---
 
 ## 1. Product Overview
 
-**One-liner:** OnLoop Energy designs and delivers site-specific small wind and hybrid (wind + solar) energy systems engineered for long-term performance across Commercial & Industrial facilities.
+**One-liner:** Wind & Hybrid Energy. Engineered for C&I and MSMEs.
 
-**What it does:** OnLoop Energy is an engineering-led EPC (Engineering, Procurement, and Construction) and O&M provider exclusively serving C&I clients. We evaluate real site behavior — wind profiles, load curves, and land constraints — and engineer the right combination of small wind and integrated solar to deliver continuous, reliable clean energy. We do not sell templates, we do not push a single technology, and we do not work outside our core domain.
+**Secondary Hook:** Cut energy costs. Secure your production. No tenders, no bureaucracy — just engineering.
 
-**Product category:** Commercial & Industrial Wind & Hybrid EPC.
+**Brand Promise:** OnLoop Energy designs wind-first, hybrid-optimized power systems exclusively for commercial facilities, factories, and growing enterprises. We handle the complex engineering, so you get predictable, low-cost power.
+
+**What it does:** OnLoop Energy is an engineering-led EPC (Engineering, Procurement, and Construction) and O&M provider exclusively serving C&I and MSME clients. We evaluate real site behavior — wind profiles, load curves, and land constraints — and engineer the right combination of small wind and integrated solar to deliver continuous, reliable captive clean energy. We do not sell templates, we do not push a single technology, and we do not work outside our core domain.
+
+**Product category:** Commercial, Industrial & MSME Captive Wind & Hybrid EPC.
 
 **Product type:** Small Wind Turbine Systems and Hybrid (Wind + Solar) Energy Systems, with Turnkey EPC and O&M Services.
 
-**Business model:** B2B Turnkey Engineering & Construction (EPC) and Long-Term O&M Contracts for C&I clients.
+**Business model:** B2B Turnkey Engineering & Construction (EPC) and Long-Term O&M Contracts for C&I and MSME clients.
 
 ---
 
-## 2. Target Audience
+## 2. Target Audience & Segmentation
 
-**Who we serve (exclusively):** Commercial & Industrial (C&I) facilities in India — manufacturing plants, processing industries, multi-shift factories, industrial parks, and large commercial facilities.
+### A. Commercial & Industrial (Large Factories, Warehouses, Processing Plants, Malls)
+- **Pain points:** High peak demand penalties, expensive diesel generator backup costs, rising grid tariffs, ESG/carbon compliance pressure.
+- **OnLoop Solution Pitch:** *"Shave your peak demand with on-site captive wind + hybrid power. Reduce grid dependence and achieve energy security at scale."*
 
-**Who we do NOT serve:** Residential customers, government bodies, public utilities, municipal infrastructure, educational/healthcare institutions.
+### B. MSMEs (Textile Dyeing Units, Food Processing, Cold Storage, Foundries, Light Engineering)
+- **Pain points:** Thin operating margins, rising grid tariffs (₹7–10+/unit), limited rooftop space for solar, lack of in-house technical staff to manage complex power plants.
+- **OnLoop Solution Pitch:** *"We design compact, high-yield wind systems that work day and night. No complex operations — just reliable power that lowers your per-unit production cost."*
 
-**Geographic focus:** Gujarat (primary) and pan-India — particularly coastal and high wind resource zones.
+**Who we do NOT serve:** Residential customers, government bodies, public utilities, municipal infrastructure, educational/healthcare institutions, government tenders.
 
-**Decision-makers:** Factory Owners, Managing Directors, COOs, Plant Managers, Heads of Engineering, Energy/Sustainability Managers in private C&I businesses.
+**Geographic focus:** Gujarat (surat, Rajkot, Ahmedabad, Morbi, Kutch, Jamnagar) and pan-India coastal/wind-rich industrial corridors.
 
-**Primary use case:** Transitioning C&I operations to reliable 24/7 clean energy by deploying small wind turbines and hybrid wind-solar systems that reduce grid tariff dependence, eliminate peak demand charges, and deliver measurable ROI.
-
-**Jobs to be done:**
-- Determine whether my specific C&I site has viable wind or hybrid potential (honest feasibility, not a sales pitch).
-- Engineer a wind or hybrid system sized precisely to my operational load profile, not a generic template.
-- Execute turnkey EPC with full compliance, grid approvals, and single-point accountability for 20–25 years.
-- Maintain the asset so it performs consistently to its design yield over its full operating life.
+**Decision-makers:** MSME Owners, Factory MDs, COOs, Plant Managers, Chief Engineers, Financial Directors.
 
 ---
 
-## 3. Core Offerings
+## 3. Core Offerings (The Wind-First Hierarchy)
 
-### A. Small Wind Turbine Systems *(Flagship Product)*
-- Precision site-specific wind systems for C&I facilities operating at 15–30m hub heights.
+### A. Small Wind Turbine Systems *(Primary Flagship)*
+- Precision site-specific wind systems operating at 15–30m hub heights with small footprints (ideal for MSMEs with limited land).
 - Deployed only where site wind data genuinely supports long-term performance.
-- PMA (Permanent Magnet Alternator) direct-drive technology — no gearbox, >98% uptime, minimal mechanical failure.
-- Critical advantage for C&I: generates power during evenings, nights, and monsoon periods when solar cannot.
-- Capacity Utilization Factor target: 30–40% (vs ~18–22% for solar alone).
+- PMA (Permanent Magnet Alternator) direct-drive technology — no gearbox, >98% uptime, minimal maintenance.
+- Generates power during evenings, nights, and monsoon periods when solar cannot.
 
-### B. Hybrid Energy Systems — Wind + Solar *(Flagship Architecture)*
-- A single coordinated energy architecture combining daytime solar generation with wind generation across the full diurnal cycle.
-- **Solar exists here only as one component within a hybrid design** — not sold or positioned as a standalone offering.
-- Delivers up to 2x higher land productivity and extended energy availability across seasons and time of day.
-- Shared grid infrastructure, protection strategies, and control logic. Engineered as one system, not two bolted together.
-- Ideal for C&I facilities with continuous 24/7 loads where solar-only is insufficient.
+### B. Hybrid Energy Systems — Wind + Solar *(Advanced Architecture)*
+- Single coordinated captive architecture combining daytime solar generation with wind generation across the full diurnal cycle.
+- Solar handles daytime peaks; Wind handles night shifts and monsoons.
+- Up to 2x higher land productivity and extended 24/7 energy availability for energy-intensive MSMEs.
 
-### C. EPC Services *(Execution)*
-- Site assessment, structural and electrical engineering, grid coordination, statutory approvals, procurement, installation, commissioning, and handover.
-- Single-point accountability from feasibility study to commissioning.
-- No fragmentation; one team owns the full scope.
-
-### D. O&M Services *(Long-term Performance)*
-- Real-Time Monitoring System (RMS), preventive maintenance, fault detection, corrective repairs, monthly reporting, quarterly reviews.
-- <4-hour emergency response target.
-- Performance measured against design yield, not generic industry benchmarks.
-
-### E. Green Consulting *(Pre-Decision Advisory)*
-- Site feasibility studies, load profile analysis, technology selection (wind vs. hybrid), financial modeling (IRR, payback), and regulatory guidance.
-- Used to determine if a project makes sense — and to design it correctly before capital is committed.
+### C. Solar PV *(Complementary / Within Hybrid Only)*
+- Recommended only as part of a hybrid architecture or top-up.
+- We never push solar if wind makes more sense for your factory.
 
 ---
 
-## 4. Problems & Pain Points
+## 4. 3-Step MSME Onboarding Process
 
-**Core problem:** C&I facility owners get sold on solar because it's the most marketed option — even when their load profile, nighttime operations, or wind resource data clearly indicate that wind or hybrid would deliver a fundamentally lower cost of energy.
-
-**Why current alternatives fall short:**
-- *Solar-only vendors* push rooftop or ground-mount solar because it's easy to install and sell — even for factories with significant night loads.
-- *Generic EPCs* don't do genuine site wind assessment; they rely on regional wind maps rather than hub-height site-specific data.
-- *No long-term ownership:* Most installers hand over equipment and walk away. Long-term underperformance compounds quietly.
-
-**Cost of bad decisions:**
-- Facilities that installed solar-only systems now face grid dependency at night, peak charges, and unrealized savings.
-- Each year of delay on a properly engineered hybrid costs ₹5–8 lakh in unrealized savings.
-
-**Emotional tension:** Anxiety over committing to a 20-25 year capital decision without genuinely objective advice from someone not trying to sell a specific product.
+1. **Share Your Electricity Bill:** Upload or send your recent utility bill and site location.
+2. **Free Wind Feasibility Study:** We analyze your site's wind resource and load profile at no cost.
+3. **Captive Hybrid Design:** We engineer a site-specific plant designed to lower your per-unit energy cost.
 
 ---
 
@@ -105,54 +88,39 @@ This section defines hard constraints on positioning across all content and mark
 
 | Differentiator | What it means |
 |---|---|
-| **C&I-only focus** | We understand industrial load profiles, shift patterns, and operational constraints — because that's all we do. |
-| **Wind-first thinking** | We ask "what does your site's wind data say?" before we recommend any technology. |
-| **Hybrid as architecture** | We design wind + solar as one integrated system, not two products sold separately. |
-| **Honest feasibility** | If the wind or site conditions don't support a system, we say so explicitly — and we don't proceed. |
-| **Single accountability** | One team. One contract. One number to call. From first site visit to year 25 of O&M. |
-| **Technology agnostic** | We have no allegiance to a panel brand or turbine supplier. The site data drives the design. |
+| **C&I & MSME Focus** | We understand factory load profiles, shift patterns, and per-unit production economics. |
+| **No Bureaucracy / No Tenders** | We deal exclusively with private business owners — fast decision-making, zero red tape. |
+| **Wind-First Thinking** | We assess wind resources before recommending technology. Solar alone cannot run a night shift. |
+| **Compact Footprint** | MSMEs don't need 10 acres of land — our compact turbines deliver high yields in small footprints. |
+| **Honest Feasibility** | If the site wind data doesn't support a turbine, we say so up-front and won't build. |
+| **Single Accountability** | Turnkey EPC to 20-25 year O&M under one roof. |
 
 ---
 
-## 6. Key Proof Points & Financial Metrics
+## 6. Key Financial Metrics for MSMEs & C&I
 
-- **Grid tariff savings:** ₹3.50 to ₹5.00 per unit for C&I units in Gujarat.
-- **Annual savings (typical mid-size factory):** ₹20–40 lakh per year.
-- **Tax incentives:** 60% Accelerated Depreciation in Year 1 (Section 32, Income Tax Act, India).
-- **Payback period:** Under 4 years for wind-solar hybrid C&I installations.
+- **Grid tariff savings:** ₹3.50 to ₹5.00 per unit saved against C&I tariffs.
+- **Monthly savings (Surat dyeing unit / typical MSME):** ₹1.2L – ₹3L per month.
+- **Accelerated Depreciation:** 60% in Year 1 under Section 32 of Income Tax Act (India).
+- **Payback period:** 3.0 to 3.8 years for C&I/MSME hybrid installations.
 - **CUF — Hybrid:** 35–40% (vs ~18–22% for solar alone).
-- **Operational uptime:** >98% target (PMA direct-drive turbines).
-- **Design lifespan:** Solar components: 25+ years. Wind turbines: 20+ years.
-- **Turbine cost benchmark:** ~₹80,000 per kW installed (higher CapEx than solar, justified by superior CUF and 24/7 generation).
+- **Turbine cost benchmark:** ~₹80,000 per kW installed.
 
 ---
 
-## 7. Brand Voice & Customer Language
+## 7. Brand Voice & Core Taglines
 
-**Positioning:** The engineering authority for C&I wind and hybrid energy. Not a solar company. Not a product seller. A technical partner for long-term energy decisions.
-
-**Core Taglines & Philosophy:**
-- *"Clean energy works best when it is engineered for the site, not forced onto it."*
-- *"We don't start with technology. We start with reality."*
-- *"Wind, when the site truly supports it."*
-- *"No noise. No pressure. No shortcuts. Just clean energy, done right."*
-- *"Solar alone cannot run a three-shift factory."*
-
-**Tone:** Calm, authoritative, disciplined, honest, anti-hype.
-**Style:** Direct, engineering-led, accessible, professional.
-
-**Words to use:** Site-specific, engineered, wind resource, load profile, CUF, hybrid architecture, long-term performance, C&I, accountability, feasibility, reality.
-
-**Words to avoid:** Cookie-cutter, template, cheap, quick, residential, guaranteed returns, passive income, rooftop solar (without hybrid context), BESS, storage.
+**Primary Tagline:** *"Wind & Hybrid Energy. Engineered for C&I and MSMEs."*
+**Secondary Hook:** *"Cut energy costs. Secure your production. No tenders, no bureaucracy — just engineering."*
+**Brand Promise:** *"OnLoop Energy designs wind-first, hybrid-optimized power systems exclusively for commercial facilities, factories, and growing enterprises. We handle the complex engineering, so you get predictable, low-cost power."*
 
 ---
 
-## 8. Conversion Goals & Call to Actions
+## 8. Lead Qualification Criteria (MSME Form)
 
-**Business goal:** Build a pipeline of C&I wind and hybrid EPC projects with minimum system sizes suitable for mid-to-large industrial facilities.
-
-**Primary CTA:** "Talk to Our Team" / "Start a Conversation" — a low-commitment first step that leads to a site feasibility conversation.
-
-**Secondary CTA:** "Request a Feasibility Study" — for prospects who are further along in their evaluation.
+- **Average Monthly Electricity Bill:** <₹50k | ₹50k–2L | ₹2L–5L | >₹5L
+- **Industry Type:** Textile Dyeing/Processing | Food Processing | Cold Storage | Foundries | Light Engineering | Warehousing/Logistics | Commercial Building | Other
+- **Space Available:** 500+ sq. ft. open/rooftop space (Yes/No)
+- **Primary Goal:** Reduce Electricity Bill | Power Reliability | Carbon Neutrality / ESG
 
 

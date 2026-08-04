@@ -2,7 +2,7 @@
 import AppLayout from '../layouts/AppLayout.astro';
 ---
 
-<AppLayout title="OnLoop Energy: Small Wind Turbine & Hybrid Energy Systems for C&I" description="OnLoop Energy designs and delivers site-specific small wind and hybrid (wind + solar) energy systems exclusively for Commercial & Industrial facilities — engineered for long-term performance, not sold from a catalogue.">
+<AppLayout title="Power Your Factory | Wind & Hybrid Energy for C&I and MSMEs | OnLoop Energy" description="OnLoop Energy designs wind-first, hybrid-optimized captive power systems exclusively for Commercial, Industrial, and MSME facilities. Cut energy costs — no tenders, no bureaucracy, just site-specific engineering.">
 <div>
       
 
@@ -15,14 +15,25 @@ import AppLayout from '../layouts/AppLayout.astro';
       <section class="hero hero--image" style="background-image: url('/images/stock/solarfarm.webp');">
         <div class="container">
           <div class="hero__content">
+            <div class="hero__badge" style="margin-top: var(--space-8);">
+              <span class="hero__badge-dot"></span>
+              Wind & Hybrid Energy for C&I and MSMEs
+            </div>
             <h1 class="hero__title">
-              Small Wind. Hybrid Energy.<br />
-              <span class="hero__title-highlight">Built for C&I. Engineered for Reality.</span>
+              Power Your Factory, Not the Bureaucracy.<br />
+              <span class="hero__title-highlight">Wind & Hybrid Energy for C&I and MSMEs.</span>
             </h1>
-            <p class="hero__subtitle">OnLoop Energy designs and delivers site-specific small wind turbines and hybrid (wind + solar) energy systems — exclusively for Commercial & Industrial facilities that need reliable 24/7 clean power.</p>
+            <p class="hero__subtitle">Engineering-first, site-specific renewable energy that reduces your electricity bills — no government tenders, no residential distractions, just low-cost captive power.</p>
+            
+            <div style="background: rgba(255, 255, 255, 0.1); border-left: 3px solid var(--color-primary); padding: var(--space-3) var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-6); max-width: 680px;">
+              <p style="margin: 0; font-size: var(--font-size-sm); color: rgba(255, 255, 255, 0.9); font-weight: 500;">
+                ⚡ <strong>Cut energy costs. Secure your production.</strong> No tenders, no red tape — just engineering.
+              </p>
+            </div>
+
             <div class="hero__actions">
-              <a href="/wind" class="btn btn--primary btn--large">Explore Wind & Hybrid</a>
-              <a href="/contact" class="btn btn--secondary btn--large">Talk to Our Team</a>
+              <a href="/contact" class="btn btn--primary btn--large">Get Free Feasibility Study</a>
+              <a href="/wind" class="btn btn--secondary btn--large">Explore Wind & Hybrid</a>
             </div>
           </div>
         </div>
@@ -43,25 +54,34 @@ import AppLayout from '../layouts/AppLayout.astro';
         </div>
       </section>
 
+      {/* Explicit Exclusion Statement Trust Banner */}
+      <div style="background: rgba(31, 183, 166, 0.08); border-top: 1px solid rgba(31, 183, 166, 0.2); border-bottom: 1px solid rgba(31, 183, 166, 0.2); padding: var(--space-4) 0;">
+        <div class="container" style="text-align: center;">
+          <p style="margin: 0; font-weight: 600; font-size: var(--font-size-base); color: var(--color-text-primary);">
+            🛡️ <strong>Exclusively Private B2B:</strong> OnLoop Energy focuses exclusively on Commercial, Industrial, and MSME facilities. We do not undertake residential installations or government/public sector projects.
+          </p>
+        </div>
+      </div>
+
       {/* Intro / Overview */}
       <section class="content-section fade-in">
         <div class="container container--narrow" style="text-align: center;">
           <h2 class="content-section__title" style="margin-bottom: var(--space-6);">Clean energy works best when it is
             engineered for the site, not forced onto it.</h2>
-          <p class="content-section__text">At OnLoop Energy, we work exclusively with Commercial & Industrial facilities — not residential, not government. We combine technical site intelligence, genuine wind and solar resource assessment, and disciplined EPC execution to deliver wind and hybrid energy systems that perform to their design yield, year after year.</p>
+          <p class="content-section__text">At OnLoop Energy, we work exclusively with Commercial, Industrial, and MSME facilities — not residential, not government. We combine technical site intelligence, genuine wind and solar resource assessment, and disciplined EPC execution to deliver wind and hybrid energy systems that perform to their design yield, year after year.</p>
         </div>
       </section>
 
-      {/* Who We Serve */}
+      {/* Who We Serve - Segmented Grid */}
       <section class="content-section content-section--light fade-in">
         <div class="container">
           <div class="content-section__header">
-            <span class="content-section__label">Who We Serve</span>
-            <h2 class="content-section__title">Exclusively Commercial & Industrial</h2>
-            <p class="content-section__text">We work only with private C&I businesses. Our economics, engineering, and timelines are calibrated for industrial-scale decision-making — not government procurement cycles or residential budgets.</p>
+            <span class="content-section__label">Target Audience</span>
+            <h2 class="content-section__title">Tailored Solutions for C&I and MSMEs</h2>
+            <p class="content-section__text">Different businesses have different operational pain points. We design captive energy architectures specifically for your operational reality.</p>
           </div>
           <div class="grid-2">
-            {/* Manufacturing & Process Industry */}
+            {/* Commercial & Industrial */}
             <div class="card">
               <div class="card__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -72,10 +92,10 @@ import AppLayout from '../layouts/AppLayout.astro';
                   <path d="M7 18h1" />
                 </svg>
               </div>
-              <h4 class="card__title">Manufacturing & Process Industry</h4>
-              <p class="card__text">Factories, processing plants, and multi-shift industrial facilities with high electricity loads and significant nighttime energy consumption — where solar alone is insufficient.</p>
+              <h4 class="card__title">Commercial & Industrial (Large Factories & Warehouses)</h4>
+              <p class="card__text"><strong>The Pain Points:</strong> High peak demand charges, diesel backup costs, and carbon compliance pressure.<br /><br /><strong>OnLoop Solution:</strong> Shave your peak demand with on-site captive wind + hybrid power. Reduce grid dependence and achieve energy security at scale.</p>
             </div>
-            {/* Large Commercial Facilities */}
+            {/* MSMEs */}
             <div class="card">
               <div class="card__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -85,8 +105,8 @@ import AppLayout from '../layouts/AppLayout.astro';
                   <path d="M9 21V9" />
                 </svg>
               </div>
-              <h4 class="card__title">Large Commercial & Industrial Facilities</h4>
-              <p class="card__text">Warehouses, logistics hubs, industrial parks, and large commercial complexes seeking long-term energy cost reduction and grid independence through wind or hybrid systems.</p>
+              <h4 class="card__title">MSMEs (Surat Dyeing, Food Processing, Foundries, Cold Storage)</h4>
+              <p class="card__text"><strong>The Pain Points:</strong> Thin margins, rising grid tariffs (₹7–10+/unit), limited rooftop space, and lack of technical staff.<br /><br /><strong>OnLoop Solution:</strong> Compact, high-yield wind systems that work day and night. No complex operations — just reliable power that lowers per-unit production cost.</p>
             </div>
           </div>
         </div>
@@ -171,55 +191,56 @@ import AppLayout from '../layouts/AppLayout.astro';
         </div>
       </section>
 
-      {/* Our Approach */}
-      <section class="content-section fade-in">
+      {/* 3-Step MSME Onboarding Flow */}
+      <section class="content-section fade-in" style="background: var(--color-bg-light);">
         <div class="container">
           <div class="content-section__header" style="max-width: 900px;">
-            <span class="content-section__label">Our Approach</span>
-            <h2 class="content-section__title">Our Engineering-First Approach</h2>
-            <p class="content-section__text">We don’t sell equipment. We design energy systems.</p>
+            <span class="content-section__label">Simple 3-Step Process</span>
+            <h2 class="content-section__title">How We Partner With MSMEs & Factories</h2>
+            <p class="content-section__text">No bureaucratic red tape. No long tender cycles. A simple engineering pathway to lower power bills.</p>
           </div>
-          <div class="grid-4" style="align-items: stretch;">
-            {/* Assess */}
-            <div class="feature-item" style="flex-direction: column; align-items: flex-start; gap: var(--space-4);">
-              <div class="feature-item__icon" style="width: 40px; height: 40px; font-weight: bold; font-size: 1.2rem;">1
+          <div class="grid-3" style="align-items: stretch;">
+            {/* Step 1 */}
+            <div class="card" style="background: #ffffff; padding: var(--space-8); position: relative;">
+              <div style="font-size: 2.5rem; font-weight: 800; color: var(--color-primary); opacity: 0.2; position: absolute; top: 16px; right: 20px;">01</div>
+              <div class="card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                </svg>
               </div>
-              <div>
-                <h4 style="font-size: var(--font-size-lg); margin-bottom: var(--space-2);">Assess</h4>
-                <p class="feature-item__text" style="font-size: var(--font-size-base);">Detailed site evaluation, load
-                  analysis, and technical feasibility.</p>
-              </div>
+              <h4 class="card__title">1. Share Your Electricity Bill</h4>
+              <p class="card__text">Upload or send your recent utility bill and facility location. We analyze your tariff rates, peak demand charges, and consumption curve.</p>
             </div>
-            {/* Design */}
-            <div class="feature-item" style="flex-direction: column; align-items: flex-start; gap: var(--space-4);">
-              <div class="feature-item__icon" style="width: 40px; height: 40px; font-weight: bold; font-size: 1.2rem;">2
+            {/* Step 2 */}
+            <div class="card" style="background: #ffffff; padding: var(--space-8); position: relative;">
+              <div style="font-size: 2.5rem; font-weight: 800; color: var(--color-primary); opacity: 0.2; position: absolute; top: 16px; right: 20px;">02</div>
+              <div class="card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2" />
+                </svg>
               </div>
-              <div>
-                <h4 style="font-size: var(--font-size-lg); margin-bottom: var(--space-2);">Design</h4>
-                <p class="feature-item__text" style="font-size: var(--font-size-base);">Custom system architecture tailored
-                  to site conditions and energy objectives.</p>
-              </div>
+              <h4 class="card__title">2. Free Wind Feasibility</h4>
+              <p class="card__text">We evaluate your site’s wind resource and space availability at zero cost. If wind data doesn't justify the investment, we tell you up-front.</p>
             </div>
-            {/* Build */}
-            <div class="feature-item" style="flex-direction: column; align-items: flex-start; gap: var(--space-4);">
-              <div class="feature-item__icon" style="width: 40px; height: 40px; font-weight: bold; font-size: 1.2rem;">3
+            {/* Step 3 */}
+            <div class="card" style="background: #ffffff; padding: var(--space-8); position: relative;">
+              <div style="font-size: 2.5rem; font-weight: 800; color: var(--color-primary); opacity: 0.2; position: absolute; top: 16px; right: 20px;">03</div>
+              <div class="card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                  <polyline points="2 17 12 22 22 17" />
+                  <polyline points="2 12 12 17 22 12" />
+                </svg>
               </div>
-              <div>
-                <h4 style="font-size: var(--font-size-lg); margin-bottom: var(--space-2);">Build</h4>
-                <p class="feature-item__text" style="font-size: var(--font-size-base);">End-to-end EPC execution with a
-                  focus on quality, safety, and compliance.</p>
-              </div>
+              <h4 class="card__title">3. Captive Hybrid Engineering</h4>
+              <p class="card__text">We engineer, install, and commission your site-specific captive power plant — delivering measurable monthly savings from day one.</p>
             </div>
-            {/* Maintain */}
-            <div class="feature-item" style="flex-direction: column; align-items: flex-start; gap: var(--space-4);">
-              <div class="feature-item__icon" style="width: 40px; height: 40px; font-weight: bold; font-size: 1.2rem;">4
-              </div>
-              <div>
-                <h4 style="font-size: var(--font-size-lg); margin-bottom: var(--space-2);">Maintain</h4>
-                <p class="feature-item__text" style="font-size: var(--font-size-base);">Performance-focused operations and
-                  maintenance to protect long-term output.</p>
-              </div>
-            </div>
+          </div>
+          <div style="text-align: center; margin-top: var(--space-8);">
+            <a href="/contact" class="btn btn--primary btn--large">Get Your Free Feasibility Study</a>
           </div>
         </div>
       </section>
@@ -270,17 +291,6 @@ import AppLayout from '../layouts/AppLayout.astro';
               <p class="card__text">
                 No templates. We study your specific load profiles and resource data to build a custom
                 energy architecture.</p>
-            </div>
-            <div class="card card--light">
-              <div class="card__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="1.5">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                </svg>
-              </div>
-              <h4 class="card__title">C&I-Only Focused</h4>
-              <p class="card__text">We work only with commercial and industrial clients — not residential, not government. Our entire process is calibrated for private C&I decision-making and industrial-scale energy loads.</p>
-            </div>
             <div class="card card--light">
               <div class="card__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
