@@ -77,7 +77,7 @@ const Contact = () => {
                             Renewable Solution Consultation
                         </div>
                         <h1 className="hero__title">Find the Right <span className="hero__title-highlight">Renewable Energy Solution</span></h1>
-                        <p className="hero__subtitle">Share your electricity bill details. Our engineering team will analyze your load curve and recommend the right renewable power plant for your facility.</p>
+                        <p className="hero__subtitle">Share your electricity bill. Our engineering team will analyze your load curve and recommend the right solution.</p>
                     </div>
                 </div>
             </section>
@@ -88,9 +88,8 @@ const Contact = () => {
                     <div className="grid-2" style={{ gap: 'var(--space-12)' }}>
                         <div>
                             <span className="content-section__label">Direct Engineering Support</span>
-                            <h2 className="content-section__title" style={{ marginBottom: 'var(--space-6)' }}>Cut your per-unit power costs.</h2>
                             <p className="content-section__text" style={{ marginBottom: 'var(--space-6)' }}>
-                                Whether you run a textile dyeing unit in Surat, a ceramics plant in Morbi, a chemical unit in Ankleshwar, or a cold storage facility — we help choose and engineer the right captive renewable plant for your electricity bill.
+                                Whether you run a textile dyeing unit in Surat, a ceramics plant in Morbi, a chemical unit in Ankleshwar, or a cold storage facility — we engineer the right captive renewable plant for your electricity bill.
                             </p>
 
                             {/* Direct Contact Feature List */}
@@ -147,7 +146,7 @@ const Contact = () => {
                                     <div style={{ display: 'flex', gap: '12px' }}>
                                         <div style={{ width: '28px', height: '28px', borderRadius: '50%', background: 'rgba(31, 183, 166, 0.15)', color: 'var(--color-primary)', fontWeight: '800', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '13px', flexShrink: 0 }}>1</div>
                                         <div>
-                                            <strong style={{ fontSize: '14px', display: 'block', color: 'var(--color-text-primary)' }}>Engineering Review (Within 24 Hours)</strong>
+                                            <strong style={{ fontSize: '14px', display: 'block', color: 'var(--color-text-primary)' }}>1. Engineering Review (Within 24 Hours):</strong>
                                             <span style={{ fontSize: '13px', color: 'var(--color-text-secondary)' }}>Our engineers analyze your monthly utility bill and tariff structure.</span>
                                         </div>
                                     </div>
@@ -155,7 +154,7 @@ const Contact = () => {
                                     <div style={{ display: 'flex', gap: '12px' }}>
                                         <div style={{ width: '28px', height: '28px', borderRadius: '50%', background: 'rgba(31, 183, 166, 0.15)', color: 'var(--color-primary)', fontWeight: '800', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '13px', flexShrink: 0 }}>2</div>
                                         <div>
-                                            <strong style={{ fontSize: '14px', display: 'block', color: 'var(--color-text-primary)' }}>Site Resource Modeling</strong>
+                                            <strong style={{ fontSize: '14px', display: 'block', color: 'var(--color-text-primary)' }}>2. Site Resource Modeling:</strong>
                                             <span style={{ fontSize: '13px', color: 'var(--color-text-secondary)' }}>We evaluate wind velocity data and land availability for your factory location.</span>
                                         </div>
                                     </div>
@@ -163,7 +162,7 @@ const Contact = () => {
                                     <div style={{ display: 'flex', gap: '12px' }}>
                                         <div style={{ width: '28px', height: '28px', borderRadius: '50%', background: 'rgba(31, 183, 166, 0.15)', color: 'var(--color-primary)', fontWeight: '800', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '13px', flexShrink: 0 }}>3</div>
                                         <div>
-                                            <strong style={{ fontSize: '14px', display: 'block', color: 'var(--color-text-primary)' }}>Findings & Consultation Call</strong>
+                                            <strong style={{ fontSize: '14px', display: 'block', color: 'var(--color-text-primary)' }}>3. Findings & Consultation Call:</strong>
                                             <span style={{ fontSize: '13px', color: 'var(--color-text-secondary)' }}>We schedule a call to share custom hybrid recommendations — no obligation, no pressure.</span>
                                         </div>
                                     </div>
@@ -176,7 +175,7 @@ const Contact = () => {
                             <div className="contact-form" style={{ background: '#ffffff', padding: 'var(--space-8)', borderRadius: 'var(--radius-xl)', boxShadow: 'var(--shadow-md)', border: '1px solid var(--glass-border)' }}>
                                 <h3 className="card__title" style={{ marginBottom: 'var(--space-2)' }}>Let us know your bill and we can find the right solution</h3>
                                 <p style={{ fontSize: 'var(--font-size-sm)', color: 'var(--color-text-secondary)', marginBottom: 'var(--space-6)' }}>
-                                    Share your energy details below. Our engineers will evaluate your load profile and recommend the optimal renewable energy plant for your factory.
+                                    Share your energy details below. Our engineers will evaluate your load profile and recommend the optimal solution for your factory.
                                 </p>
 
                                 {status === 'success' && (
