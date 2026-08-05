@@ -154,8 +154,8 @@ const Contact = () => {
                                     <div style={{ display: 'flex', gap: '12px' }}>
                                         <div style={{ width: '28px', height: '28px', borderRadius: '50%', background: 'rgba(31, 183, 166, 0.15)', color: 'var(--color-primary)', fontWeight: '800', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '13px', flexShrink: 0 }}>2</div>
                                         <div>
-                                            <strong style={{ fontSize: '14px', display: 'block', color: 'var(--color-text-primary)' }}>2. Site Resource Modeling:</strong>
-                                            <span style={{ fontSize: '13px', color: 'var(--color-text-secondary)' }}>We evaluate wind velocity data and land availability for your factory location.</span>
+                                            <strong style={{ fontSize: '14px', display: 'block', color: 'var(--color-text-primary)' }}>2. Savings Analysis:</strong>
+                                            <span style={{ fontSize: '13px', color: 'var(--color-text-secondary)' }}>Our engineers model your potential savings based on your load profile and tariff structure.</span>
                                         </div>
                                     </div>
 
@@ -202,58 +202,56 @@ const Contact = () => {
                                         color: '#ef4444',
                                         fontSize: '0.95rem',
                                     }}>
-                                        ❌ Something went wrong. Please try again or email us directly at info@onloopenergy.com
+                                        ❌ Something went wrong. Please try again or call us directly at +91 98700 93424.
                                     </div>
                                 )}
 
                                 <form onSubmit={handleSubmit}>
+                                    <div className="form-group" style={{ marginBottom: 'var(--space-4)' }}>
+                                        <label className="form-label">Full Name *</label>
+                                        <input type="text" name="name" required className="form-input" placeholder="e.g. Rajesh Patel" value={formData.name} onChange={handleChange} />
+                                    </div>
+
                                     <div className="grid-2" style={{ gap: 'var(--space-4)', marginBottom: 'var(--space-4)' }}>
-                                        <div className="form-group" style={{ marginBottom: 0 }}>
-                                            <label className="form-label">Full Name *</label>
-                                            <input type="text" name="name" className="form-input" required placeholder="Your Name" value={formData.name} onChange={handleChange} />
-                                        </div>
                                         <div className="form-group" style={{ marginBottom: 0 }}>
                                             <label className="form-label">Phone Number *</label>
-                                            <input type="tel" name="phone" className="form-input" required placeholder="e.g. +91 98765 43210" value={formData.phone} onChange={handleChange} />
+                                            <input type="tel" name="phone" required className="form-input" placeholder="+91 98765 43210" value={formData.phone} onChange={handleChange} />
                                         </div>
-                                    </div>
-
-                                    <div className="grid-2" style={{ gap: 'var(--space-4)', marginBottom: 'var(--space-4)' }}>
                                         <div className="form-group" style={{ marginBottom: 0 }}>
                                             <label className="form-label">Email Address *</label>
-                                            <input type="email" name="email" className="form-input" required placeholder="your@email.com" value={formData.email} onChange={handleChange} />
-                                        </div>
-                                        <div className="form-group" style={{ marginBottom: 0 }}>
-                                            <label className="form-label">Company / Facility Name</label>
-                                            <input type="text" name="company" className="form-input" placeholder="e.g. Surat Textiles Ltd" value={formData.company} onChange={handleChange} />
+                                            <input type="email" name="email" required className="form-input" placeholder="name@company.com" value={formData.email} onChange={handleChange} />
                                         </div>
                                     </div>
 
                                     <div className="grid-2" style={{ gap: 'var(--space-4)', marginBottom: 'var(--space-4)' }}>
                                         <div className="form-group" style={{ marginBottom: 0 }}>
-                                            <label className="form-label">Factory Location (City/District) *</label>
-                                            <input type="text" name="location" className="form-input" required placeholder="e.g. Surat / Morbi / Ankleshwar" value={formData.location} onChange={handleChange} />
+                                            <label className="form-label">Company / Facility Name</label>
+                                            <input type="text" name="company" className="form-input" placeholder="e.g. Sunshine Dyeing Mills" value={formData.company} onChange={handleChange} />
                                         </div>
                                         <div className="form-group" style={{ marginBottom: 0 }}>
-                                            <label className="form-label">Industry Type</label>
+                                            <label className="form-label">Factory Location (City/District) *</label>
+                                            <input type="text" name="location" required className="form-input" placeholder="e.g. Surat, Morbi, Ankleshwar" value={formData.location} onChange={handleChange} />
+                                        </div>
+                                    </div>
+
+                                    <div className="grid-2" style={{ gap: 'var(--space-4)', marginBottom: 'var(--space-4)' }}>
+                                        <div className="form-group" style={{ marginBottom: 0 }}>
+                                            <label className="form-label">Industry Sector</label>
                                             <select name="industryType" className="form-input" value={formData.industryType} onChange={handleChange}>
-                                                <option value="Textile">Textile / Dyeing</option>
-                                                <option value="Ceramics">Ceramics / Tiles</option>
-                                                <option value="Chemical">Chemical / Processing</option>
+                                                <option value="Textile">Textile & Dyeing</option>
+                                                <option value="Ceramics">Ceramics & Tiles</option>
+                                                <option value="Chemical">Chemical & Processing</option>
                                                 <option value="Food Processing">Food Processing</option>
-                                                <option value="Cold Storage">Cold Storage</option>
-                                                <option value="Foundry / Metals">Foundry / Metals</option>
-                                                <option value="Light Engineering">Light Engineering</option>
-                                                <option value="Warehousing / Logistics">Warehousing / Logistics</option>
-                                                <option value="Commercial Complex">Commercial Complex</option>
+                                                <option value="Cold Storage">Cold Storage & Refrigeration</option>
+                                                <option value="Foundry">Foundry & Metal Processing</option>
+                                                <option value="Light Engineering">Light Engineering & Auto Components</option>
+                                                <option value="Warehousing">Warehousing & Logistics</option>
+                                                <option value="Commercial">Commercial Building / Complex</option>
                                                 <option value="Other">Other Manufacturing</option>
                                             </select>
                                         </div>
-                                    </div>
-
-                                    <div className="grid-2" style={{ gap: 'var(--space-4)', marginBottom: 'var(--space-4)' }}>
                                         <div className="form-group" style={{ marginBottom: 0 }}>
-                                            <label className="form-label">Avg. Monthly Electricity Bill (₹)</label>
+                                            <label className="form-label">Avg. Monthly Electricity Bill (₹) *</label>
                                             <select name="monthlyBill" className="form-input" value={formData.monthlyBill} onChange={handleChange}>
                                                 <option value="10L-25L">₹10 Lakhs – ₹25 Lakhs / month</option>
                                                 <option value="25L-50L">₹25 Lakhs – ₹50 Lakhs / month</option>
@@ -261,14 +259,15 @@ const Contact = () => {
                                                 <option value=">1Cr">More than ₹1 Crore / month</option>
                                             </select>
                                         </div>
-                                        <div className="form-group" style={{ marginBottom: 0 }}>
-                                            <label className="form-label">Primary Concern / Goal</label>
-                                            <select name="primaryObjective" className="form-input" value={formData.primaryObjective} onChange={handleChange}>
-                                                <option value="Reduce Bill">Reduce Electricity Bill</option>
-                                                <option value="Power Reliability">Power Reliability / Backup</option>
-                                                <option value="Carbon Neutrality">Carbon Neutrality / ESG</option>
-                                            </select>
-                                        </div>
+                                    </div>
+
+                                    <div className="form-group" style={{ marginBottom: 'var(--space-4)' }}>
+                                        <label className="form-label">Primary Concern / Goal</label>
+                                        <select name="primaryObjective" className="form-input" value={formData.primaryObjective} onChange={handleChange}>
+                                            <option value="Reduce Bill">Reduce Electricity Bill</option>
+                                            <option value="Power Reliability">Power Reliability / Backup</option>
+                                            <option value="Carbon Neutrality">Carbon Neutrality / ESG</option>
+                                        </select>
                                     </div>
 
                                     <div className="form-group" style={{ marginBottom: 'var(--space-6)' }}>
@@ -282,7 +281,7 @@ const Contact = () => {
                                         style={{ width: '100%', justifyContent: 'center' }}
                                         disabled={status === 'sending'}
                                     >
-                                        {status === 'sending' ? 'Submitting Request...' : 'Request Free Wind Feasibility Study'}
+                                        {status === 'sending' ? 'Submitting Request...' : 'Request Free Savings Analysis'}
                                     </button>
                                 </form>
                             </div>
