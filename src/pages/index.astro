@@ -12,24 +12,27 @@ import AppLayout from '../layouts/AppLayout.astro';
 
 
       {/* Hero Section */}
-      <section class="hero hero--image" style="background-image: url('/images/stock/solarfarm.webp');">
+      <section class="hero" style="position: relative; overflow: hidden;">
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="hero__video"
+          poster="/images/stock/solarfarm.webp"
+        >
+          <source src="/images/stock/hero video.mp4" type="video/mp4" />
+        </video>
         <div class="container">
           <div class="hero__content">
-            <div class="hero__badge" style="margin-top: var(--space-8);">
-              <span class="hero__badge-dot"></span>
-              Wind & Hybrid Energy for C&I and MSMEs
-            </div>
+            
             <h1 class="hero__title">
-              Power Your Factory, Not the Bureaucracy.<br />
+              Power Your Factory, With Best Solutions<br />
               <span class="hero__title-highlight">Wind & Hybrid Energy for C&I and MSMEs.</span>
             </h1>
-            <p class="hero__subtitle">Engineering-first renewable energy — no tenders, no residential.</p>
+            <p class="hero__subtitle">Engineering-first renewable energy.</p>
             
-            <div style="background: rgba(255, 255, 255, 0.1); border-left: 3px solid var(--color-primary); padding: var(--space-3) var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-6); max-width: 680px;">
-              <p style="margin: 0; font-size: var(--font-size-sm); color: rgba(255, 255, 255, 0.9); font-weight: 500;">
-                <strong>Cut energy costs. Secure your production.</strong> No tenders, no red tape — just engineering.
-              </p>
-            </div>
+          
 
             <div class="hero__actions">
               <a href="/contact" class="btn btn--primary btn--large">Get Your Free Savings Analysis</a>
@@ -51,7 +54,7 @@ import AppLayout from '../layouts/AppLayout.astro';
       <div style="background: rgba(31, 183, 166, 0.08); border-top: 1px solid rgba(31, 183, 166, 0.2); border-bottom: 1px solid rgba(31, 183, 166, 0.2); padding: var(--space-4) 0;">
         <div class="container" style="text-align: center;">
           <p style="margin: 0; font-weight: 600; font-size: var(--font-size-base); color: var(--color-text-primary);">
-            🛡️ <strong>Exclusively Private B2B:</strong> Commercial, Industrial & MSME only. No residential. No government.
+            <strong>Exclusively Private B2B:</strong> Commercial, Industrial & MSME only. No residential.
           </p>
         </div>
       </div>
@@ -59,7 +62,7 @@ import AppLayout from '../layouts/AppLayout.astro';
       {/* Intro / 3 Data-Driven Value Propositions */}
       <section class="content-section fade-in" style="padding: var(--space-10) 0;">
         <div class="container">
-          <div class="content-section__header container--narrow" style="text-align: center; margin-bottom: var(--space-8);">
+          <div class="content-section__header" style="margin-bottom: var(--space-8); text-align: left;">
             <span class="content-section__label">Proven Impact</span>
             <h2 class="content-section__title">Real Data. Real Industrial Savings.</h2>
             <p class="content-section__text">We build captive power systems engineered around what your factory actually gets.</p>
@@ -195,10 +198,10 @@ import AppLayout from '../layouts/AppLayout.astro';
         <div class="container">
           <div class="content-section__header">
             <span class="content-section__label">Solutions Overview</span>
-            <h2 class="content-section__title">Wind. Hybrid. Nothing Else.</h2>
-            <p class="content-section__text">We focus on two technologies: captive wind energy and hybrid (wind + solar) systems. No BESS, no pure solar, no residential. Every solution is engineered for a specific C&I context.</p>
+            <h2 class="content-section__title">Wind. Hybrid.Whichever Suits Best.</h2>
+            <p class="content-section__text">We focus on two technologies: captive wind energy and hybrid (wind + solar) systems. Every solution is engineered for a specific C&I context.</p>
           </div>
-          <div class="grid-3">
+          <div class="grid-2">
             <div class="image-card">
               <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=600&h=400&fit=crop"
                 alt="Commercial wind energy site-specific turbine installation for industrial facility" loading="lazy" />
@@ -213,14 +216,6 @@ import AppLayout from '../layouts/AppLayout.astro';
               <div class="image-card__caption">
                 <h4>Hybrid Energy Systems (Wind + Solar)</h4>
                 <p>A single engineered architecture combining daytime solar with wind generation across the full diurnal and seasonal cycle. Higher CUF, better land utilization, and true 24/7 coverage for demanding C&I loads.</p>
-              </div>
-            </div>
-            <div class="image-card">
-              <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&h=400&fit=crop"
-                alt="Solar panels as part of a hybrid energy system for industrial use" loading="lazy" />
-              <div class="image-card__caption">
-                <h4>Solar — Only Within Hybrid</h4>
-                <p>We use solar as the daytime generation layer in our hybrid systems. We do not install solar-only systems. If your load profile calls for solar-only, we will tell you honestly and point you to the right specialist.</p>
               </div>
             </div>
           </div>
@@ -289,7 +284,7 @@ import AppLayout from '../layouts/AppLayout.astro';
                 </svg>
               </div>
               <h4 class="card__title">1. Share Your Electricity Bill</h4>
-              <p class="card__text">Upload or send your recent utility bill and facility location. We analyze your tariff rates, peak demand charges, and consumption curve.</p>
+              <p class="card__text">Send your recent utility bill and facility location.</p>
             </div>
             {/* Step 2 */}
             <div class="card" style="background: #ffffff; padding: var(--space-8); position: relative;">
@@ -300,7 +295,7 @@ import AppLayout from '../layouts/AppLayout.astro';
                 </svg>
               </div>
               <h4 class="card__title">2. Load Profile Analysis</h4>
-              <p class="card__text">Our engineers analyze your tariff structure, consumption patterns, and peak demand charges. We identify the exact savings opportunity.</p>
+              <p class="card__text">We analyze your tariffs, consumption patterns, and peak demand charges.</p>
             </div>
             {/* Step 3 */}
             <div class="card" style="background: #ffffff; padding: var(--space-8); position: relative;">
@@ -313,7 +308,7 @@ import AppLayout from '../layouts/AppLayout.astro';
                 </svg>
               </div>
               <h4 class="card__title">3. Captive Hybrid Engineering</h4>
-              <p class="card__text">We engineer, install, and commission your site-specific captive power plant — delivering measurable monthly savings from day one.</p>
+              <p class="card__text">We deliver your captive power plant, saving your bill from day one.</p>
             </div>
           </div>
           <div style="text-align: center; margin-top: var(--space-8);">
@@ -329,67 +324,40 @@ import AppLayout from '../layouts/AppLayout.astro';
             <span class="content-section__label">Why OnLoop Energy</span>
             <h2 class="content-section__title">Built for long-term performance</h2>
           </div>
-          <div class="grid-3">
-            <div class="card card--light">
+          <div class="grid-3" style="gap: var(--space-6);">
+            {/* Card 1 */}
+            <div class="card card--light" style="display: flex; flex-direction: column; height: 100%;">
               <div class="card__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="1.5">
-                  <path
-                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
                 </svg>
               </div>
               <h4 class="card__title">Engineering-led</h4>
-              <p class="card__text">
-                Every recommendation is backed by technical validation and site data.</p>
+              <p class="card__text">Every recommendation is backed by technical validation and site data.</p>
             </div>
-            <div class="card card--light">
+
+            {/* Card 2 */}
+            <div class="card card--light" style="display: flex; flex-direction: column; height: 100%;">
               <div class="card__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </div>
               <h4 class="card__title">Honest Assessment</h4>
-              <p class="card__text">
-                We tell you what works — and what doesn't — upfront. If wind or hybrid doesn't fit your load profile, we say so.</p>
+              <p class="card__text">We tell you what works — and what doesn't — upfront. If wind or hybrid doesn't fit your load profile, we say so.</p>
             </div>
-            <div class="card card--light">
+
+            {/* Card 3 */}
+            <div class="card card--light" style="display: flex; flex-direction: column; height: 100%;">
               <div class="card__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
               </div>
               <h4 class="card__title">Load-First Engineering</h4>
-              <p class="card__text">
-                No templates. We study your specific load profiles and tariff structure to build a custom
-                energy architecture.</p>
-            <div class="card card--light">
-              <div class="card__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="1.5">
-                  <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                  <circle cx="9" cy="7" r="4" />
-                  <polyline points="16 11 18 13 22 9" />
-                </svg>
-              </div>
-              <h4 class="card__title">Single Accountability</h4>
-              <p class="card__text">
-                We take ownership of the entire lifecycle, from initial savings analysis to long-term
-                operations.</p>
-            </div>
-            <div class="card card--light">
-              <div class="card__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="1.5">
-                  <rect x="2" y="7" width="20" height="15" rx="2" ry="2" />
-                  <polyline points="17 2 12 7 7 2" />
-                </svg>
-              </div>
-              <h4 class="card__title">Wind-First Thinking</h4>
-              <p class="card__text">We ask what your load profile demands before recommending any technology. Solar alone cannot run a three-shift factory. Wind often can.</p>
+              <p class="card__text">No templates. We study your specific load profiles and tariff structure to build a custom energy architecture.</p>
             </div>
           </div>
         </div>
