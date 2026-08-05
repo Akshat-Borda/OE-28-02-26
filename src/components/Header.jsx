@@ -59,7 +59,7 @@ const Header = () => {
                   </a>
                   <div style={{ height: '1px', background: 'rgba(0,0,0,0.06)', margin: '4px 0' }}></div>
                   <a href="/wind" className="nav__dropdown-link">
-                    Small Wind Turbines
+                    Captive Wind Energy
                   </a>
                   <a href="/hybrid" className="nav__dropdown-link">
                     Hybrid (Wind + Solar)
@@ -96,7 +96,7 @@ const Header = () => {
 
           <div className="nav__mobile-group">
             <div className="nav__mobile-group-title">By Technology</div>
-            <a href="/wind" className="nav__mobile-sublink">Small Wind Turbines</a>
+            <a href="/wind" className="nav__mobile-sublink">Captive Wind Energy</a>
             <a href="/hybrid" className="nav__mobile-sublink">Hybrid (Wind + Solar)</a>
           </div>
 

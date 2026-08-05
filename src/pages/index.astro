@@ -63,12 +63,46 @@ import AppLayout from '../layouts/AppLayout.astro';
         </div>
       </div>
 
-      {/* Intro / Overview */}
-      <section class="content-section fade-in">
-        <div class="container container--narrow" style="text-align: center;">
-          <h2 class="content-section__title" style="margin-bottom: var(--space-6);">Clean energy works best when it is
-            engineered for the site, not forced onto it.</h2>
-          <p class="content-section__text">At OnLoop Energy, we work exclusively with Commercial, Industrial, and MSME facilities — not residential, not government. We combine technical site intelligence, genuine wind and solar resource assessment, and disciplined EPC execution to deliver wind and hybrid energy systems that perform to their design yield, year after year.</p>
+      {/* Intro / 3 Data-Driven Value Propositions */}
+      <section class="content-section fade-in" style="padding: var(--space-10) 0;">
+        <div class="container">
+          <div class="content-section__header container--narrow" style="text-align: center; margin-bottom: var(--space-8);">
+            <span class="content-section__label">Proven Impact</span>
+            <h2 class="content-section__title">Real Data. Real Industrial Savings.</h2>
+            <p class="content-section__text">We build captive power systems engineered around what your factory actually gets.</p>
+          </div>
+
+          <div class="grid-3" style="gap: var(--space-6);">
+            {/* Value Prop 1 */}
+            <div class="card" style="padding: var(--space-6); border-top: 4px solid var(--color-primary); background: #ffffff;">
+              <div style="font-size: 1.8rem; margin-bottom: var(--space-2);">🧵</div>
+              <h4 class="card__title" style="font-size: var(--font-size-lg); margin-bottom: var(--space-2);">Textile & Dyeing Mills</h4>
+              <p class="card__text" style="font-size: var(--font-size-base); font-weight: 700; color: var(--color-primary); margin-bottom: 0;">
+                Textile dyeing units save ₹1.2 Lakhs/month
+              </p>
+              <p style="font-size: 13px; color: var(--color-text-secondary); margin-top: 6px;">By offsetting night shift dyeing jet tariffs with wind power.</p>
+            </div>
+
+            {/* Value Prop 2 */}
+            <div class="card" style="padding: var(--space-6); border-top: 4px solid var(--color-primary); background: #ffffff;">
+              <div style="font-size: 1.8rem; margin-bottom: var(--space-2);">🧱</div>
+              <h4 class="card__title" style="font-size: var(--font-size-lg); margin-bottom: var(--space-2);">Ceramics & Tiles Plants</h4>
+              <p class="card__text" style="font-size: var(--font-size-base); font-weight: 700; color: var(--color-primary); margin-bottom: 0;">
+                Ceramic plants cut peak demand by 40%
+              </p>
+              <p style="font-size: 13px; color: var(--color-text-secondary); margin-top: 6px;">Shaving peak surcharges on 24/7 continuous roller kilns.</p>
+            </div>
+
+            {/* Value Prop 3 */}
+            <div class="card" style="padding: var(--space-6); border-top: 4px solid var(--color-primary); background: #ffffff;">
+              <div style="font-size: 1.8rem; margin-bottom: var(--space-2);">🧪</div>
+              <h4 class="card__title" style="font-size: var(--font-size-lg); margin-bottom: var(--space-2);">Chemical & Processing</h4>
+              <p class="card__text" style="font-size: 14px; font-weight: 700; color: var(--color-primary); margin-bottom: 0;">
+                Chemical facilities achieve 24/7 power security
+              </p>
+              <p style="font-size: 13px; color: var(--color-text-secondary); margin-top: 6px;">Safe perimeter wind generation for continuous chiller loads.</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -169,14 +203,14 @@ import AppLayout from '../layouts/AppLayout.astro';
           <div class="content-section__header">
             <span class="content-section__label">Solutions Overview</span>
             <h2 class="content-section__title">Wind. Hybrid. Nothing Else.</h2>
-            <p class="content-section__text">We focus on two technologies: small wind turbines and hybrid (wind + solar) systems. No BESS, no pure solar, no residential. Every solution is site-specific and engineered for a specific C&I context.</p>
+            <p class="content-section__text">We focus on two technologies: captive wind energy and hybrid (wind + solar) systems. No BESS, no pure solar, no residential. Every solution is site-specific and engineered for a specific C&I context.</p>
           </div>
           <div class="grid-3">
             <div class="image-card">
               <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=600&h=400&fit=crop"
-                alt="Commercial small wind turbines site-specific installation for industrial facility" loading="lazy" />
+                alt="Commercial wind energy site-specific turbine installation for industrial facility" loading="lazy" />
               <div class="image-card__caption">
-                <h4>Small Wind Turbine Systems</h4>
+                <h4>Captive Wind Turbine Systems</h4>
                 <p>Deployed only at sites where wind resource data genuinely supports long-term performance. Generates power 24/7 — including nights, weekends, and monsoon season when solar output is zero.</p>
               </div>
             </div>
@@ -200,43 +234,43 @@ import AppLayout from '../layouts/AppLayout.astro';
         </div>
       </section>
 
-      {/* Our Philosophy */}
+      {/* Compressed Philosophy & Track Record Block */}
       <section class="content-section content-section--light fade-in">
         <div class="container">
-          <div class="grid-2">
-            <div>
-              <span class="content-section__label">Our Philosophy</span>
-              <h2 class="content-section__title">Energy systems designed for your reality.</h2>
-              <p class="content-section__text">Every C&I site is different. A three-shift ceramics factory has a fundamentally different energy profile from a logistics hub or a textile mill. Wind resources vary by altitude, proximity to the coast, and seasonal patterns.</p>
-              <p class="content-section__text">At OnLoop Energy, we don't arrive with a product to sell. We arrive with data. We assess your site's actual wind resource, map it against your operational load curve, and only then determine whether small wind, hybrid, or neither is the right path forward.</p>
-              <div
-                style="margin-top: var(--space-8); padding: var(--space-6); background: rgba(30; border-radius: var(--radius-lg); border-left: 4px solid var(--color-primary);">
-                <h4 style="margin-bottom: var(--space-2); color: var(--color-primary); font-size: var(--font-size-lg);">
-                  Engineering is not an add-on.</h4>
-                <p
-                  style="margin-bottom: 0; font-weight: 500; font-size: var(--font-size-base); color: var(--color-text-secondary);">
-                  It is the foundation of performance.</p>
-              </div>
+          {/* Philosophy Statement */}
+          <div style="max-width: 800px; margin: 0 auto; text-align: center; margin-bottom: var(--space-12);">
+            <span class="content-section__label">Our Philosophy</span>
+            <h2 class="content-section__title" style="margin-bottom: var(--space-4);">We start with your site data, not our product catalog.</h2>
+            <div style="display: flex; justify-content: center; gap: var(--space-4); flex-wrap: wrap; margin-top: var(--space-4);">
+              <span style="background: rgba(31, 183, 166, 0.12); color: var(--color-primary); font-weight: 700; padding: var(--space-2) var(--space-5); border-radius: 20px; font-size: 0.95rem;">📊 Data-Driven</span>
+              <span style="background: rgba(31, 183, 166, 0.12); color: var(--color-primary); font-weight: 700; padding: var(--space-2) var(--space-5); border-radius: 20px; font-size: 0.95rem;">📍 Site-Specific</span>
+              <span style="background: rgba(31, 183, 166, 0.12); color: var(--color-primary); font-weight: 700; padding: var(--space-2) var(--space-5); border-radius: 20px; font-size: 0.95rem;">⚖️ Zero Bias</span>
             </div>
-            <div class="card">
-              <div class="card__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M2 22h20" />
-                  <polyline points="22,6 12,13 2,6" />
-                  <path d="M12,13 12,21.5" />
-                </svg>
+          </div>
+
+          {/* New "Trusted By / Track Record" Metrics Block */}
+          <div style="background: #ffffff; padding: var(--space-8); border-radius: var(--radius-xl); box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+            <div style="text-align: center; margin-bottom: var(--space-6);">
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 1px;">Proven Track Record</span>
+              <h3 style="font-size: var(--font-size-xl); margin-top: 4px;">Trusted Across Gujarat’s Major Industrial Belts</h3>
+            </div>
+            <div class="grid-4" style="text-align: center; gap: var(--space-6);">
+              <div>
+                <div style="font-size: 2.2rem; font-weight: 800; color: var(--color-primary);">20+</div>
+                <p style="font-size: 14px; color: var(--color-text-secondary); margin: 0; font-weight: 500;">Installations Across Gujarat</p>
               </div>
-              <h4 class="card__title">Site-Specific Design</h4>
-              <p class="card__text">
-                We analyze your location's specific resource data, sun irradiance, wind speeds, and
-                energy consumption patterns, to design a system that maximizes output and ROI, regardless of the
-                technology.<br /><br />
-                Using detailed modelling and financial analysis, we design a system architecture that optimizes output,
-                stability, and long-term cost of energy, not just installed capacity.
-                <br /><br />
-                The result is a technically sound, financially viable energy system engineered for measurable performance.
-              </p>
+              <div>
+                <div style="font-size: 2.2rem; font-weight: 800; color: var(--color-primary);">5</div>
+                <p style="font-size: 14px; color: var(--color-text-secondary); margin: 0; font-weight: 500;">Key Sectors (Textile, Ceramics, Chemical, Food, Cold Storage)</p>
+              </div>
+              <div>
+                <div style="font-size: 2.2rem; font-weight: 800; color: var(--color-primary);">35%+</div>
+                <p style="font-size: 14px; color: var(--color-text-secondary); margin: 0; font-weight: 500;">Avg. Hybrid CUF (vs ~20% solar alone)</p>
+              </div>
+              <div>
+                <div style="font-size: 2.2rem; font-weight: 800; color: #10b981;"><3.5 Yrs</div>
+                <p style="font-size: 14px; color: var(--color-text-secondary); margin: 0; font-weight: 500;">Average CapEx Payback Period</p>
+              </div>
             </div>
           </div>
         </div>
@@ -371,38 +405,14 @@ import AppLayout from '../layouts/AppLayout.astro';
         </div>
       </section>
 
-      {/* AI-SEO FAQ Block */}
-      <section class="content-section content-section--white fade-in" style="padding: var(--space-12) 0;">
-        <div class="container">
-          <div class="content-section__header">
-            <h2 class="content-section__title">Frequently Asked Questions</h2>
-            <p class="content-section__text">Direct answers to common questions about our commercial hybrid energy systems.</p>
-          </div>
-          <div class="grid-2" style="gap: var(--space-8);">
-            <div>
-              <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--space-2);">What is a Commercial Hybrid Energy System?</h3>
-              <p style="color: var(--color-text-secondary); line-height: 1.6;">
-                A commercial hybrid energy system integrates multiple renewable generation sources—typically industrial solar panels and small wind turbines—into a single, coordinated energy architecture. By combining daytime solar generation with nighttime or seasonal wind generation, hybrid systems deliver higher energy availability and resilience than standalone solar or wind systems.
-              </p>
-            </div>
-            <div>
-              <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--space-2);">Why choose OnLoop Energy as your EPC partner?</h3>
-              <p style="color: var(--color-text-secondary); line-height: 1.6;">
-                OnLoop Energy is an engineering-first EPC provider. According to our site-specific feasibility approach, we evaluate actual consumption profiles and resource data before recommending a solution. This ensures commercial and industrial facilities receive energy architectures engineered for long-term financial performance and reliability, rather than generic equipment packages.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Final CTA */}
+      {/* Direct, High-Impact Bottom CTA */}
       <section class="cta-section fade-in">
         <div class="container">
           <div class="cta-section__content">
-            <h2 class="cta-section__title">Let’s design the right energy system for your site</h2>
-            <p class="cta-section__text">If you run a manufacturing plant, processing facility, industrial estate, or large commercial operation — and you want to know whether small wind or hybrid energy makes economic sense for your site — that conversation starts here.</p>
+            <h2 class="cta-section__title">Ready to cut your power bill?</h2>
+            <p class="cta-section__text">Share your electricity bill. We'll return a wind & hybrid feasibility report — free, no obligation.</p>
             <a href="/contact" class="btn btn--primary btn--large">
-              Contact OnLoop Energy
+              Get Your Free Feasibility Study
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
                 <line x1="5" y1="12" x2="19" y2="12" />

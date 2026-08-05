@@ -2,10 +2,10 @@
 import AppLayout from '../../layouts/AppLayout.astro';
 ---
 
-<AppLayout title="Industry-Specific Wind & Hybrid Energy Solutions | OnLoop Energy" description="OnLoop Energy engineers site-specific captive wind and hybrid power solutions for Textile Dyeing, Ceramics, Chemical Processing, Food Processing, and Cold Storage industries.">
+<AppLayout title="Tailored Industry Solutions | Wind & Hybrid Energy | OnLoop Energy" description="We engineer site-specific captive wind and hybrid power solutions for Textile Dyeing, Ceramics, Chemical Processing, Food Processing, and Cold Storage industries in Gujarat.">
 <div>
 
-  {/* Hero Section */}
+  {/* Section 1: Hero Section */}
   <section class="hero hero--short">
     <div class="container">
       <div class="hero__content">
@@ -17,142 +17,366 @@ import AppLayout from '../../layouts/AppLayout.astro';
           We don't sell generic energy.<br />
           <span class="hero__title-highlight">We solve industry-specific power problems.</span>
         </h1>
-        <p class="hero__subtitle">Every industry has a distinct load curve, operating shift schedule, and per-unit production cost pressure. Explore how we engineer captive wind & hybrid power for your specific sector.</p>
+        <p class="hero__subtitle">Every manufacturing sector has a distinct load curve, operating shift schedule, and per-unit production cost pressure. Explore how we engineer captive wind & hybrid power for your specific facility.</p>
       </div>
     </div>
   </section>
 
-  {/* Industry Hub Grid */}
+  {/* Explicit Exclusion Statement Trust Banner */}
+  <div style="background: rgba(31, 183, 166, 0.08); border-top: 1px solid rgba(31, 183, 166, 0.2); border-bottom: 1px solid rgba(31, 183, 166, 0.2); padding: var(--space-4) 0;">
+    <div class="container" style="text-align: center;">
+      <p style="margin: 0; font-weight: 600; font-size: var(--font-size-base); color: var(--color-text-primary);">
+        🛡️ <strong>Private B2B Focus:</strong> OnLoop Energy focuses exclusively on Commercial, Industrial, and MSME facilities. We do not undertake residential installations or government tenders.
+      </p>
+    </div>
+  </div>
+
+  {/* Section 2: Why Wind Energy Works for C&I and MSMEs (Educational Section) */}
+  <section class="content-section fade-in" style="background: var(--color-bg-secondary); padding: var(--space-12) 0;">
+    <div class="container">
+      <div class="content-section__header">
+        <span class="content-section__label">Technology Reality</span>
+        <h2 class="content-section__title">Why Wind Energy Works for C&I and MSMEs</h2>
+        <p class="content-section__text">Solar alone cannot run a multi-shift factory. Here is why captive wind and hybrid systems deliver superior economics for industrial facilities.</p>
+      </div>
+
+      <div class="grid-3" style="gap: var(--space-6);">
+        <div class="card" style="background: #ffffff; padding: var(--space-6); border-left: 4px solid var(--color-primary);">
+          <div style="font-size: 2rem; margin-bottom: var(--space-3);">⚡</div>
+          <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--space-2);">1. 24/7 Power Generation</h3>
+          <p style="color: var(--color-text-secondary); font-size: 14px; line-height: 1.6; margin: 0;">
+            Unlike solar panels that stop producing at sunset, captive wind turbines generate power continuously — during evenings, night shifts, and monsoon months when factory load is high and solar yield is zero.
+          </p>
+        </div>
+
+        <div class="card" style="background: #ffffff; padding: var(--space-6); border-left: 4px solid var(--color-primary);">
+          <div style="font-size: 2rem; margin-bottom: var(--space-3);">☀️</div>
+          <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--space-2);">2. Round-the-Clock Hybrid Stability</h3>
+          <p style="color: var(--color-text-secondary); font-size: 14px; line-height: 1.6; margin: 0;">
+            Combining daytime solar with evening wind generation creates a flat, predictable power output profile. This increases your plant's Capacity Utilization Factor (CUF) from ~20% to over 35%.
+          </p>
+        </div>
+
+        <div class="card" style="background: #ffffff; padding: var(--space-6); border-left: 4px solid var(--color-primary);">
+          <div style="font-size: 2rem; margin-bottom: var(--space-3);">🌬️</div>
+          <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--space-2);">3. High-Yield Gujarat Wind Corridors</h3>
+          <p style="color: var(--color-text-secondary); font-size: 14px; line-height: 1.6; margin: 0;">
+            Gujarat's coastal and industrial belts (Surat, Morbi, Ankleshwar, Rajkot, Anand) benefit from strong coastal and plain thermal wind currents — your factory may already be sitting in a prime wind corridor.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Section 3: Industry-Specific Solutions (Expanded Detailed Cards) */}
   <section class="content-section fade-in">
     <div class="container">
       <div class="content-section__header">
-        <span class="content-section__label">Sectors We Serve</span>
+        <span class="content-section__label">Sector Deep Dives</span>
         <h2 class="content-section__title">Solutions by Industry</h2>
-        <p class="content-section__text">Click your industry sector to see specific load challenges, wind-hybrid solutions, and real financial case studies.</p>
+        <p class="content-section__text">Explore pain points, custom wind-hybrid architectures, and real financial case study results for your sector.</p>
       </div>
 
-      <div class="grid-3" style="gap: var(--space-8);">
+      <div style="display: flex; flex-direction: column; gap: var(--space-8);">
         
         {/* Industry 1: Textile & Dyeing */}
-        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: var(--space-8); border-top: 4px solid var(--color-primary);">
-          <div>
-            <div class="card__icon" style="margin-bottom: var(--space-4);">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L3 12.5V21h8.5l8.74-8.76z" />
-                <line x1="16" y1="8" x2="2" y2="22" />
-              </svg>
+        <div class="card" style="padding: var(--space-8); border-top: 5px solid var(--color-primary); background: #ffffff; box-shadow: var(--shadow-sm);">
+          <div class="grid-2" style="gap: var(--space-8); align-items: center;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 12px; margin-bottom: var(--space-4);">
+                <div style="font-size: 2rem;">🧵</div>
+                <div>
+                  <span style="font-size: 12px; color: var(--color-primary); font-weight: 700; text-transform: uppercase;">Surat & Gujarat Textile Belt</span>
+                  <h3 style="font-size: var(--font-size-2xl); margin: 0;">Textile & Dyeing Mills</h3>
+                </div>
+              </div>
+
+              <div style="margin-bottom: var(--space-4);">
+                <strong style="color: #ef4444; font-size: 14px; display: block; margin-bottom: 4px;">⚠️ Key Pain Points:</strong>
+                <ul style="margin: 0; padding-left: 20px; font-size: 14px; color: var(--color-text-secondary); line-height: 1.6;">
+                  <li>Non-stop 24/7 dyeing jet cycles driving high nighttime grid electricity bills.</li>
+                  <li>High per-unit grid tariffs eroding thin fabric processing margins.</li>
+                  <li>Costly diesel generator reliance during unexpected industrial grid trips.</li>
+                </ul>
+              </div>
+
+              <div>
+                <strong style="color: var(--color-primary); font-size: 14px; display: block; margin-bottom: 4px;">⚡ OnLoop Wind-Hybrid Solution:</strong>
+                <p style="font-size: 14px; color: var(--color-text-secondary); margin-bottom: 0; line-height: 1.5;">
+                  50kW–200kW captive wind turbines integrated with daytime solar to power continuous night dyeing jets and stenter machines.
+                </p>
+              </div>
             </div>
-            <h3 class="card__title" style="font-size: var(--font-size-xl); margin-bottom: var(--space-3);">Textile & Dyeing Mills</h3>
-            <p class="card__text" style="color: var(--color-text-secondary); line-height: 1.6; margin-bottom: var(--space-6);">
-              <strong>Core Challenge:</strong> High 24/7 power demand during continuous dyeing cycles and high grid tariff rates eroding thin fabric margins.
-            </p>
+
+            <div style="background: var(--color-bg-light); padding: var(--space-6); border-radius: var(--radius-lg); border: 1px solid var(--glass-border);">
+              <span style="font-size: 12px; font-weight: 700; color: var(--color-primary); text-transform: uppercase;">Real Case Study Result</span>
+              <h4 style="font-size: var(--font-size-lg); margin-top: 4px; margin-bottom: var(--space-4);">Surat (Sachin GIDC) Dyeing Unit</h4>
+              
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: var(--space-6);">
+                <div style="background: #ffffff; padding: 10px; border-radius: 6px;">
+                  <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">System Size</span>
+                  <strong style="font-size: 15px; color: var(--color-text-primary);">50kW Wind + 20kW Solar</strong>
+                </div>
+                <div style="background: #ffffff; padding: 10px; border-radius: 6px;">
+                  <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">Monthly Savings</span>
+                  <strong style="font-size: 15px; color: #10b981;">₹1.2 Lakhs / month</strong>
+                </div>
+              </div>
+
+              <a href="/solutions/textile-industry" class="btn btn--primary" style="width: 100%; justify-content: center;">
+                View Full Textile Case Study →
+              </a>
+            </div>
           </div>
-          <a href="/solutions/textile-industry" class="btn btn--primary" style="justify-content: center; width: 100%;">
-            Explore Textile Solutions →
-          </a>
         </div>
 
         {/* Industry 2: Ceramics & Tiles */}
-        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: var(--space-8); border-top: 4px solid var(--color-primary);">
-          <div>
-            <div class="card__icon" style="margin-bottom: var(--space-4);">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                <path d="M3 9h18" />
-                <path d="M9 21V9" />
-              </svg>
+        <div class="card" style="padding: var(--space-8); border-top: 5px solid var(--color-primary); background: #ffffff; box-shadow: var(--shadow-sm);">
+          <div class="grid-2" style="gap: var(--space-8); align-items: center;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 12px; margin-bottom: var(--space-4);">
+                <div style="font-size: 2rem;">🧱</div>
+                <div>
+                  <span style="font-size: 12px; color: var(--color-primary); font-weight: 700; text-transform: uppercase;">Morbi & Wankaner Ceramics Cluster</span>
+                  <h3 style="font-size: var(--font-size-2xl); margin: 0;">Ceramics & Tiles Manufacturing</h3>
+                </div>
+              </div>
+
+              <div style="margin-bottom: var(--space-4);">
+                <strong style="color: #ef4444; font-size: 14px; display: block; margin-bottom: 4px;">⚠️ Key Pain Points:</strong>
+                <ul style="margin: 0; padding-left: 20px; font-size: 14px; color: var(--color-text-secondary); line-height: 1.6;">
+                  <li>Continuous 24/7 roller kiln operation that cannot be shut down without heavy thermal loss.</li>
+                  <li>Severe peak demand MD penalties on high-voltage grid connections.</li>
+                  <li>High night-shift electricity tariffs during heavy kiln firing cycles.</li>
+                </ul>
+              </div>
+
+              <div>
+                <strong style="color: var(--color-primary); font-size: 14px; display: block; margin-bottom: 4px;">⚡ OnLoop Wind-Hybrid Solution:</strong>
+                <p style="font-size: 14px; color: var(--color-text-secondary); margin-bottom: 0; line-height: 1.5;">
+                  100kW–300kW direct-drive wind turbines coupled with rooftop solar to flatten peak demand and shave night kiln power costs.
+                </p>
+              </div>
             </div>
-            <h3 class="card__title" style="font-size: var(--font-size-xl); margin-bottom: var(--space-3);">Ceramics & Tiles Manufacturing</h3>
-            <p class="card__text" style="color: var(--color-text-secondary); line-height: 1.6; margin-bottom: var(--space-6);">
-              <strong>Core Challenge:</strong> Non-stop kiln operation requiring continuous power, heavy peak demand penalties, and high night-shift power costs.
-            </p>
+
+            <div style="background: var(--color-bg-light); padding: var(--space-6); border-radius: var(--radius-lg); border: 1px solid var(--glass-border);">
+              <span style="font-size: 12px; font-weight: 700; color: var(--color-primary); text-transform: uppercase;">Real Case Study Result</span>
+              <h4 style="font-size: var(--font-size-lg); margin-top: 4px; margin-bottom: var(--space-4);">Morbi Ceramic Zone Plant</h4>
+              
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: var(--space-6);">
+                <div style="background: #ffffff; padding: 10px; border-radius: 6px;">
+                  <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">System Size</span>
+                  <strong style="font-size: 15px; color: var(--color-text-primary);">150kW Wind + 50kW Solar</strong>
+                </div>
+                <div style="background: #ffffff; padding: 10px; border-radius: 6px;">
+                  <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">Monthly Savings</span>
+                  <strong style="font-size: 15px; color: #10b981;">₹3.5 Lakhs / month</strong>
+                </div>
+              </div>
+
+              <a href="/solutions/ceramics-industry" class="btn btn--primary" style="width: 100%; justify-content: center;">
+                View Full Ceramics Case Study →
+              </a>
+            </div>
           </div>
-          <a href="/solutions/ceramics-industry" class="btn btn--primary" style="justify-content: center; width: 100%;">
-            Explore Ceramics Solutions →
-          </a>
         </div>
 
         {/* Industry 3: Chemical & Processing */}
-        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: var(--space-8); border-top: 4px solid var(--color-primary);">
-          <div>
-            <div class="card__icon" style="margin-bottom: var(--space-4);">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M10 2v7.31L4.75 20.5a2 2 0 0 0 1.71 3h11.08a2 2 0 0 0 1.71-3L14 9.31V2" />
-                <line x1="8.5" y1="2" x2="15.5" y2="2" />
-              </svg>
+        <div class="card" style="padding: var(--space-8); border-top: 5px solid var(--color-primary); background: #ffffff; box-shadow: var(--shadow-sm);">
+          <div class="grid-2" style="gap: var(--space-8); align-items: center;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 12px; margin-bottom: var(--space-4);">
+                <div style="font-size: 2rem;">🧪</div>
+                <div>
+                  <span style="font-size: 12px; color: var(--color-primary); font-weight: 700; text-transform: uppercase;">Ankleshwar, Vapi & Bharuch Chemical Belts</span>
+                  <h3 style="font-size: var(--font-size-2xl); margin: 0;">Chemical & Processing Plants</h3>
+                </div>
+              </div>
+
+              <div style="margin-bottom: var(--space-4);">
+                <strong style="color: #ef4444; font-size: 14px; display: block; margin-bottom: 4px;">⚠️ Key Pain Points:</strong>
+                <ul style="margin: 0; padding-left: 20px; font-size: 14px; color: var(--color-text-secondary); line-height: 1.6;">
+                  <li>Corrosive chemical atmospheres and safety vents prohibiting rooftop solar mounting.</li>
+                  <li>Continuous 24/7 power draw for Effluent Treatment Plants (ETP) and reactors.</li>
+                  <li>Strict ESG and corporate carbon-reduction mandates from international clients.</li>
+                </ul>
+              </div>
+
+              <div>
+                <strong style="color: var(--color-primary); font-size: 14px; display: block; margin-bottom: 4px;">⚡ OnLoop Wind-Hybrid Solution:</strong>
+                <p style="font-size: 14px; color: var(--color-text-secondary); margin-bottom: 0; line-height: 1.5;">
+                  150kW–500kW perimeter-mounted wind turbines with anti-corrosion marine coatings, combined with ground-mounted solar.
+                </p>
+              </div>
             </div>
-            <h3 class="card__title" style="font-size: var(--font-size-xl); margin-bottom: var(--space-3);">Chemical & Processing Plants</h3>
-            <p class="card__text" style="color: var(--color-text-secondary); line-height: 1.6; margin-bottom: var(--space-6);">
-              <strong>Core Challenge:</strong> Strict uptime requirements, high baseline electrical draw, and environmental carbon reduction compliance.
-            </p>
+
+            <div style="background: var(--color-bg-light); padding: var(--space-6); border-radius: var(--radius-lg); border: 1px solid var(--glass-border);">
+              <span style="font-size: 12px; font-weight: 700; color: var(--color-primary); text-transform: uppercase;">Real Case Study Result</span>
+              <h4 style="font-size: var(--font-size-lg); margin-top: 4px; margin-bottom: var(--space-4);">Ankleshwar GIDC Processing Facility</h4>
+              
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: var(--space-6);">
+                <div style="background: #ffffff; padding: 10px; border-radius: 6px;">
+                  <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">System Size</span>
+                  <strong style="font-size: 15px; color: var(--color-text-primary);">200kW Hybrid System</strong>
+                </div>
+                <div style="background: #ffffff; padding: 10px; border-radius: 6px;">
+                  <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">Monthly Savings</span>
+                  <strong style="font-size: 15px; color: #10b981;">₹4.0 Lakhs / month</strong>
+                </div>
+              </div>
+
+              <a href="/solutions/chemical-industry" class="btn btn--primary" style="width: 100%; justify-content: center;">
+                View Full Chemical Case Study →
+              </a>
+            </div>
           </div>
-          <a href="/solutions/chemical-industry" class="btn btn--primary" style="justify-content: center; width: 100%;">
-            Explore Chemical Solutions →
-          </a>
         </div>
 
         {/* Industry 4: Food Processing */}
-        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: var(--space-8); border-top: 4px solid var(--color-primary);">
-          <div>
-            <div class="card__icon" style="margin-bottom: var(--space-4);">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-              </svg>
+        <div class="card" style="padding: var(--space-8); border-top: 5px solid var(--color-primary); background: #ffffff; box-shadow: var(--shadow-sm);">
+          <div class="grid-2" style="gap: var(--space-8); align-items: center;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 12px; margin-bottom: var(--space-4);">
+                <div style="font-size: 2rem;">🌾</div>
+                <div>
+                  <span style="font-size: 12px; color: var(--color-primary); font-weight: 700; text-transform: uppercase;">Anand & Rajkot Agro Belts</span>
+                  <h3 style="font-size: var(--font-size-2xl); margin: 0;">Food Processing Units</h3>
+                </div>
+              </div>
+
+              <div style="margin-bottom: var(--space-4);">
+                <strong style="color: #ef4444; font-size: 14px; display: block; margin-bottom: 4px;">⚠️ Key Pain Points:</strong>
+                <ul style="margin: 0; padding-left: 20px; font-size: 14px; color: var(--color-text-secondary); line-height: 1.6;">
+                  <li>Monsoon harvest processing spikes occurring precisely when solar panel generation drops by 60%.</li>
+                  <li>Strict temperature control compliance requiring unbroken refrigeration power.</li>
+                  <li>Heavy seasonal grid surcharge rates during peak harvest months.</li>
+                </ul>
+              </div>
+
+              <div>
+                <strong style="color: var(--color-primary); font-size: 14px; display: block; margin-bottom: 4px;">⚡ OnLoop Wind-Hybrid Solution:</strong>
+                <p style="font-size: 14px; color: var(--color-text-secondary); margin-bottom: 0; line-height: 1.5;">
+                  50kW–150kW wind-heavy hybrid plants engineered to tap peak monsoon wind speeds when solar output is lowest.
+                </p>
+              </div>
             </div>
-            <h3 class="card__title" style="font-size: var(--font-size-xl); margin-bottom: var(--space-3);">Food Processing Units</h3>
-            <p class="card__text" style="color: var(--color-text-secondary); line-height: 1.6; margin-bottom: var(--space-6);">
-              <strong>Core Challenge:</strong> Seasonal harvest production spikes, heavy monsoon electricity demand when solar output drops, and strict thermal standards.
-            </p>
+
+            <div style="background: var(--color-bg-light); padding: var(--space-6); border-radius: var(--radius-lg); border: 1px solid var(--glass-border);">
+              <span style="font-size: 12px; font-weight: 700; color: var(--color-primary); text-transform: uppercase;">Real Case Study Result</span>
+              <h4 style="font-size: var(--font-size-lg); margin-top: 4px; margin-bottom: var(--space-4);">Anand Dairy & Agro Unit</h4>
+              
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: var(--space-6);">
+                <div style="background: #ffffff; padding: 10px; border-radius: 6px;">
+                  <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">System Size</span>
+                  <strong style="font-size: 15px; color: var(--color-text-primary);">75kW Wind + 30kW Solar</strong>
+                </div>
+                <div style="background: #ffffff; padding: 10px; border-radius: 6px;">
+                  <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">Monthly Savings</span>
+                  <strong style="font-size: 15px; color: #10b981;">₹1.8 Lakhs / month</strong>
+                </div>
+              </div>
+
+              <a href="/solutions/food-processing" class="btn btn--primary" style="width: 100%; justify-content: center;">
+                View Full Food Processing Case Study →
+              </a>
+            </div>
           </div>
-          <a href="/solutions/food-processing" class="btn btn--primary" style="justify-content: center; width: 100%;">
-            Explore Food Processing →
-          </a>
         </div>
 
         {/* Industry 5: Cold Storage */}
-        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: var(--space-8); border-top: 4px solid var(--color-primary);">
-          <div>
-            <div class="card__icon" style="margin-bottom: var(--space-4);">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 3v18M3 12h18" />
-                <path d="M5.3 5.3l13.4 13.4M5.3 18.7L18.7 5.3" />
-              </svg>
-            </div>
-            <h3 class="card__title" style="font-size: var(--font-size-xl); margin-bottom: var(--space-3);">Cold Storage & Refrigeration</h3>
-            <p class="card__text" style="color: var(--color-text-secondary); line-height: 1.6; margin-bottom: var(--space-6);">
-              <strong>Core Challenge:</strong> Constant 24/7 refrigeration compressor loads driving high nighttime grid bills that solar power cannot reduce.
-            </p>
-          </div>
-          <a href="/solutions/cold-storage" class="btn btn--primary" style="justify-content: center; width: 100%;">
-            Explore Cold Storage →
-          </a>
-        </div>
+        <div class="card" style="padding: var(--space-8); border-top: 5px solid var(--color-primary); background: #ffffff; box-shadow: var(--shadow-sm);">
+          <div class="grid-2" style="gap: var(--space-8); align-items: center;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 12px; margin-bottom: var(--space-4);">
+                <div style="font-size: 2rem;">❄️</div>
+                <div>
+                  <span style="font-size: 12px; color: var(--color-primary); font-weight: 700; text-transform: uppercase;">Rajkot & Saurashtra Cold Chains</span>
+                  <h3 style="font-size: var(--font-size-2xl); margin: 0;">Cold Storage & Refrigeration</h3>
+                </div>
+              </div>
 
-        {/* Portfolio CTA Card */}
-        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: var(--space-8); background: var(--color-bg-light); border: 2px dashed var(--color-primary);">
-          <div>
-            <h3 class="card__title" style="font-size: var(--font-size-xl); margin-bottom: var(--space-3);">Proven Case Studies</h3>
-            <p class="card__text" style="color: var(--color-text-secondary); line-height: 1.6; margin-bottom: var(--space-6);">
-              See real financial ROI metrics, monthly savings numbers, and payback periods from actual installed plants across Gujarat.
-            </p>
+              <div style="margin-bottom: var(--space-4);">
+                <strong style="color: #ef4444; font-size: 14px; display: block; margin-bottom: 4px;">⚠️ Key Pain Points:</strong>
+                <ul style="margin: 0; padding-left: 20px; font-size: 14px; color: var(--color-text-secondary); line-height: 1.6;">
+                  <li>Continuous 24/7 compressor loads operating non-stop through hot summer nights.</li>
+                  <li>High night grid tariffs driving massive monthly power bills that daytime solar cannot alter.</li>
+                  <li>Inventory spoilage risk if industrial grid power experiences extended outages.</li>
+                </ul>
+              </div>
+
+              <div>
+                <strong style="color: var(--color-primary); font-size: 14px; display: block; margin-bottom: 4px;">⚡ OnLoop Wind-Hybrid Solution:</strong>
+                <p style="font-size: 14px; color: var(--color-text-secondary); margin-bottom: 0; line-height: 1.5;">
+                  75kW–250kW wind turbines supplying continuous overnight power to keep cold rooms chilled at lowest per-unit cost.
+                </p>
+              </div>
+            </div>
+
+            <div style="background: var(--color-bg-light); padding: var(--space-6); border-radius: var(--radius-lg); border: 1px solid var(--glass-border);">
+              <span style="font-size: 12px; font-weight: 700; color: var(--color-primary); text-transform: uppercase;">Real Case Study Result</span>
+              <h4 style="font-size: var(--font-size-lg); margin-top: 4px; margin-bottom: var(--space-4);">Rajkot Agro Cold Storage Facility</h4>
+              
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: var(--space-6);">
+                <div style="background: #ffffff; padding: 10px; border-radius: 6px;">
+                  <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">System Size</span>
+                  <strong style="font-size: 15px; color: var(--color-text-primary);">100kW Wind + 40kW Solar</strong>
+                </div>
+                <div style="background: #ffffff; padding: 10px; border-radius: 6px;">
+                  <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">Monthly Savings</span>
+                  <strong style="font-size: 15px; color: #10b981;">₹2.1 Lakhs / month</strong>
+                </div>
+              </div>
+
+              <a href="/solutions/cold-storage" class="btn btn--primary" style="width: 100%; justify-content: center;">
+                View Full Cold Storage Case Study →
+              </a>
+            </div>
           </div>
-          <a href="/projects" class="btn btn--secondary" style="justify-content: center; width: 100%;">
-            View Case Studies Portfolio →
-          </a>
         </div>
 
       </div>
     </div>
   </section>
 
-  {/* CTA Section */}
+  {/* Section 4: Simple 3-Step Process */}
+  <section class="content-section fade-in" style="background: var(--color-bg-light); padding: var(--space-12) 0;">
+    <div class="container">
+      <div class="content-section__header" style="max-width: 800px;">
+        <span class="content-section__label">Simple 3-Step Pathway</span>
+        <h2 class="content-section__title">How to Start</h2>
+        <p class="content-section__text">No complex tender paperwork. A direct, engineering-first path to lower factory power bills.</p>
+      </div>
+
+      <div class="grid-3" style="gap: var(--space-6);">
+        <div class="card" style="background: #ffffff; padding: var(--space-6); text-align: center;">
+          <div style="font-size: 1.8rem; font-weight: 800; color: var(--color-primary); margin-bottom: 8px;">01</div>
+          <h4 style="font-size: var(--font-size-lg); margin-bottom: 8px;">1. Share Electricity Bill</h4>
+          <p style="font-size: 14px; color: var(--color-text-secondary); margin: 0; line-height: 1.5;">Send your recent utility bill. We analyze your demand charges, shift schedules, and per-unit tariff rates.</p>
+        </div>
+
+        <div class="card" style="background: #ffffff; padding: var(--space-6); text-align: center;">
+          <div style="font-size: 1.8rem; font-weight: 800; color: var(--color-primary); margin-bottom: 8px;">02</div>
+          <h4 style="font-size: var(--font-size-lg); margin-bottom: 8px;">2. Free Wind Feasibility Report</h4>
+          <p style="font-size: 14px; color: var(--color-text-secondary); margin: 0; line-height: 1.5;">Our engineers evaluate your site's wind resource data and load curve at zero cost or obligation.</p>
+        </div>
+
+        <div class="card" style="background: #ffffff; padding: var(--space-6); text-align: center;">
+          <div style="font-size: 1.8rem; font-weight: 800; color: var(--color-primary); margin-bottom: 8px;">03</div>
+          <h4 style="font-size: var(--font-size-lg); margin-bottom: 8px;">3. Turnkey Captive Execution</h4>
+          <p style="font-size: 14px; color: var(--color-text-secondary); margin: 0; line-height: 1.5;">We design, supply, install, and commission your site-specific hybrid plant to start cutting bills immediately.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Section 5: Final CTA Section */}
   <section class="cta-section fade-in">
     <div class="container">
       <div class="cta-section__content">
-        <h2 class="cta-section__title">Ready to see what wind + hybrid can do for your factory?</h2>
-        <p class="cta-section__text">Tell us your industry sector and average monthly electricity bill. Our engineering team will run a free, site-specific wind feasibility study tailored to your operating hours.</p>
+        <h2 class="cta-section__title">Ready to cut your factory's power bill?</h2>
+        <p class="cta-section__text">Share your electricity bill details with our engineering team. We'll return a site-specific wind & hybrid feasibility report — free, no obligation.</p>
         <a href="/contact" class="btn btn--primary btn--large">
-          Request Free Industry Feasibility Study
+          Get Your Free Feasibility Study
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
             <line x1="5" y1="12" x2="19" y2="12" />
             <polyline points="12 5 19 12 12 19" />

@@ -6,6 +6,7 @@ const Contact = () => {
         phone: '',
         email: '',
         company: '',
+        location: '',
         monthlyBill: '10L-25L',
         industryType: 'Textile',
         primaryObjective: 'Reduce Bill',
@@ -33,6 +34,7 @@ const Contact = () => {
                     "Phone Number": formData.phone,
                     "Email Address": formData.email,
                     "Company / Facility Name": formData.company,
+                    "Factory Location": formData.location,
                     "Average Monthly Bill (₹)": formData.monthlyBill,
                     "Industry Sector": formData.industryType,
                     "Primary Objective": formData.primaryObjective,
@@ -50,6 +52,7 @@ const Contact = () => {
                     phone: '',
                     email: '',
                     company: '',
+                    location: '',
                     monthlyBill: '10L-25L',
                     industryType: 'Textile',
                     primaryObjective: 'Reduce Bill',
@@ -79,7 +82,7 @@ const Contact = () => {
                 </div>
             </section>
 
-            {/* Contact Info & MSME Lead Gen Form */}
+            {/* Contact Info, Timeline & Form */}
             <section className="content-section">
                 <div className="container">
                     <div className="grid-2" style={{ gap: 'var(--space-12)' }}>
@@ -90,7 +93,23 @@ const Contact = () => {
                                 Whether you run a textile dyeing unit in Surat, a ceramics plant in Morbi, a chemical unit in Ankleshwar, or a cold storage facility — we help choose and engineer the right captive renewable plant for your electricity bill.
                             </p>
 
-                            <div className="feature-list">
+                            {/* Direct Contact Feature List */}
+                            <div className="feature-list" style={{ marginBottom: 'var(--space-8)' }}>
+                                {/* WhatsApp Instant Option */}
+                                <div className="feature-item" style={{ background: 'rgba(37, 211, 102, 0.08)', border: '1px solid rgba(37, 211, 102, 0.3)', borderRadius: 'var(--radius-lg)' }}>
+                                    <div className="feature-item__icon" style={{ background: '#25D366', color: 'white' }}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                                        </svg>
+                                    </div>
+                                    <span className="feature-item__text">
+                                        <strong>Instant WhatsApp Chat</strong><br />
+                                        <a href="https://wa.me/919870093424?text=Hi%20OnLoop%20Energy,%20I%20would%20like%20to%20get%20a%20feasibility%20report%20for%20my%20factory." target="_blank" rel="noopener noreferrer" style={{ color: '#15803d', fontWeight: '700', textDecoration: 'underline' }}>
+                                            Chat on WhatsApp (+91 98700 93424) →
+                                        </a>
+                                    </span>
+                                </div>
+
                                 <div className="feature-item">
                                     <div className="feature-item__icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
@@ -99,11 +118,11 @@ const Contact = () => {
                                         </svg>
                                     </div>
                                     <span className="feature-item__text">
-                                        <strong>Phone</strong><br />
-                                        +91 98700 93424<br />
-                                        +91 82004 87832
+                                        <strong>Direct Phone</strong><br />
+                                        +91 98700 93424 / +91 82004 87832
                                     </span>
                                 </div>
+
                                 <div className="feature-item">
                                     <div className="feature-item__icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
@@ -113,22 +132,41 @@ const Contact = () => {
                                         </svg>
                                     </div>
                                     <span className="feature-item__text">
-                                        <strong>Email</strong><br />
+                                        <strong>Email Support</strong><br />
                                         info@onloopenergy.com
                                     </span>
                                 </div>
-                                <div className="feature-item">
-                                    <div className="feature-item__icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                                            <circle cx="12" cy="10" r="3" />
-                                        </svg>
+                            </div>
+
+                            {/* What Happens Next Block */}
+                            <div style={{ background: '#ffffff', padding: 'var(--space-6)', borderRadius: 'var(--radius-xl)', border: '1px solid var(--glass-border)', boxShadow: 'var(--shadow-sm)' }}>
+                                <span style={{ fontSize: '11px', fontWeight: '700', color: 'var(--color-primary)', textTransform: 'uppercase', letterSpacing: '1px' }}>Transparent Process</span>
+                                <h3 style={{ fontSize: 'var(--font-size-lg)', marginTop: '4px', marginBottom: 'var(--space-4)' }}>What happens next?</h3>
+
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                                    <div style={{ display: 'flex', gap: '12px' }}>
+                                        <div style={{ width: '28px', height: '28px', borderRadius: '50%', background: 'rgba(31, 183, 166, 0.15)', color: 'var(--color-primary)', fontWeight: '800', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '13px', flexShrink: 0 }}>1</div>
+                                        <div>
+                                            <strong style={{ fontSize: '14px', display: 'block', color: 'var(--color-text-primary)' }}>Engineering Review (Within 24 Hours)</strong>
+                                            <span style={{ fontSize: '13px', color: 'var(--color-text-secondary)' }}>Our engineers analyze your monthly utility bill and tariff structure.</span>
+                                        </div>
                                     </div>
-                                    <span className="feature-item__text">
-                                        <strong>Office</strong><br />
-                                        16, Balaji Industrial Park<br />Kathwada, Ahmedabad<br />Daskroi, Gujarat, 382430
-                                    </span>
+
+                                    <div style={{ display: 'flex', gap: '12px' }}>
+                                        <div style={{ width: '28px', height: '28px', borderRadius: '50%', background: 'rgba(31, 183, 166, 0.15)', color: 'var(--color-primary)', fontWeight: '800', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '13px', flexShrink: 0 }}>2</div>
+                                        <div>
+                                            <strong style={{ fontSize: '14px', display: 'block', color: 'var(--color-text-primary)' }}>Site Resource Modeling</strong>
+                                            <span style={{ fontSize: '13px', color: 'var(--color-text-secondary)' }}>We evaluate wind velocity data and land availability for your factory location.</span>
+                                        </div>
+                                    </div>
+
+                                    <div style={{ display: 'flex', gap: '12px' }}>
+                                        <div style={{ width: '28px', height: '28px', borderRadius: '50%', background: 'rgba(31, 183, 166, 0.15)', color: 'var(--color-primary)', fontWeight: '800', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '13px', flexShrink: 0 }}>3</div>
+                                        <div>
+                                            <strong style={{ fontSize: '14px', display: 'block', color: 'var(--color-text-primary)' }}>Findings & Consultation Call</strong>
+                                            <span style={{ fontSize: '13px', color: 'var(--color-text-secondary)' }}>We schedule a call to share custom hybrid recommendations — no obligation, no pressure.</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -194,13 +232,8 @@ const Contact = () => {
 
                                     <div className="grid-2" style={{ gap: 'var(--space-4)', marginBottom: 'var(--space-4)' }}>
                                         <div className="form-group" style={{ marginBottom: 0 }}>
-                                            <label className="form-label">Avg. Monthly Electricity Bill (₹)</label>
-                                            <select name="monthlyBill" className="form-input" value={formData.monthlyBill} onChange={handleChange}>
-                                                <option value="10L-25L">₹10 Lakhs – ₹25 Lakhs / month</option>
-                                                <option value="25L-50L">₹25 Lakhs – ₹50 Lakhs / month</option>
-                                                <option value="50L-1Cr">₹50 Lakhs – ₹1 Crore / month</option>
-                                                <option value=">1Cr">More than ₹1 Crore / month</option>
-                                            </select>
+                                            <label className="form-label">Factory Location (City/District) *</label>
+                                            <input type="text" name="location" className="form-input" required placeholder="e.g. Surat / Morbi / Ankleshwar" value={formData.location} onChange={handleChange} />
                                         </div>
                                         <div className="form-group" style={{ marginBottom: 0 }}>
                                             <label className="form-label">Industry Type</label>
@@ -219,18 +252,29 @@ const Contact = () => {
                                         </div>
                                     </div>
 
-                                    <div className="form-group" style={{ marginBottom: 'var(--space-4)' }}>
-                                        <label className="form-label">Primary Objective</label>
-                                        <select name="primaryObjective" className="form-input" value={formData.primaryObjective} onChange={handleChange}>
-                                            <option value="Reduce Bill">Reduce Electricity Bill</option>
-                                            <option value="Power Reliability">Power Reliability / Backup</option>
-                                            <option value="Carbon Neutrality">Carbon Neutrality / ESG</option>
-                                        </select>
+                                    <div className="grid-2" style={{ gap: 'var(--space-4)', marginBottom: 'var(--space-4)' }}>
+                                        <div className="form-group" style={{ marginBottom: 0 }}>
+                                            <label className="form-label">Avg. Monthly Electricity Bill (₹)</label>
+                                            <select name="monthlyBill" className="form-input" value={formData.monthlyBill} onChange={handleChange}>
+                                                <option value="10L-25L">₹10 Lakhs – ₹25 Lakhs / month</option>
+                                                <option value="25L-50L">₹25 Lakhs – ₹50 Lakhs / month</option>
+                                                <option value="50L-1Cr">₹50 Lakhs – ₹1 Crore / month</option>
+                                                <option value=">1Cr">More than ₹1 Crore / month</option>
+                                            </select>
+                                        </div>
+                                        <div className="form-group" style={{ marginBottom: 0 }}>
+                                            <label className="form-label">Primary Concern / Goal</label>
+                                            <select name="primaryObjective" className="form-input" value={formData.primaryObjective} onChange={handleChange}>
+                                                <option value="Reduce Bill">Reduce Electricity Bill</option>
+                                                <option value="Power Reliability">Power Reliability / Backup</option>
+                                                <option value="Carbon Neutrality">Carbon Neutrality / ESG</option>
+                                            </select>
+                                        </div>
                                     </div>
 
                                     <div className="form-group" style={{ marginBottom: 'var(--space-6)' }}>
                                         <label className="form-label">Additional Site Context / Message</label>
-                                        <textarea name="message" className="form-textarea" placeholder="Tell us about your operating hours, shifts, or specific energy goals..." style={{ height: '90px' }} value={formData.message} onChange={handleChange}></textarea>
+                                        <textarea name="message" className="form-textarea" placeholder="Tell us about your operating hours, shifts, or specific energy goals..." style={{ height: '80px' }} value={formData.message} onChange={handleChange}></textarea>
                                     </div>
 
                                     <button
@@ -239,7 +283,7 @@ const Contact = () => {
                                         style={{ width: '100%', justifyContent: 'center' }}
                                         disabled={status === 'sending'}
                                     >
-                                        {status === 'sending' ? 'Submitting Request...' : 'Submit Feasibility Request'}
+                                        {status === 'sending' ? 'Submitting Request...' : 'Request Free Wind Feasibility Study'}
                                     </button>
                                 </form>
                             </div>

@@ -11,7 +11,7 @@ const Footer = () => {
               <img src="/images/logo.svg" alt="OnLoop Energy - Commercial Hybrid Energy Systems EPC" style={{ height: '42px', width: 'auto', marginBottom: '20px' }} />
             </a>
             <p className="footer__description">
-              Engineering small wind and hybrid (wind + solar) energy systems exclusively for Commercial & Industrial facilities across India.
+              Engineering captive wind and hybrid (wind + solar) energy systems exclusively for Commercial & Industrial facilities across India.
             </p>
           </div>
 
@@ -31,7 +31,7 @@ const Footer = () => {
             <div>
               <h4 className="footer__title">Technology</h4>
               <ul className="footer__list">
-                <li><a href="/wind" className="footer__link">Small Wind Turbines</a></li>
+                <li><a href="/wind" className="footer__link">Captive Wind Energy</a></li>
                 <li><a href="/hybrid" className="footer__link">Hybrid (Wind + Solar)</a></li>
                 <li><a href="/solar" className="footer__link" style={{opacity: 0.7, fontSize: '0.9em'}}>Solar (within Hybrid)</a></li>
               </ul>
