@@ -116,11 +116,10 @@ This section defines hard constraints on positioning across all content and mark
 
 ---
 
-## 8. Lead Qualification Criteria (MSME Form)
+## 8. Lead Qualification Criteria (C&I & MSME Form)
 
-- **Average Monthly Electricity Bill:** <₹50k | ₹50k–2L | ₹2L–5L | >₹5L
-- **Industry Type:** Textile Dyeing/Processing | Food Processing | Cold Storage | Foundries | Light Engineering | Warehousing/Logistics | Commercial Building | Other
-- **Space Available:** 500+ sq. ft. open/rooftop space (Yes/No)
+- **Average Monthly Electricity Bill:** ₹10L–₹25L | ₹25L–₹50L | ₹50L–₹1Cr | >₹1Cr
+- **Industry Type:** Textile Dyeing | Ceramics/Tiles | Chemical/Processing | Food Processing | Cold Storage | Foundries | Light Engineering | Warehousing/Logistics | Commercial Complex | Other
 - **Primary Goal:** Reduce Electricity Bill | Power Reliability | Carbon Neutrality / ESG
 
 

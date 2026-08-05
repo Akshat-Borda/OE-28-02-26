@@ -1,0 +1,211 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+---
+
+<AppLayout title="Project Case Studies & ROI Portfolio | OnLoop Energy" description="Explore real project case studies, monthly electricity bill savings, and CapEx payback metrics from OnLoop Energy's small wind and hybrid installations for C&I and MSME factories in Gujarat.">
+<div>
+
+  {/* Hero Section */}
+  <section class="hero hero--short">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__badge" style="margin-top: var(--space-12);">
+          <span class="hero__badge-dot"></span>
+          Proven Project Portfolio
+        </div>
+        <h1 class="hero__title">
+          Real projects. Real results.<br />
+          <span class="hero__title-highlight">See how we cut power costs for private businesses.</span>
+        </h1>
+        <p class="hero__subtitle">Every project below was evaluated on site-specific wind data, engineered for an industrial load profile, and executed turnkey by OnLoop Energy.</p>
+      </div>
+    </div>
+  </section>
+
+  {/* Projects Grid */}
+  <section class="content-section fade-in">
+    <div class="container">
+      <div class="content-section__header">
+        <span class="content-section__label">Financial Proven Metrics</span>
+        <h2 class="content-section__title">Featured Industrial Case Studies</h2>
+        <p class="content-section__text">Explore real system sizes, monthly tariff savings, and payback periods achieved across Gujarat’s major industrial clusters.</p>
+      </div>
+
+      <div class="grid-3" style="gap: var(--space-8);">
+        
+        {/* Case Study 1: Surat Textile */}
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: var(--space-8); border-top: 4px solid var(--color-primary); background: #ffffff;">
+          <div>
+            <span style="font-size: 11px; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 1px;">Sachin GIDC, Surat</span>
+            <h3 class="card__title" style="font-size: var(--font-size-xl); margin-top: 4px; margin-bottom: var(--space-3);">Textile Dyeing Unit</h3>
+            <p class="card__text" style="color: var(--color-text-secondary); font-size: 14px; line-height: 1.6; margin-bottom: var(--space-4);">
+              Night shift dyeing jet operations were driving high grid tariffs. Installed 50kW wind + 20kW solar hybrid plant.
+            </p>
+            <div style="background: var(--color-bg-light); padding: var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-4);">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                <span style="font-size: 12px; color: var(--color-text-secondary);">Monthly Savings:</span>
+                <strong style="color: var(--color-primary); font-weight: 700;">₹1.2 Lakhs/mo</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                <span style="font-size: 12px; color: var(--color-text-secondary);">Payback Period:</span>
+                <strong style="color: #10b981; font-weight: 700;">3.2 Years</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span style="font-size: 12px; color: var(--color-text-secondary);">System Size:</span>
+                <span style="font-size: 12px; font-weight: 600;">50kW Wind + 20kW Solar</span>
+              </div>
+            </div>
+          </div>
+          <a href="/solutions/textile-industry" class="btn btn--secondary" style="justify-content: center; width: 100%;">
+            Read Textile Case Study →
+          </a>
+        </div>
+
+        {/* Case Study 2: Morbi Ceramics */}
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: var(--space-8); border-top: 4px solid var(--color-primary); background: #ffffff;">
+          <div>
+            <span style="font-size: 11px; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 1px;">Morbi Industrial Belt</span>
+            <h3 class="card__title" style="font-size: var(--font-size-xl); margin-top: 4px; margin-bottom: var(--space-3);">Vitrified Tile Plant</h3>
+            <p class="card__text" style="color: var(--color-text-secondary); font-size: 14px; line-height: 1.6; margin-bottom: var(--space-4);">
+              Continuous 24/7 roller kiln load driving heavy peak demand surcharges. Installed 150kW direct-drive wind + 50kW solar.
+            </p>
+            <div style="background: var(--color-bg-light); padding: var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-4);">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                <span style="font-size: 12px; color: var(--color-text-secondary);">Monthly Savings:</span>
+                <strong style="color: var(--color-primary); font-weight: 700;">₹3.5 Lakhs/mo</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                <span style="font-size: 12px; color: var(--color-text-secondary);">Payback Period:</span>
+                <strong style="color: #10b981; font-weight: 700;">3.0 Years</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span style="font-size: 12px; color: var(--color-text-secondary);">System Size:</span>
+                <span style="font-size: 12px; font-weight: 600;">150kW Wind + 50kW Solar</span>
+              </div>
+            </div>
+          </div>
+          <a href="/solutions/ceramics-industry" class="btn btn--secondary" style="justify-content: center; width: 100%;">
+            Read Ceramics Case Study →
+          </a>
+        </div>
+
+        {/* Case Study 3: Ankleshwar Chemical */}
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: var(--space-8); border-top: 4px solid var(--color-primary); background: #ffffff;">
+          <div>
+            <span style="font-size: 11px; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 1px;">Ankleshwar GIDC</span>
+            <h3 class="card__title" style="font-size: var(--font-size-xl); margin-top: 4px; margin-bottom: var(--space-3);">Specialty Chemical Plant</h3>
+            <p class="card__text" style="color: var(--color-text-secondary); font-size: 14px; line-height: 1.6; margin-bottom: var(--space-4);">
+              Rooftop unusable due to acid vents. Installed 200kW perimeter wind-solar hybrid system meeting safety standards.
+            </p>
+            <div style="background: var(--color-bg-light); padding: var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-4);">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                <span style="font-size: 12px; color: var(--color-text-secondary);">Monthly Savings:</span>
+                <strong style="color: var(--color-primary); font-weight: 700;">₹4.0 Lakhs/mo</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                <span style="font-size: 12px; color: var(--color-text-secondary);">Payback Period:</span>
+                <strong style="color: #10b981; font-weight: 700;">3.4 Years</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span style="font-size: 12px; color: var(--color-text-secondary);">System Size:</span>
+                <span style="font-size: 12px; font-weight: 600;">200kW Hybrid System</span>
+              </div>
+            </div>
+          </div>
+          <a href="/solutions/chemical-industry" class="btn btn--secondary" style="justify-content: center; width: 100%;">
+            Read Chemical Case Study →
+          </a>
+        </div>
+
+        {/* Case Study 4: Anand Food Processing */}
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: var(--space-8); border-top: 4px solid var(--color-primary); background: #ffffff;">
+          <div>
+            <span style="font-size: 11px; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 1px;">Anand Agro Belt</span>
+            <h3 class="card__title" style="font-size: var(--font-size-xl); margin-top: 4px; margin-bottom: var(--space-3);">Fruit Dehydration Unit</h3>
+            <p class="card__text" style="color: var(--color-text-secondary); font-size: 14px; line-height: 1.6; margin-bottom: var(--space-4);">
+              Monsoon harvest solar drop forced heavy grid power usage. Installed 75kW wind + 30kW solar hybrid plant.
+            </p>
+            <div style="background: var(--color-bg-light); padding: var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-4);">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                <span style="font-size: 12px; color: var(--color-text-secondary);">Monthly Savings:</span>
+                <strong style="color: var(--color-primary); font-weight: 700;">₹1.8 Lakhs/mo</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                <span style="font-size: 12px; color: var(--color-text-secondary);">Payback Period:</span>
+                <strong style="color: #10b981; font-weight: 700;">3.3 Years</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span style="font-size: 12px; color: var(--color-text-secondary);">System Size:</span>
+                <span style="font-size: 12px; font-weight: 600;">75kW Wind + 30kW Solar</span>
+              </div>
+            </div>
+          </div>
+          <a href="/solutions/food-processing" class="btn btn--secondary" style="justify-content: center; width: 100%;">
+            Read Food Case Study →
+          </a>
+        </div>
+
+        {/* Case Study 5: Rajkot Cold Storage */}
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: var(--space-8); border-top: 4px solid var(--color-primary); background: #ffffff;">
+          <div>
+            <span style="font-size: 11px; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 1px;">Gondal Road, Rajkot</span>
+            <h3 class="card__title" style="font-size: var(--font-size-xl); margin-top: 4px; margin-bottom: var(--space-3);">Agricultural Cold Storage</h3>
+            <p class="card__text" style="color: var(--color-text-secondary); font-size: 14px; line-height: 1.6; margin-bottom: var(--space-4);">
+              24/7 ammonia compressor load causing massive nighttime electricity bills. Installed 100kW wind + 40kW solar hybrid.
+            </p>
+            <div style="background: var(--color-bg-light); padding: var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-4);">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                <span style="font-size: 12px; color: var(--color-text-secondary);">Monthly Savings:</span>
+                <strong style="color: var(--color-primary); font-weight: 700;">₹2.1 Lakhs/mo</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                <span style="font-size: 12px; color: var(--color-text-secondary);">Payback Period:</span>
+                <strong style="color: #10b981; font-weight: 700;">3.1 Years</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span style="font-size: 12px; color: var(--color-text-secondary);">System Size:</span>
+                <span style="font-size: 12px; font-weight: 600;">100kW Wind + 40kW Solar</span>
+              </div>
+            </div>
+          </div>
+          <a href="/solutions/cold-storage" class="btn btn--secondary" style="justify-content: center; width: 100%;">
+            Read Cold Storage Case Study →
+          </a>
+        </div>
+
+        {/* Custom Feasibility Card */}
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: var(--space-8); background: var(--color-bg-light); border: 2px dashed var(--color-primary);">
+          <div>
+            <h3 class="card__title" style="font-size: var(--font-size-xl); margin-bottom: var(--space-3);">Your Factory Next?</h3>
+            <p class="card__text" style="color: var(--color-text-secondary); line-height: 1.6; margin-bottom: var(--space-6);">
+              Let our engineering team evaluate your site’s wind resource and load profile — at zero cost.
+            </p>
+          </div>
+          <a href="/contact" class="btn btn--primary" style="justify-content: center; width: 100%;">
+            Request Feasibility Study →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  {/* CTA Section */}
+  <section class="cta-section fade-in">
+    <div class="container">
+      <div class="cta-section__content">
+        <h2 class="cta-section__title">Ready to see what we can do for your factory?</h2>
+        <p class="cta-section__text">Share your monthly utility bill and facility location. Our engineering team will return a complete wind & hybrid financial ROI analysis in 24-48 hours.</p>
+        <a href="/contact" class="btn btn--primary btn--large">
+          Request Your Free Feasibility Study
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</div>
+</AppLayout>

@@ -24,7 +24,7 @@ const Header = () => {
             <ul className="nav__list">
               <li><a href="/" className={`nav__link ${pathname === '/' ? 'nav__link--active' : ''}`}>Home</a></li>
               <li className="nav__dropdown">
-                <span className={`nav__dropdown-toggle ${['/solar', '/wind', '/hybrid'].includes(pathname) ? 'nav__link--active' : ''}`}>
+                <span className={`nav__dropdown-toggle ${pathname.startsWith('/solutions') || ['/solar', '/wind', '/hybrid'].includes(pathname) ? 'nav__link--active' : ''}`}>
                   Solutions
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -32,40 +32,41 @@ const Header = () => {
                   </svg>
                 </span>
                 <div className="nav__dropdown-menu">
-                  <a href="/wind" className="nav__dropdown-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16">
-                      <path
-                        d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2" />
+                  <a href="/solutions" className="nav__dropdown-link" style={{ fontWeight: 'bold', color: 'var(--color-primary)' }}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16">
+                      <rect x="3" y="3" width="7" height="7" />
+                      <rect x="14" y="3" width="7" height="7" />
+                      <rect x="14" y="14" width="7" height="7" />
+                      <rect x="3" y="14" width="7" height="7" />
                     </svg>
+                    Industry Solutions Hub
+                  </a>
+                  <div style={{ height: '1px', background: 'rgba(0,0,0,0.06)', margin: '4px 0' }}></div>
+                  <a href="/solutions/textile-industry" className="nav__dropdown-link">
+                    Textile & Dyeing Mills
+                  </a>
+                  <a href="/solutions/ceramics-industry" className="nav__dropdown-link">
+                    Ceramics & Tiles Manufacturing
+                  </a>
+                  <a href="/solutions/chemical-industry" className="nav__dropdown-link">
+                    Chemical & Processing Plants
+                  </a>
+                  <a href="/solutions/food-processing" className="nav__dropdown-link">
+                    Food Processing Units
+                  </a>
+                  <a href="/solutions/cold-storage" className="nav__dropdown-link">
+                    Cold Storage & Refrigeration
+                  </a>
+                  <div style={{ height: '1px', background: 'rgba(0,0,0,0.06)', margin: '4px 0' }}></div>
+                  <a href="/wind" className="nav__dropdown-link">
                     Small Wind Turbines
                   </a>
                   <a href="/hybrid" className="nav__dropdown-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16">
-                      <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                      <path d="M2 17l10 5 10-5" />
-                      <path d="M2 12l10 5 10-5" />
-                    </svg>
                     Hybrid (Wind + Solar)
-                  </a>
-                  <a href="/solar" className="nav__dropdown-link" style={{fontSize: '0.85rem', opacity: 0.75}}>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16">
-                      <circle cx="12" cy="12" r="5" />
-                      <line x1="12" y1="1" x2="12" y2="3" />
-                      <line x1="12" y1="21" x2="12" y2="23" />
-                      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-                      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-                      <line x1="1" y1="12" x2="3" y2="12" />
-                      <line x1="21" y1="12" x2="23" y2="12" />
-                      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-                      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-                    </svg>
-                    Solar (within Hybrid)
                   </a>
                 </div>
               </li>
+              <li><a href="/projects" className={`nav__link ${pathname === '/projects' ? 'nav__link--active' : ''}`}>Case Studies</a></li>
               <li><a href="/about" className={`nav__link ${pathname === '/about' ? 'nav__link--active' : ''}`}>About Us</a></li>
               <li><a href="/faqs" className={`nav__link ${pathname === '/faqs' ? 'nav__link--active' : ''}`}>FAQs</a></li>
               <li><a href="/blogs" className={`nav__link ${pathname.startsWith('/blog') ? 'nav__link--active' : ''}`}>Blogs</a></li>
@@ -82,42 +83,24 @@ const Header = () => {
       <nav className="nav--mobile">
         <div className="nav__mobile-content">
           <a href="/" className="nav__mobile-item">Home</a>
+          <a href="/solutions" className="nav__mobile-item" style={{ fontWeight: 'bold' }}>Industry Solutions Hub</a>
 
           <div className="nav__mobile-group">
-            <div className="nav__mobile-group-title">Solutions</div>
-            <a href="/wind" className="nav__mobile-sublink">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
-                strokeLinecap="round" strokeLinejoin="round">
-                <path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2" />
-              </svg>
-              Small Wind Turbines
-            </a>
-            <a href="/hybrid" className="nav__mobile-sublink">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
-                strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                <path d="M2 17l10 5 10-5" />
-                <path d="M2 12l10 5 10-5" />
-              </svg>
-              Hybrid (Wind + Solar)
-            </a>
-            <a href="/solar" className="nav__mobile-sublink" style={{opacity: 0.75}}>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
-                strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="5" />
-                <line x1="12" y1="1" x2="12" y2="3" />
-                <line x1="12" y1="21" x2="12" y2="23" />
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-                <line x1="1" y1="12" x2="3" y2="12" />
-                <line x1="21" y1="12" x2="23" y2="12" />
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-              </svg>
-              Solar (within Hybrid)
-            </a>
+            <div className="nav__mobile-group-title">By Industry</div>
+            <a href="/solutions/textile-industry" className="nav__mobile-sublink">Textile & Dyeing Mills</a>
+            <a href="/solutions/ceramics-industry" className="nav__mobile-sublink">Ceramics & Tiles</a>
+            <a href="/solutions/chemical-industry" className="nav__mobile-sublink">Chemical & Processing</a>
+            <a href="/solutions/food-processing" className="nav__mobile-sublink">Food Processing</a>
+            <a href="/solutions/cold-storage" className="nav__mobile-sublink">Cold Storage</a>
           </div>
 
+          <div className="nav__mobile-group">
+            <div className="nav__mobile-group-title">By Technology</div>
+            <a href="/wind" className="nav__mobile-sublink">Small Wind Turbines</a>
+            <a href="/hybrid" className="nav__mobile-sublink">Hybrid (Wind + Solar)</a>
+          </div>
+
+          <a href="/projects" className="nav__mobile-item">Case Studies</a>
           <a href="/blogs" className="nav__mobile-item">Blogs</a>
           <a href="/faqs" className="nav__mobile-item">FAQs</a>
           <a href="/about" className="nav__mobile-item">About Us</a>

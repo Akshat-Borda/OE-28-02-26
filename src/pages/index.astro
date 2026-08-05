@@ -72,42 +72,93 @@ import AppLayout from '../layouts/AppLayout.astro';
         </div>
       </section>
 
-      {/* Who We Serve - Segmented Grid */}
+      {/* Solutions for Your Industry */}
       <section class="content-section content-section--light fade-in">
         <div class="container">
           <div class="content-section__header">
-            <span class="content-section__label">Target Audience</span>
-            <h2 class="content-section__title">Tailored Solutions for C&I and MSMEs</h2>
-            <p class="content-section__text">Different businesses have different operational pain points. We design captive energy architectures specifically for your operational reality.</p>
+            <span class="content-section__label">Industry Solutions</span>
+            <h2 class="content-section__title">Solutions for Your Industry</h2>
+            <p class="content-section__text">We don't sell generic energy packages. Explore how we solve power challenges for your specific manufacturing sector.</p>
           </div>
-          <div class="grid-2">
-            {/* Commercial & Industrial */}
-            <div class="card">
+
+          <div class="grid-3" style="gap: var(--space-6);">
+            {/* Textile */}
+            <a href="/solutions/textile-industry" class="card" style="text-decoration: none; color: inherit; transition: transform 0.2s ease;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
               <div class="card__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
-                  <path d="M17 18h1" />
-                  <path d="M12 18h1" />
-                  <path d="M7 18h1" />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L3 12.5V21h8.5l8.74-8.76z" />
                 </svg>
               </div>
-              <h4 class="card__title">Commercial & Industrial (Large Factories & Warehouses)</h4>
-              <p class="card__text"><strong>The Pain Points:</strong> High peak demand charges, diesel backup costs, and carbon compliance pressure.<br /><br /><strong>OnLoop Solution:</strong> Shave your peak demand with on-site captive wind + hybrid power. Reduce grid dependence and achieve energy security at scale.</p>
-            </div>
-            {/* MSMEs */}
-            <div class="card">
+              <h4 class="card__title" style="margin-bottom: var(--space-2);">Textile & Dyeing Mills</h4>
+              <p class="card__text" style="font-size: 14px; color: var(--color-text-secondary); margin-bottom: var(--space-4);">Cut night shift dyeing tariff costs in Surat & Gujarat mills.</p>
+              <span style="color: var(--color-primary); font-weight: 600; font-size: 14px;">Explore Textile Solutions →</span>
+            </a>
+
+            {/* Ceramics */}
+            <a href="/solutions/ceramics-industry" class="card" style="text-decoration: none; color: inherit; transition: transform 0.2s ease;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
               <div class="card__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
                   <path d="M3 9h18" />
                   <path d="M9 21V9" />
                 </svg>
               </div>
-              <h4 class="card__title">MSMEs (Surat Dyeing, Food Processing, Foundries, Cold Storage)</h4>
-              <p class="card__text"><strong>The Pain Points:</strong> Thin margins, rising grid tariffs (₹7–10+/unit), limited rooftop space, and lack of technical staff.<br /><br /><strong>OnLoop Solution:</strong> Compact, high-yield wind systems that work day and night. No complex operations — just reliable power that lowers per-unit production cost.</p>
-            </div>
+              <h4 class="card__title" style="margin-bottom: var(--space-2);">Ceramics & Tiles</h4>
+              <p class="card__text" style="font-size: 14px; color: var(--color-text-secondary); margin-bottom: var(--space-4);">Shave peak demand for 24/7 continuous kilns in Morbi.</p>
+              <span style="color: var(--color-primary); font-weight: 600; font-size: 14px;">Explore Ceramics Solutions →</span>
+            </a>
+
+            {/* Chemical */}
+            <a href="/solutions/chemical-industry" class="card" style="text-decoration: none; color: inherit; transition: transform 0.2s ease;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+              <div class="card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M10 2v7.31L4.75 20.5a2 2 0 0 0 1.71 3h11.08a2 2 0 0 0 1.71-3L14 9.31V2" />
+                </svg>
+              </div>
+              <h4 class="card__title" style="margin-bottom: var(--space-2);">Chemical & Processing</h4>
+              <p class="card__text" style="font-size: 14px; color: var(--color-text-secondary); margin-bottom: var(--space-4);">High-uptime perimeter wind plants in Ankleshwar & Vapi.</p>
+              <span style="color: var(--color-primary); font-weight: 600; font-size: 14px;">Explore Chemical Solutions →</span>
+            </a>
+
+            {/* Food Processing */}
+            <a href="/solutions/food-processing" class="card" style="text-decoration: none; color: inherit; transition: transform 0.2s ease;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+              <div class="card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <h4 class="card__title" style="margin-bottom: var(--space-2);">Food Processing Units</h4>
+              <p class="card__text" style="font-size: 14px; color: var(--color-text-secondary); margin-bottom: var(--space-4);">Offset monsoon harvest solar drops with peak seasonal wind.</p>
+              <span style="color: var(--color-primary); font-weight: 600; font-size: 14px;">Explore Food Solutions →</span>
+            </a>
+
+            {/* Cold Storage */}
+            <a href="/solutions/cold-storage" class="card" style="text-decoration: none; color: inherit; transition: transform 0.2s ease;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+              <div class="card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3v18M3 12h18" />
+                </svg>
+              </div>
+              <h4 class="card__title" style="margin-bottom: var(--space-2);">Cold Storage & Logistics</h4>
+              <p class="card__text" style="font-size: 14px; color: var(--color-text-secondary); margin-bottom: var(--space-4);">24/7 refrigeration compressor power in Rajkot & Saurashtra.</p>
+              <span style="color: var(--color-primary); font-weight: 600; font-size: 14px;">Explore Cold Storage →</span>
+            </a>
+
+            {/* Case Studies Card */}
+            <a href="/projects" class="card" style="text-decoration: none; color: inherit; background: var(--color-bg-light); border: 2px dashed var(--color-primary); transition: transform 0.2s ease;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+              <div class="card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                </svg>
+              </div>
+              <h4 class="card__title" style="margin-bottom: var(--space-2);">Real Case Studies</h4>
+              <p class="card__text" style="font-size: 14px; color: var(--color-text-secondary); margin-bottom: var(--space-4);">See ₹1.2L–₹4.0L/mo savings and payback metrics.</p>
+              <span style="color: var(--color-primary); font-weight: 700; font-size: 14px;">View Project Portfolio →</span>
+            </a>
+          </div>
+
+          <div style="text-align: center; margin-top: var(--space-8);">
+            <a href="/solutions" class="btn btn--secondary">View Full Industry Hub & Overview →</a>
           </div>
         </div>
       </section>

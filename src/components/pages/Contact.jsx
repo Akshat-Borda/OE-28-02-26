@@ -6,9 +6,8 @@ const Contact = () => {
         phone: '',
         email: '',
         company: '',
-        monthlyBill: '<50k',
+        monthlyBill: '10L-25L',
         industryType: 'Textile',
-        openSpace: 'Yes',
         primaryObjective: 'Reduce Bill',
         message: ''
     });
@@ -36,10 +35,9 @@ const Contact = () => {
                     "Company / Facility Name": formData.company,
                     "Average Monthly Bill (₹)": formData.monthlyBill,
                     "Industry Sector": formData.industryType,
-                    "500+ sq ft Space Available": formData.openSpace,
                     "Primary Objective": formData.primaryObjective,
                     "Additional Message": formData.message,
-                    _subject: `New C&I / MSME Feasibility Lead from ${formData.name}`,
+                    _subject: `New C&I / MSME Plant Consultation Request from ${formData.name}`,
                     _captcha: 'false',
                     _template: 'table',
                 }),
@@ -52,9 +50,8 @@ const Contact = () => {
                     phone: '',
                     email: '',
                     company: '',
-                    monthlyBill: '<50k',
+                    monthlyBill: '10L-25L',
                     industryType: 'Textile',
-                    openSpace: 'Yes',
                     primaryObjective: 'Reduce Bill',
                     message: ''
                 });
@@ -74,10 +71,10 @@ const Contact = () => {
                     <div className="hero__content">
                         <div className="hero__badge" style={{ marginTop: 'var(--space-12)' }}>
                             <span className="hero__badge-dot"></span>
-                            Free Wind & Hybrid Feasibility
+                            Renewable Solution Consultation
                         </div>
-                        <h1 className="hero__title">Request Your <span className="hero__title-highlight">Free Feasibility Study</span></h1>
-                        <p className="hero__subtitle">Share your energy details. Our engineering team will analyze your site’s wind resource and load profile — no tenders, no pressure, just engineering.</p>
+                        <h1 className="hero__title">Find the Right <span className="hero__title-highlight">Renewable Energy Solution</span></h1>
+                        <p className="hero__subtitle">Share your electricity bill details. Our engineering team will analyze your load curve and recommend the right renewable power plant for your facility.</p>
                     </div>
                 </div>
             </section>
@@ -90,7 +87,7 @@ const Contact = () => {
                             <span className="content-section__label">Direct Engineering Support</span>
                             <h2 className="content-section__title" style={{ marginBottom: 'var(--space-6)' }}>Cut your per-unit power costs.</h2>
                             <p className="content-section__text" style={{ marginBottom: 'var(--space-6)' }}>
-                                Whether you run a textile dyeing unit in Surat, a food processing plant, a cold storage facility, or a multi-shift manufacturing plant — we’re here to help you evaluate captive wind and hybrid power.
+                                Whether you run a textile dyeing unit in Surat, a ceramics plant in Morbi, a chemical unit in Ankleshwar, or a cold storage facility — we help choose and engineer the right captive renewable plant for your electricity bill.
                             </p>
 
                             <div className="feature-list">
@@ -139,9 +136,9 @@ const Contact = () => {
                         <div>
                             {/* Targeted MSME Lead Form */}
                             <div className="contact-form" style={{ background: '#ffffff', padding: 'var(--space-8)', borderRadius: 'var(--radius-xl)', boxShadow: 'var(--shadow-md)', border: '1px solid var(--glass-border)' }}>
-                                <h3 className="card__title" style={{ marginBottom: 'var(--space-2)' }}>Request Wind Feasibility Assessment</h3>
+                                <h3 className="card__title" style={{ marginBottom: 'var(--space-2)' }}>Let us know your bill and we can find the right solution</h3>
                                 <p style={{ fontSize: 'var(--font-size-sm)', color: 'var(--color-text-secondary)', marginBottom: 'var(--space-6)' }}>
-                                    Fill out this quick form for a free, site-specific wind energy assessment.
+                                    Share your energy details below. Our engineers will evaluate your load profile and recommend the optimal renewable energy plant for your factory.
                                 </p>
 
                                 {status === 'success' && (
@@ -154,7 +151,7 @@ const Contact = () => {
                                         color: '#10b981',
                                         fontSize: '0.95rem',
                                     }}>
-                                        ✅ Thank you! Your feasibility request has been received. Our engineers will review your bill details and reach out within 24 hours.
+                                        ✅ Thank you! Your request has been received. Our engineers will review your bill details and reach out within 24 hours.
                                     </div>
                                 )}
 
@@ -199,16 +196,18 @@ const Contact = () => {
                                         <div className="form-group" style={{ marginBottom: 0 }}>
                                             <label className="form-label">Avg. Monthly Electricity Bill (₹)</label>
                                             <select name="monthlyBill" className="form-input" value={formData.monthlyBill} onChange={handleChange}>
-                                                <option value="<50k">Less than ₹50,000 / month</option>
-                                                <option value="50k-2L">₹50,000 – ₹2 Lakhs / month</option>
-                                                <option value="2L-5L">₹2 Lakhs – ₹5 Lakhs / month</option>
-                                                <option value=">5L">More than ₹5 Lakhs / month</option>
+                                                <option value="10L-25L">₹10 Lakhs – ₹25 Lakhs / month</option>
+                                                <option value="25L-50L">₹25 Lakhs – ₹50 Lakhs / month</option>
+                                                <option value="50L-1Cr">₹50 Lakhs – ₹1 Crore / month</option>
+                                                <option value=">1Cr">More than ₹1 Crore / month</option>
                                             </select>
                                         </div>
                                         <div className="form-group" style={{ marginBottom: 0 }}>
                                             <label className="form-label">Industry Type</label>
                                             <select name="industryType" className="form-input" value={formData.industryType} onChange={handleChange}>
                                                 <option value="Textile">Textile / Dyeing</option>
+                                                <option value="Ceramics">Ceramics / Tiles</option>
+                                                <option value="Chemical">Chemical / Processing</option>
                                                 <option value="Food Processing">Food Processing</option>
                                                 <option value="Cold Storage">Cold Storage</option>
                                                 <option value="Foundry / Metals">Foundry / Metals</option>
@@ -220,23 +219,13 @@ const Contact = () => {
                                         </div>
                                     </div>
 
-                                    <div className="grid-2" style={{ gap: 'var(--space-4)', marginBottom: 'var(--space-4)' }}>
-                                        <div className="form-group" style={{ marginBottom: 0 }}>
-                                            <label className="form-label">500+ sq. ft. Rooftop / Open Space?</label>
-                                            <select name="openSpace" className="form-input" value={formData.openSpace} onChange={handleChange}>
-                                                <option value="Yes">Yes, space is available</option>
-                                                <option value="No">No / Limited space</option>
-                                                <option value="Unsure">Unsure (Need evaluation)</option>
-                                            </select>
-                                        </div>
-                                        <div className="form-group" style={{ marginBottom: 0 }}>
-                                            <label className="form-label">Primary Objective</label>
-                                            <select name="primaryObjective" className="form-input" value={formData.primaryObjective} onChange={handleChange}>
-                                                <option value="Reduce Bill">Reduce Electricity Bill</option>
-                                                <option value="Power Reliability">Power Reliability / Backup</option>
-                                                <option value="Carbon Neutrality">Carbon Neutrality / ESG</option>
-                                            </select>
-                                        </div>
+                                    <div className="form-group" style={{ marginBottom: 'var(--space-4)' }}>
+                                        <label className="form-label">Primary Objective</label>
+                                        <select name="primaryObjective" className="form-input" value={formData.primaryObjective} onChange={handleChange}>
+                                            <option value="Reduce Bill">Reduce Electricity Bill</option>
+                                            <option value="Power Reliability">Power Reliability / Backup</option>
+                                            <option value="Carbon Neutrality">Carbon Neutrality / ESG</option>
+                                        </select>
                                     </div>
 
                                     <div className="form-group" style={{ marginBottom: 'var(--space-6)' }}>

@@ -15,9 +15,21 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="footer__nav-grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}>
+          <div className="footer__nav-grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)', gap: 'var(--space-6)' }}>
             <div>
-              <h4 className="footer__title">Solutions</h4>
+              <h4 className="footer__title">Industries</h4>
+              <ul className="footer__list">
+                <li><a href="/solutions" className="footer__link" style={{ fontWeight: 'bold' }}>Industry Hub</a></li>
+                <li><a href="/solutions/textile-industry" className="footer__link">Textile & Dyeing</a></li>
+                <li><a href="/solutions/ceramics-industry" className="footer__link">Ceramics & Tiles</a></li>
+                <li><a href="/solutions/chemical-industry" className="footer__link">Chemical Plants</a></li>
+                <li><a href="/solutions/food-processing" className="footer__link">Food Processing</a></li>
+                <li><a href="/solutions/cold-storage" className="footer__link">Cold Storage</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="footer__title">Technology</h4>
               <ul className="footer__list">
                 <li><a href="/wind" className="footer__link">Small Wind Turbines</a></li>
                 <li><a href="/hybrid" className="footer__link">Hybrid (Wind + Solar)</a></li>
@@ -29,6 +41,7 @@ const Footer = () => {
             <div>
               <h4 className="footer__title">Company</h4>
               <ul className="footer__list">
+                <li><a href="/projects" className="footer__link" style={{ fontWeight: 'bold' }}>Case Studies</a></li>
                 <li><a href="/blogs" className="footer__link">Blogs</a></li>
                 <li><a href="/faqs" className="footer__link">FAQs</a></li>
                 <li><a href="/about" className="footer__link">About Us</a></li>
