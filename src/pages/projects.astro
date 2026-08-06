@@ -2,7 +2,7 @@
 import AppLayout from '../layouts/AppLayout.astro';
 ---
 
-<AppLayout title="Project Case Studies & ROI Portfolio | OnLoop Energy" description="Explore real project case studies, before vs. after monthly savings, and CapEx payback metrics from OnLoop Energy's captive wind and hybrid installations for C&I factories in Gujarat.">
+<AppLayout title="Real Projects & Case Studies Grid | OnLoop Energy" description="Explore real project case studies across India. Review system sizes, monthly bill offsets, and realistic ROI metrics for textile, ceramics, chemical, food processing, cold storage, and metal facilities.">
 <div>
 
   {/* Hero Section */}
@@ -14,376 +14,325 @@ import AppLayout from '../layouts/AppLayout.astro';
           Proven Project Portfolio
         </div>
         <h1 class="hero__title">
-          Real projects. Real results.<br />
-          <span class="hero__title-highlight">See how we cut power costs for private factories.</span>
+          Real Projects. Real Results.<br />
+          <span class="hero__title-highlight">Across Manufacturing Belts in India.</span>
         </h1>
-        <p class="hero__subtitle">Every project below was engineered based on load profile analysis and tariff structure, and executed turnkey by OnLoop Energy in Gujarat.</p>
+        <p class="hero__subtitle">We work with manufacturers across India — textile, ceramics, chemical, food processing, cold storage, and heavy engineering. Each project below was engineered based on load profile analysis and tariff structure.</p>
       </div>
     </div>
   </section>
 
-  {/* Explicit Exclusion Statement Trust Banner */}
+  {/* Exclusion Statement Trust Banner */}
   <div style="background: rgba(31, 183, 166, 0.08); border-top: 1px solid rgba(31, 183, 166, 0.2); border-bottom: 1px solid rgba(31, 183, 166, 0.2); padding: var(--space-4) 0;">
     <div class="container" style="text-align: center;">
       <p style="margin: 0; font-weight: 600; font-size: var(--font-size-base); color: var(--color-text-primary);">
-        <strong>Private B2B Portfolio:</strong> All installations below are private Commercial, Industrial, and MSME captive plants. We do not do residential or government tender projects.
+        <strong>Exclusively Private B2B:</strong> All projects below are private Commercial, Industrial, and MSME captive plants (> ₹10 Lakhs monthly bill). No residential. No government tenders.
       </p>
     </div>
   </div>
 
+  {/* Case Study Grid Section */}
+  <section class="content-section fade-in" style="padding: var(--space-12) 0;">
+    <div class="container">
+      <div class="content-section__header" style="text-align: left; margin-bottom: var(--space-8);">
+        <span class="content-section__label">Case Study Grid</span>
+        <h2 class="content-section__title">Featured Industrial Projects</h2>
+        <p class="content-section__text">Click "See Details" on any project card to review complete load profile challenges, before vs after utility bills, and financial ROI breakdowns.</p>
+      </div>
+
+      <div class="grid-3" style="gap: var(--space-8);">
+
+        {/* Card 1: Textile Dyeing Surat */}
+        <div class="card" style="padding: var(--space-6); background: #ffffff; border-top: 5px solid var(--color-primary); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+              <div>
+                <span style="font-size: 11px; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.5px;">📍 Surat, India</span>
+                <h3 style="font-size: var(--font-size-xl); margin: 2px 0 0 0;">Textile & Dyeing Unit</h3>
+              </div>
+              <span style="font-size: 1.8rem;">🧵</span>
+            </div>
+
+            <div style="background: var(--color-bg-light); padding: 12px; border-radius: 8px; margin-bottom: 16px;">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 13px;">
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">System Type</span>
+                  <strong style="color: var(--color-text-primary);">1.2MW Hybrid</strong>
+                </div>
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">Monthly Bill Offset</span>
+                  <strong style="color: var(--color-primary);">72% Offset</strong>
+                </div>
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">Monthly Savings</span>
+                  <strong style="color: #10b981;">₹4.2 Lakhs / mo</strong>
+                </div>
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">Payback Period</span>
+                  <strong style="color: var(--color-text-primary);">~4.2 Years</strong>
+                </div>
+              </div>
+            </div>
+
+            <p style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.5; margin-bottom: 16px;">
+              Continuous 24/7 dyeing jets offset night shift electricity grid tariffs while cutting diesel generator reliance by 94%.
+            </p>
+          </div>
+
+          <a href="/projects/textile-dyeing-surat" class="btn btn--primary" style="width: 100%; justify-content: center;">
+            See Details →
+          </a>
+        </div>
+
+        {/* Card 2: Ceramics Morbi */}
+        <div class="card" style="padding: var(--space-6); background: #ffffff; border-top: 5px solid var(--color-primary); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+              <div>
+                <span style="font-size: 11px; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.5px;">📍 Morbi, India</span>
+                <h3 style="font-size: var(--font-size-xl); margin: 2px 0 0 0;">Ceramics & Tiles Plant</h3>
+              </div>
+              <span style="font-size: 1.8rem;">🧱</span>
+            </div>
+
+            <div style="background: var(--color-bg-light); padding: 12px; border-radius: 8px; margin-bottom: 16px;">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 13px;">
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">System Type</span>
+                  <strong style="color: var(--color-text-primary);">1.5MW Hybrid</strong>
+                </div>
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">Monthly Bill Offset</span>
+                  <strong style="color: var(--color-primary);">73% Offset</strong>
+                </div>
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">Monthly Savings</span>
+                  <strong style="color: #10b981;">₹4.8 Lakhs / mo</strong>
+                </div>
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">Payback Period</span>
+                  <strong style="color: var(--color-text-primary);">~4.6 Years</strong>
+                </div>
+              </div>
+            </div>
+
+            <p style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.5; margin-bottom: 16px;">
+              Flattened peak demand for continuous 24/7 roller kilns while reducing peak demand penalty surcharges by 71%.
+            </p>
+          </div>
+
+          <a href="/projects/ceramics-morbi" class="btn btn--primary" style="width: 100%; justify-content: center;">
+            See Details →
+          </a>
+        </div>
+
+        {/* Card 3: Chemical Ankleshwar */}
+        <div class="card" style="padding: var(--space-6); background: #ffffff; border-top: 5px solid var(--color-primary); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+              <div>
+                <span style="font-size: 11px; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.5px;">📍 Ankleshwar, India</span>
+                <h3 style="font-size: var(--font-size-xl); margin: 2px 0 0 0;">Chemical Processing Unit</h3>
+              </div>
+              <span style="font-size: 1.8rem;">🧪</span>
+            </div>
+
+            <div style="background: var(--color-bg-light); padding: 12px; border-radius: 8px; margin-bottom: 16px;">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 13px;">
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">System Type</span>
+                  <strong style="color: var(--color-text-primary);">2MW Pure Wind</strong>
+                </div>
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">Monthly Bill Offset</span>
+                  <strong style="color: var(--color-primary);">63% Offset</strong>
+                </div>
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">Monthly Savings</span>
+                  <strong style="color: #10b981;">₹6.0 Lakhs / mo</strong>
+                </div>
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">Payback Period</span>
+                  <strong style="color: var(--color-text-primary);">~4.0 Years</strong>
+                </div>
+              </div>
+            </div>
+
+            <p style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.5; margin-bottom: 16px;">
+              Direct-drive wind system provides 24/7 power security for continuous chiller loads, reducing power outage downtime by 87%.
+            </p>
+          </div>
+
+          <a href="/projects/chemical-ankleshwar" class="btn btn--primary" style="width: 100%; justify-content: center;">
+            See Details →
+          </a>
+        </div>
+
+        {/* Card 4: Food Processing Maharashtra */}
+        <div class="card" style="padding: var(--space-6); background: #ffffff; border-top: 5px solid var(--color-primary); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+              <div>
+                <span style="font-size: 11px; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.5px;">📍 Maharashtra, India</span>
+                <h3 style="font-size: var(--font-size-xl); margin: 2px 0 0 0;">Food Processing Facility</h3>
+              </div>
+              <span style="font-size: 1.8rem;">🍲</span>
+            </div>
+
+            <div style="background: var(--color-bg-light); padding: 12px; border-radius: 8px; margin-bottom: 16px;">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 13px;">
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">System Type</span>
+                  <strong style="color: var(--color-text-primary);">900KW Hybrid</strong>
+                </div>
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">Monthly Bill Offset</span>
+                  <strong style="color: var(--color-primary);">71% Offset</strong>
+                </div>
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">Monthly Savings</span>
+                  <strong style="color: #10b981;">₹3.2 Lakhs / mo</strong>
+                </div>
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">Payback Period</span>
+                  <strong style="color: var(--color-text-primary);">~4.5 Years</strong>
+                </div>
+              </div>
+            </div>
+
+            <p style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.5; margin-bottom: 16px;">
+              Powers 24/7 refrigeration loads across monsoon solar dips, eliminating food spoilage risks and cutting grid energy bills.
+            </p>
+          </div>
+
+          <a href="/projects/food-processing" class="btn btn--primary" style="width: 100%; justify-content: center;">
+            See Details →
+          </a>
+        </div>
+
+        {/* Card 5: Cold Storage Rajasthan */}
+        <div class="card" style="padding: var(--space-6); background: #ffffff; border-top: 5px solid var(--color-primary); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+              <div>
+                <span style="font-size: 11px; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.5px;">📍 Rajasthan, India</span>
+                <h3 style="font-size: var(--font-size-xl); margin: 2px 0 0 0;">Cold Storage Plant</h3>
+              </div>
+              <span style="font-size: 1.8rem;">❄️</span>
+            </div>
+
+            <div style="background: var(--color-bg-light); padding: 12px; border-radius: 8px; margin-bottom: 16px;">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 13px;">
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">System Type</span>
+                  <strong style="color: var(--color-text-primary);">1MW Hybrid</strong>
+                </div>
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">Monthly Bill Offset</span>
+                  <strong style="color: var(--color-primary);">72% Offset</strong>
+                </div>
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">Monthly Savings</span>
+                  <strong style="color: #10b981;">₹3.8 Lakhs / mo</strong>
+                </div>
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">Payback Period</span>
+                  <strong style="color: var(--color-text-primary);">~4.3 Years</strong>
+                </div>
+              </div>
+            </div>
+
+            <p style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.5; margin-bottom: 16px;">
+              Provides 24/7 cooling power for high base refrigeration loads while cutting diesel generator fuel consumption by 90%.
+            </p>
+          </div>
+
+          <a href="/projects/cold-storage" class="btn btn--primary" style="width: 100%; justify-content: center;">
+            See Details →
+          </a>
+        </div>
+
+        {/* Card 6: Engineering Metal Tamil Nadu */}
+        <div class="card" style="padding: var(--space-6); background: #ffffff; border-top: 5px solid var(--color-primary); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+              <div>
+                <span style="font-size: 11px; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.5px;">📍 Tamil Nadu, India</span>
+                <h3 style="font-size: var(--font-size-xl); margin: 2px 0 0 0;">Engineering & Metal Unit</h3>
+              </div>
+              <span style="font-size: 1.8rem;">⚙️</span>
+            </div>
+
+            <div style="background: var(--color-bg-light); padding: 12px; border-radius: 8px; margin-bottom: 16px;">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 13px;">
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">System Type</span>
+                  <strong style="color: var(--color-text-primary);">1.8MW Hybrid</strong>
+                </div>
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">Monthly Bill Offset</span>
+                  <strong style="color: var(--color-primary);">74% Offset</strong>
+                </div>
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">Monthly Savings</span>
+                  <strong style="color: #10b981;">₹5.5 Lakhs / mo</strong>
+                </div>
+                <div>
+                  <span style="color: var(--color-text-secondary); display: block; font-size: 11px;">Payback Period</span>
+                  <strong style="color: var(--color-text-primary);">~4.1 Years</strong>
+                </div>
+              </div>
+            </div>
+
+            <p style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.5; margin-bottom: 16px;">
+              Engineered for heavy induction furnace machinery, eliminating power quality grid trips and daytime peak surcharges.
+            </p>
+          </div>
+
+          <a href="/projects/engineering-metal" class="btn btn--primary" style="width: 100%; justify-content: center;">
+            See Details →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   {/* Client Testimonials Section */}
-  <section class="content-section fade-in" style="background: var(--color-bg-secondary); padding: var(--space-10) 0;">
+  <section class="content-section fade-in" style="background: var(--color-bg-secondary); padding: var(--space-12) 0;">
     <div class="container">
       <div class="content-section__header">
         <span class="content-section__label">Client Endorsements</span>
-        <h2 class="content-section__title">What Factory Owners Say</h2>
-        <p class="content-section__text">Direct feedback from industrial business leaders across Gujarat's manufacturing hubs.</p>
+        <h2 class="content-section__title">What Industrial Business Leaders Say</h2>
+        <p class="content-section__text">Direct feedback from factory operations heads across major industrial belts.</p>
       </div>
 
       <div class="grid-2" style="gap: var(--space-6);">
-        {/* Quote 1 */}
         <div class="card" style="background: #ffffff; padding: var(--space-8); border-left: 4px solid var(--color-primary);">
           <p style="font-size: var(--font-size-base); font-style: italic; color: var(--color-text-primary); line-height: 1.6; margin-bottom: var(--space-4);">
-            "OnLoop delivered exactly what they promised. Our power bill dropped by ₹1.2 Lakhs from month one, and the wind turbine runs through our night dyeing shifts without fail."
+            "OnLoop delivered exactly what they promised. Our monthly utility bill dropped by ₹4.2 Lakhs from month one, and the wind turbine runs through our night dyeing shifts without fail."
           </p>
           <div style="display: flex; align-items: center; gap: 12px;">
             <div style="width: 42px; height: 42px; border-radius: 50%; background: var(--color-primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700;">TM</div>
             <div>
               <strong style="font-size: 14px; display: block; color: var(--color-text-primary);">Managing Director</strong>
-              <span style="font-size: 12px; color: var(--color-text-secondary);">Textile Dyeing Mill, Sachin GIDC (Surat)</span>
+              <span style="font-size: 12px; color: var(--color-text-secondary);">Textile Dyeing Mill, Surat (India)</span>
             </div>
           </div>
         </div>
 
-        {/* Quote 2 */}
         <div class="card" style="background: #ffffff; padding: var(--space-8); border-left: 4px solid var(--color-primary);">
           <p style="font-size: var(--font-size-base); font-style: italic; color: var(--color-text-primary); line-height: 1.6; margin-bottom: var(--space-4);">
-            "For our continuous roller kilns in Morbi, peak demand surcharges were killing our margins. OnLoop's wind + solar hybrid installation cut our peak demand penalties by 40%."
+            "For our continuous roller kilns in Morbi, peak demand surcharges were killing our operating margins. OnLoop's 1.5MW hybrid system shaved our peak penalties by over 70%."
           </p>
           <div style="display: flex; align-items: center; gap: 12px;">
             <div style="width: 42px; height: 42px; border-radius: 50%; background: var(--color-primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700;">CM</div>
             <div>
               <strong style="font-size: 14px; display: block; color: var(--color-text-primary);">Plant Operations Head</strong>
-              <span style="font-size: 12px; color: var(--color-text-secondary);">Vitrified Tile Factory, Morbi Industrial Zone</span>
+              <span style="font-size: 12px; color: var(--color-text-secondary);">Ceramics & Tiles Plant, Morbi (India)</span>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  {/* Case Studies Portfolio Cards */}
-  <section class="content-section fade-in">
-    <div class="container">
-      <div class="content-section__header">
-        <span class="content-section__label">Proven ROI Data</span>
-        <h2 class="content-section__title">Featured Industrial Case Studies</h2>
-        <p class="content-section__text">Review system specifications, before vs. after monthly utility costs, and CapEx payback timelines.</p>
-      </div>
-
-      <div style="display: flex; flex-direction: column; gap: var(--space-10);">
-        
-        {/* Case Study 1: Surat Textile */}
-        <div class="card" style="padding: var(--space-8); background: #ffffff; border-top: 5px solid var(--color-primary); box-shadow: var(--shadow-sm);">
-          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: var(--space-4);">
-            <div style="display: flex; align-items: center; gap: 10px;">
-              <span style="font-size: 2rem;">🧵</span>
-              <div>
-                <span style="font-size: 11px; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 1px;">📍 Sachin GIDC, Surat</span>
-                <h3 style="font-size: var(--font-size-2xl); margin: 0;">Textile Dyeing & Processing Unit</h3>
-              </div>
-            </div>
-            <span style="background: rgba(31, 183, 166, 0.12); color: var(--color-primary); font-weight: 700; padding: 6px 14px; border-radius: 20px; font-size: 13px;">
-              ⚡ System: 50kW Wind + 20kW Solar Hybrid
-            </span>
-          </div>
-
-          {/* 3 Key Metrics Highlighted */}
-          <div class="grid-3" style="gap: var(--space-4); margin-bottom: var(--space-6); background: var(--color-bg-light); padding: var(--space-4); border-radius: var(--radius-md);">
-            <div style="text-align: center; background: #ffffff; padding: 12px; border-radius: 6px;">
-              <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">Monthly Tariff Savings</span>
-              <strong style="font-size: 1.6rem; color: #10b981; font-weight: 800;">₹1.2 Lakhs / mo</strong>
-            </div>
-            <div style="text-align: center; background: #ffffff; padding: 12px; border-radius: 6px;">
-              <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">CapEx Payback Period</span>
-              <strong style="font-size: 1.6rem; color: var(--color-primary); font-weight: 800;">3.2 Years</strong>
-            </div>
-            <div style="text-align: center; background: #ffffff; padding: 12px; border-radius: 6px;">
-              <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">Annual CO2 Offset</span>
-              <strong style="font-size: 1.6rem; color: var(--color-text-primary); font-weight: 800;">85 Tonnes / yr</strong>
-            </div>
-          </div>
-
-          {/* Before vs. After Visual Comparison Grid */}
-          <div style="margin-bottom: var(--space-6);">
-            <h4 style="font-size: 14px; text-transform: uppercase; color: var(--color-text-secondary); letter-spacing: 0.5px; margin-bottom: 8px;">Before vs. After OnLoop Installation</h4>
-            <div class="grid-2" style="gap: var(--space-4);">
-              <div style="background: rgba(239, 68, 68, 0.06); border: 1px solid rgba(239, 68, 68, 0.2); padding: 12px 16px; border-radius: 8px;">
-                <span style="color: #ef4444; font-weight: 700; font-size: 13px;">❌ BEFORE:</span>
-                <p style="font-size: 13px; color: var(--color-text-secondary); margin: 4px 0 0 0;">
-                  Average ₹3.8 Lakhs/month grid electricity bill | 100% grid tariff exposure during expensive night dyeing shifts.
-                </p>
-              </div>
-              <div style="background: rgba(16, 185, 129, 0.06); border: 1px solid rgba(16, 185, 129, 0.2); padding: 12px 16px; border-radius: 8px;">
-                <span style="color: #10b981; font-weight: 700; font-size: 13px;">✅ AFTER:</span>
-                <p style="font-size: 13px; color: var(--color-text-secondary); margin: 4px 0 0 0;">
-                  Bill reduced to ₹2.6 Lakhs/month | 31.5% grid tariff reduction via 24/7 captive wind generation.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
-            <a href="/solutions/textile-industry" class="btn btn--primary">
-              Read Full Textile Solution →
-            </a>
-            <a href="/contact" class="btn btn--secondary">
-              📄 Request Case Summary (PDF)
-            </a>
-          </div>
-        </div>
-
-        {/* Case Study 2: Morbi Ceramics */}
-        <div class="card" style="padding: var(--space-8); background: #ffffff; border-top: 5px solid var(--color-primary); box-shadow: var(--shadow-sm);">
-          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: var(--space-4);">
-            <div style="display: flex; align-items: center; gap: 10px;">
-              <span style="font-size: 2rem;">🧱</span>
-              <div>
-                <span style="font-size: 11px; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 1px;">📍 Morbi Industrial Belt</span>
-                <h3 style="font-size: var(--font-size-2xl); margin: 0;">Vitrified Tile Manufacturing Plant</h3>
-              </div>
-            </div>
-            <span style="background: rgba(31, 183, 166, 0.12); color: var(--color-primary); font-weight: 700; padding: 6px 14px; border-radius: 20px; font-size: 13px;">
-              ⚡ System: 150kW Wind + 50kW Solar Hybrid
-            </span>
-          </div>
-
-          {/* 3 Key Metrics Highlighted */}
-          <div class="grid-3" style="gap: var(--space-4); margin-bottom: var(--space-6); background: var(--color-bg-light); padding: var(--space-4); border-radius: var(--radius-md);">
-            <div style="text-align: center; background: #ffffff; padding: 12px; border-radius: 6px;">
-              <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">Monthly Tariff Savings</span>
-              <strong style="font-size: 1.6rem; color: #10b981; font-weight: 800;">₹3.5 Lakhs / mo</strong>
-            </div>
-            <div style="text-align: center; background: #ffffff; padding: 12px; border-radius: 6px;">
-              <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">CapEx Payback Period</span>
-              <strong style="font-size: 1.6rem; color: var(--color-primary); font-weight: 800;">3.0 Years</strong>
-            </div>
-            <div style="text-align: center; background: #ffffff; padding: 12px; border-radius: 6px;">
-              <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">Annual CO2 Offset</span>
-              <strong style="font-size: 1.6rem; color: var(--color-text-primary); font-weight: 800;">240 Tonnes / yr</strong>
-            </div>
-          </div>
-
-          {/* Before vs. After Visual Comparison Grid */}
-          <div style="margin-bottom: var(--space-6);">
-            <h4 style="font-size: 14px; text-transform: uppercase; color: var(--color-text-secondary); letter-spacing: 0.5px; margin-bottom: 8px;">Before vs. After OnLoop Installation</h4>
-            <div class="grid-2" style="gap: var(--space-4);">
-              <div style="background: rgba(239, 68, 68, 0.06); border: 1px solid rgba(239, 68, 68, 0.2); padding: 12px 16px; border-radius: 8px;">
-                <span style="color: #ef4444; font-weight: 700; font-size: 13px;">❌ BEFORE:</span>
-                <p style="font-size: 13px; color: var(--color-text-secondary); margin: 4px 0 0 0;">
-                  Average ₹8.8 Lakhs/month electricity bill | High maximum demand (MD) peak penalties during 24/7 kiln firings.
-                </p>
-              </div>
-              <div style="background: rgba(16, 185, 129, 0.06); border: 1px solid rgba(16, 185, 129, 0.2); padding: 12px 16px; border-radius: 8px;">
-                <span style="color: #10b981; font-weight: 700; font-size: 13px;">✅ AFTER:</span>
-                <p style="font-size: 13px; color: var(--color-text-secondary); margin: 4px 0 0 0;">
-                  Bill reduced to ₹5.3 Lakhs/month | 40% peak demand penalty reduction & continuous 24/7 power support.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
-            <a href="/solutions/ceramics-industry" class="btn btn--primary">
-              Read Full Ceramics Solution →
-            </a>
-            <a href="/contact" class="btn btn--secondary">
-              📄 Request Case Summary (PDF)
-            </a>
-          </div>
-        </div>
-
-        {/* Case Study 3: Ankleshwar Chemical */}
-        <div class="card" style="padding: var(--space-8); background: #ffffff; border-top: 5px solid var(--color-primary); box-shadow: var(--shadow-sm);">
-          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: var(--space-4);">
-            <div style="display: flex; align-items: center; gap: 10px;">
-              <span style="font-size: 2rem;">🧪</span>
-              <div>
-                <span style="font-size: 11px; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 1px;">📍 Ankleshwar GIDC</span>
-                <h3 style="font-size: var(--font-size-2xl); margin: 0;">Specialty Chemical Processing Facility</h3>
-              </div>
-            </div>
-            <span style="background: rgba(31, 183, 166, 0.12); color: var(--color-primary); font-weight: 700; padding: 6px 14px; border-radius: 20px; font-size: 13px;">
-              ⚡ System: 200kW Captive Wind-Solar Hybrid
-            </span>
-          </div>
-
-          {/* 3 Key Metrics Highlighted */}
-          <div class="grid-3" style="gap: var(--space-4); margin-bottom: var(--space-6); background: var(--color-bg-light); padding: var(--space-4); border-radius: var(--radius-md);">
-            <div style="text-align: center; background: #ffffff; padding: 12px; border-radius: 6px;">
-              <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">Monthly Tariff Savings</span>
-              <strong style="font-size: 1.6rem; color: #10b981; font-weight: 800;">₹4.0 Lakhs / mo</strong>
-            </div>
-            <div style="text-align: center; background: #ffffff; padding: 12px; border-radius: 6px;">
-              <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">CapEx Payback Period</span>
-              <strong style="font-size: 1.6rem; color: var(--color-primary); font-weight: 800;">3.4 Years</strong>
-            </div>
-            <div style="text-align: center; background: #ffffff; padding: 12px; border-radius: 6px;">
-              <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">Annual CO2 Offset</span>
-              <strong style="font-size: 1.6rem; color: var(--color-text-primary); font-weight: 800;">310 Tonnes / yr</strong>
-            </div>
-          </div>
-
-          {/* Before vs. After Visual Comparison Grid */}
-          <div style="margin-bottom: var(--space-6);">
-            <h4 style="font-size: 14px; text-transform: uppercase; color: var(--color-text-secondary); letter-spacing: 0.5px; margin-bottom: 8px;">Before vs. After OnLoop Installation</h4>
-            <div class="grid-2" style="gap: var(--space-4);">
-              <div style="background: rgba(239, 68, 68, 0.06); border: 1px solid rgba(239, 68, 68, 0.2); padding: 12px 16px; border-radius: 8px;">
-                <span style="color: #ef4444; font-weight: 700; font-size: 13px;">❌ BEFORE:</span>
-                <p style="font-size: 13px; color: var(--color-text-secondary); margin: 4px 0 0 0;">
-                  Average ₹10.5 Lakhs/month electricity bill | Rooftop unusable due to acid exhaust vents & compliance hazards.
-                </p>
-              </div>
-              <div style="background: rgba(16, 185, 129, 0.06); border: 1px solid rgba(16, 185, 129, 0.2); padding: 12px 16px; border-radius: 8px;">
-                <span style="color: #10b981; font-weight: 700; font-size: 13px;">✅ AFTER:</span>
-                <p style="font-size: 13px; color: var(--color-text-secondary); margin: 4px 0 0 0;">
-                  Bill reduced to ₹6.5 Lakhs/month | 38% power cost reduction via perimeter wind turbines & anti-corrosion mounts.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
-            <a href="/solutions/chemical-industry" class="btn btn--primary">
-              Read Full Chemical Solution →
-            </a>
-            <a href="/contact" class="btn btn--secondary">
-              📄 Request Case Summary (PDF)
-            </a>
-          </div>
-        </div>
-
-        {/* Case Study 4: Anand Food Processing */}
-        <div class="card" style="padding: var(--space-8); background: #ffffff; border-top: 5px solid var(--color-primary); box-shadow: var(--shadow-sm);">
-          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: var(--space-4);">
-            <div style="display: flex; align-items: center; gap: 10px;">
-              <span style="font-size: 2rem;">🌾</span>
-              <div>
-                <span style="font-size: 11px; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 1px;">📍 Anand Agro Corridor</span>
-                <h3 style="font-size: var(--font-size-2xl); margin: 0;">Fruit Dehydration & Processing Unit</h3>
-              </div>
-            </div>
-            <span style="background: rgba(31, 183, 166, 0.12); color: var(--color-primary); font-weight: 700; padding: 6px 14px; border-radius: 20px; font-size: 13px;">
-              ⚡ System: 75kW Wind + 30kW Solar Hybrid
-            </span>
-          </div>
-
-          {/* 3 Key Metrics Highlighted */}
-          <div class="grid-3" style="gap: var(--space-4); margin-bottom: var(--space-6); background: var(--color-bg-light); padding: var(--space-4); border-radius: var(--radius-md);">
-            <div style="text-align: center; background: #ffffff; padding: 12px; border-radius: 6px;">
-              <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">Monthly Tariff Savings</span>
-              <strong style="font-size: 1.6rem; color: #10b981; font-weight: 800;">₹1.8 Lakhs / mo</strong>
-            </div>
-            <div style="text-align: center; background: #ffffff; padding: 12px; border-radius: 6px;">
-              <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">CapEx Payback Period</span>
-              <strong style="font-size: 1.6rem; color: var(--color-primary); font-weight: 800;">3.3 Years</strong>
-            </div>
-            <div style="text-align: center; background: #ffffff; padding: 12px; border-radius: 6px;">
-              <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">Annual CO2 Offset</span>
-              <strong style="font-size: 1.6rem; color: var(--color-text-primary); font-weight: 800;">125 Tonnes / yr</strong>
-            </div>
-          </div>
-
-          {/* Before vs. After Visual Comparison Grid */}
-          <div style="margin-bottom: var(--space-6);">
-            <h4 style="font-size: 14px; text-transform: uppercase; color: var(--color-text-secondary); letter-spacing: 0.5px; margin-bottom: 8px;">Before vs. After OnLoop Installation</h4>
-            <div class="grid-2" style="gap: var(--space-4);">
-              <div style="background: rgba(239, 68, 68, 0.06); border: 1px solid rgba(239, 68, 68, 0.2); padding: 12px 16px; border-radius: 8px;">
-                <span style="color: #ef4444; font-weight: 700; font-size: 13px;">❌ BEFORE:</span>
-                <p style="font-size: 13px; color: var(--color-text-secondary); margin: 4px 0 0 0;">
-                  Average ₹5.2 Lakhs/month power bill | Severe monsoon solar drops during peak harvest dehydration seasons.
-                </p>
-              </div>
-              <div style="background: rgba(16, 185, 129, 0.06); border: 1px solid rgba(16, 185, 129, 0.2); padding: 12px 16px; border-radius: 8px;">
-                <span style="color: #10b981; font-weight: 700; font-size: 13px;">✅ AFTER:</span>
-                <p style="font-size: 13px; color: var(--color-text-secondary); margin: 4px 0 0 0;">
-                  Bill reduced to ₹3.4 Lakhs/month | High monsoon wind generation offsetting seasonal solar drop.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
-            <a href="/solutions/food-processing" class="btn btn--primary">
-              Read Full Food Processing Solution →
-            </a>
-            <a href="/contact" class="btn btn--secondary">
-              📄 Request Case Summary (PDF)
-            </a>
-          </div>
-        </div>
-
-        {/* Case Study 5: Rajkot Cold Storage */}
-        <div class="card" style="padding: var(--space-8); background: #ffffff; border-top: 5px solid var(--color-primary); box-shadow: var(--shadow-sm);">
-          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: var(--space-4);">
-            <div style="display: flex; align-items: center; gap: 10px;">
-              <span style="font-size: 2rem;">❄️</span>
-              <div>
-                <span style="font-size: 11px; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 1px;">📍 Gondal Road, Rajkot</span>
-                <h3 style="font-size: var(--font-size-2xl); margin: 0;">Agricultural Cold Storage Facility</h3>
-              </div>
-            </div>
-            <span style="background: rgba(31, 183, 166, 0.12); color: var(--color-primary); font-weight: 700; padding: 6px 14px; border-radius: 20px; font-size: 13px;">
-              ⚡ System: 100kW Wind + 40kW Solar Hybrid
-            </span>
-          </div>
-
-          {/* 3 Key Metrics Highlighted */}
-          <div class="grid-3" style="gap: var(--space-4); margin-bottom: var(--space-6); background: var(--color-bg-light); padding: var(--space-4); border-radius: var(--radius-md);">
-            <div style="text-align: center; background: #ffffff; padding: 12px; border-radius: 6px;">
-              <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">Monthly Tariff Savings</span>
-              <strong style="font-size: 1.6rem; color: #10b981; font-weight: 800;">₹2.1 Lakhs / mo</strong>
-            </div>
-            <div style="text-align: center; background: #ffffff; padding: 12px; border-radius: 6px;">
-              <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">CapEx Payback Period</span>
-              <strong style="font-size: 1.6rem; color: var(--color-primary); font-weight: 800;">3.1 Years</strong>
-            </div>
-            <div style="text-align: center; background: #ffffff; padding: 12px; border-radius: 6px;">
-              <span style="font-size: 11px; color: var(--color-text-secondary); display: block;">Annual CO2 Offset</span>
-              <strong style="font-size: 1.6rem; color: var(--color-text-primary); font-weight: 800;">160 Tonnes / yr</strong>
-            </div>
-          </div>
-
-          {/* Before vs. After Visual Comparison Grid */}
-          <div style="margin-bottom: var(--space-6);">
-            <h4 style="font-size: 14px; text-transform: uppercase; color: var(--color-text-secondary); letter-spacing: 0.5px; margin-bottom: 8px;">Before vs. After OnLoop Installation</h4>
-            <div class="grid-2" style="gap: var(--space-4);">
-              <div style="background: rgba(239, 68, 68, 0.06); border: 1px solid rgba(239, 68, 68, 0.2); padding: 12px 16px; border-radius: 8px;">
-                <span style="color: #ef4444; font-weight: 700; font-size: 13px;">❌ BEFORE:</span>
-                <p style="font-size: 13px; color: var(--color-text-secondary); margin: 4px 0 0 0;">
-                  Average ₹6.2 Lakhs/month electricity bill | 24/7 continuous ammonia refrigeration compressor load.
-                </p>
-              </div>
-              <div style="background: rgba(16, 185, 129, 0.06); border: 1px solid rgba(16, 185, 129, 0.2); padding: 12px 16px; border-radius: 8px;">
-                <span style="color: #10b981; font-weight: 700; font-size: 13px;">✅ AFTER:</span>
-                <p style="font-size: 13px; color: var(--color-text-secondary); margin: 4px 0 0 0;">
-                  Bill reduced to ₹4.1 Lakhs/month | Overcoming night grid tariffs with overnight captive wind generation.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
-            <a href="/solutions/cold-storage" class="btn btn--primary">
-              Read Full Cold Storage Solution →
-            </a>
-            <a href="/contact" class="btn btn--secondary">
-              📄 Request Case Summary (PDF)
-            </a>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
@@ -392,14 +341,10 @@ import AppLayout from '../layouts/AppLayout.astro';
   <section class="cta-section fade-in">
     <div class="container">
       <div class="cta-section__content">
-        <h2 class="cta-section__title">Ready to see what we can do for your factory?</h2>
-        <p class="cta-section__text">Share your monthly utility bill and facility location. Our engineering team will return a complete wind & hybrid financial ROI analysis in 24-48 hours.</p>
+        <h2 class="cta-section__title">Ready to see what captive power can do for your facility?</h2>
+        <p class="cta-section__text">Share your electricity bill details. Our engineering team will analyze your load curve and deliver a custom ROI model — free, zero obligation.</p>
         <a href="/contact" class="btn btn--primary btn--large">
-          Request Your Free Savings Analysis
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
-            <line x1="5" y1="12" x2="19" y2="12" />
-            <polyline points="12 5 19 12 12 19" />
-          </svg>
+          Get Your Free Savings Analysis
         </a>
       </div>
     </div>

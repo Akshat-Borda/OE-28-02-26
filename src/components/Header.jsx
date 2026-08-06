@@ -39,39 +39,23 @@ const Header = () => {
                       <rect x="14" y="14" width="7" height="7" />
                       <rect x="3" y="14" width="7" height="7" />
                     </svg>
-                    Industry Solutions Hub
-                  </a>
-                  <div style={{ height: '1px', background: 'rgba(0,0,0,0.06)', margin: '4px 0' }}></div>
-                  <a href="/solutions/textile-industry" className="nav__dropdown-link">
-                    Textile & Dyeing Mills
-                  </a>
-                  <a href="/solutions/ceramics-industry" className="nav__dropdown-link">
-                    Ceramics & Tiles Manufacturing
-                  </a>
-                  <a href="/solutions/chemical-industry" className="nav__dropdown-link">
-                    Chemical & Processing Plants
-                  </a>
-                  <a href="/solutions/food-processing" className="nav__dropdown-link">
-                    Food Processing Units
-                  </a>
-                  <a href="/solutions/cold-storage" className="nav__dropdown-link">
-                    Cold Storage & Refrigeration
+                    Solutions Overview
                   </a>
                   <div style={{ height: '1px', background: 'rgba(0,0,0,0.06)', margin: '4px 0' }}></div>
                   <a href="/wind" className="nav__dropdown-link">
-                    Captive Wind Energy
+                    💨 Captive Wind Energy
                   </a>
                   <a href="/hybrid" className="nav__dropdown-link">
-                    Hybrid (Wind + Solar)
+                    ⚡ Hybrid Systems (Wind + Solar)
                   </a>
                 </div>
               </li>
-              <li><a href="/projects" className={`nav__link ${pathname === '/projects' ? 'nav__link--active' : ''}`}>Case Studies</a></li>
+              <li><a href="/projects" className={`nav__link ${pathname === '/projects' || pathname.startsWith('/projects/') ? 'nav__link--active' : ''}`}>Projects</a></li>
               <li><a href="/about" className={`nav__link ${pathname === '/about' ? 'nav__link--active' : ''}`}>About Us</a></li>
               <li><a href="/faqs" className={`nav__link ${pathname === '/faqs' ? 'nav__link--active' : ''}`}>FAQs</a></li>
               <li><a href="/blogs" className={`nav__link ${pathname.startsWith('/blog') ? 'nav__link--active' : ''}`}>Blogs</a></li>
             </ul>
-            <a href="/contact" className="btn btn--primary">Contact Us</a>
+            <a href="/contact" className="btn btn--primary">Get Free Savings Analysis</a>
           </nav>
           <button className="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
             <span></span>
@@ -83,28 +67,19 @@ const Header = () => {
       <nav className="nav--mobile">
         <div className="nav__mobile-content">
           <a href="/" className="nav__mobile-item">Home</a>
-          <a href="/solutions" className="nav__mobile-item" style={{ fontWeight: 'bold' }}>Industry Solutions Hub</a>
+          <a href="/solutions" className="nav__mobile-item" style={{ fontWeight: 'bold' }}>Solutions Overview</a>
 
           <div className="nav__mobile-group">
-            <div className="nav__mobile-group-title">By Industry</div>
-            <a href="/solutions/textile-industry" className="nav__mobile-sublink">Textile & Dyeing Mills</a>
-            <a href="/solutions/ceramics-industry" className="nav__mobile-sublink">Ceramics & Tiles</a>
-            <a href="/solutions/chemical-industry" className="nav__mobile-sublink">Chemical & Processing</a>
-            <a href="/solutions/food-processing" className="nav__mobile-sublink">Food Processing</a>
-            <a href="/solutions/cold-storage" className="nav__mobile-sublink">Cold Storage</a>
-          </div>
-
-          <div className="nav__mobile-group">
-            <div className="nav__mobile-group-title">By Technology</div>
+            <div className="nav__mobile-group-title">Our Technologies</div>
             <a href="/wind" className="nav__mobile-sublink">Captive Wind Energy</a>
-            <a href="/hybrid" className="nav__mobile-sublink">Hybrid (Wind + Solar)</a>
+            <a href="/hybrid" className="nav__mobile-sublink">Hybrid Systems (Wind + Solar)</a>
           </div>
 
-          <a href="/projects" className="nav__mobile-item">Case Studies</a>
+          <a href="/projects" className="nav__mobile-item">Projects</a>
           <a href="/blogs" className="nav__mobile-item">Blogs</a>
           <a href="/faqs" className="nav__mobile-item">FAQs</a>
           <a href="/about" className="nav__mobile-item">About Us</a>
-          <a href="/contact" className="btn btn--primary" style={{ marginTop: 'var(--space-4)' }}>Contact Us</a>
+          <a href="/contact" className="btn btn--primary" style={{ marginTop: 'var(--space-4)' }}>Get Free Savings Analysis</a>
         </div>
       </nav>
     </>
