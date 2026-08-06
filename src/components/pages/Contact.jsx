@@ -188,7 +188,7 @@ const Contact = () => {
                                         color: '#10b981',
                                         fontSize: '0.95rem',
                                     }}>
-                                        ✅ Thank you! Your request has been received. Our engineers will review your bill details and reach out within 24 hours.
+                                        Thank you! Your request has been received. Our engineers will review your bill details and reach out within 24 hours.
                                     </div>
                                 )}
 
@@ -202,7 +202,7 @@ const Contact = () => {
                                         color: '#ef4444',
                                         fontSize: '0.95rem',
                                     }}>
-                                        ❌ Something went wrong. Please try again or call us directly at +91 98700 93424.
+                                        Something went wrong. Please try again or call us directly at +91 98700 93424.
                                     </div>
                                 )}
 

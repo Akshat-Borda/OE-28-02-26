@@ -43,10 +43,10 @@ const Header = () => {
                   </a>
                   <div style={{ height: '1px', background: 'rgba(0,0,0,0.06)', margin: '4px 0' }}></div>
                   <a href="/wind" className="nav__dropdown-link">
-                    💨 Captive Wind Energy
+                    Captive Wind Energy
                   </a>
                   <a href="/hybrid" className="nav__dropdown-link">
-                    ⚡ Hybrid Systems (Wind + Solar)
+                    Hybrid Systems (Wind + Solar)
                   </a>
                 </div>
               </li>
